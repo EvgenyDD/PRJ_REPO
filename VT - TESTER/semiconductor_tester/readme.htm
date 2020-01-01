@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Readme zum AVR-Transistortester</title>
+<h1>AVR-Transistortester</h1>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body>
+
+<a href="#start">Allgemeines</a><br>
+<a href="#features">Features</a><br>
+<a href="#aufbau">Hardware</a><br>
+<a href="#firmware">Firmware</a><br>
+<a href="#eeprom">Konfigurations im EEPROM</a><br>
+<a href="#compile">Kompilieren der Firmware</a><br><br>
+
+<a name="start"><h3>Allgemeines</h3></a> (größtenteils aus dem Artikel von µC.net übernommen)<br>
+Jeder Bastler kennt wohl dieses Problem: Man baut einen Transistor aus einem Gerät aus oder kramt einen aus der Bastelkiste. <br>
+Wenn die Typenbezeichnung zu erkennen ist (und sie einem bekannt ist), ist ja alles in Ordnung. Oft ist dem aber nicht so, und dann geht das Übliche mal wieder los: Typ und Pinbelegung des Transistors aus dem Internet oder einem Buch heraussuchen.<br>
+Das nervt auf Dauer natürlich ziemlich. Auch Transistoren im gleichen Gehäuse haben nicht immer die gleiche Pin-Belegung. Zum Beispiel hat ein 2N5551 eine andere Belegung als ein BC547, obwohl beide ein TO92 Gehäuse haben. <br>
+Wenn bei einem Transistor die Bezeichnung nicht mehr zu erkennen ist (oder nicht mal Google was dazu weiß), wird es mit konventionellen Methoden richtig umständlich, den Transistortypen herauszufinden: Es könnte sich um NPN, PNP, N-oder P-Kanal-Mosfet, etc. handeln. <br>
+Eventuell hat das Bauteil auch noch eine Schutzdiode intern. Das macht die Identifizierung noch schwieriger. <br>
+Durchprobieren per Hand ist also ein recht zeitraubendes Unterfangen.<br>
+
+Warum soll man das nicht per Mikrocontroller erledigen lassen? So ist dieser automatische Transistortester entstanden.<br><br>
+
+<a name="features"><h3>Features</h3></a>
+
+    * Automatische Erkennung von NPN und PNP-Transistoren, N-und P-Kanal-MOSFETs, Dioden (auch Doppeldioden), Thyristoren, Triacs und auch Widerständen und Kondensatoren.<br>
+    * Automatische Ermittlung und Anzeige der Pins des zu testenden Bauteils<br>
+    * Erkennung und Anzeige von Schutzdioden bei Transistoren und MOSFETs<br>
+    * Ermittlung des Verstärkungsfaktors und der Basis-Emitter-Durchlassspannung bei Transistoren<br>
+    * Messung der Gate-Schwellspannung und Gatekapazität von Mosfets<br>
+    * Anzeige der Werte auf einem Text-LCD (2*16 Zeichen)<br>
+    * Dauer eines Bauteil-Tests: Unter 2 Sekunden (Ausnahme: größere Kondensatoren)<br>
+    * Ein-Knopf-Bedienung; automatische Abschaltung<br>
+    * Stromverbrauch im ausgeschalteten Zustand: Unter 20 nA <br><br>
+    
+
+
+<a name="aufbau"><h3>Hardware</h3></a>
+Es gibt zwei Versionen der Schaltung.<br>
+Eine verfügt über eine automatische Abschaltung ca. 10s nach Test-Ende. Damit ergibt sich eine komfortable Ein-Knopf-Bedienung bei vernachlässigbarem Standby-Stromverbrauch.<br>
+Der Schaltplan:<br>
+<img src="schaltplan.png" alt="http://www.mikrocontroller.net/wikifiles/f/f0/Schaltplan_transistortester.png"><br>
+Der linke Teil der Schaltung ist für die automatische Abschaltung zuständig. Mit 3 Transistoren und ein paar Widerständen und Kondensatoren ist es ein gewisser Schaltungsaufwand.<br><br>
+Wird auf dieses Feature verzichtet, wird die Schaltung deutlich kleiner:<br>
+<img src="schaltplan_ohne_abschaltung.png" alt="http://www.mikrocontroller.net/wikifiles/7/76/Transistortester_ohne_Abschaltung.png"><br>
+Der Tester wird hier über Schalter S2 ein- und ausgeschaltet. Über den (optionalen) Taster S1 kann ein neuer Testvorgang gestartet werden, ohne den Tester über S2 aus- und wieder einschalten zu müssen.<br><br>
+
+<a name="firmware"><h3>Firmware</h3></a>
+Die 2 Ordner "ATMega8" und "ATMega48" enthalten die kompilierten Programme für den jeweiligen Controller.<br><br>
+Die Datei TransistorTestNew.hex muss in den Flash programmiert werden <br><br>
+Die Datei TransistorTestNew.eep muss ins EEPROM. Das bitte nicht vergessen!<br><br>
+
+Die Datei TransistorTestNew_binary.eep (nur bei ATMega8) ist vom Inhalt her identisch mit der TransistorTestNew.eep.<br>
+Sie enthält die EEPROM-Daten im Binärformat und nicht im Intel Hex-Format. Das ist besser, um Änderungen daran vorzunehmen.<br>
+In der ATMega8-Version liegen einige Konfigurations-Konstanten im EEPROM.<br><br>
+
+
+<a name="eeprom"><h3>Konfiguration im EEPROM (nur bei ATMega8)</h3></a>
+WICHTIG: Die ATMega48-Version bietet diese Konfigurationsmöglichkeiten NICHT!<br><br>
+<table border="1">
+<tr>
+	<th>EEPROM-Adresse</th>		
+	<th>Konfigurations-Einstellung</th>
+</tr>
+<tr>
+	<td>0</td>	
+	<td>Kondensator-Erkennung</td>
+</tr>	
+<tr>
+	<td>1-3</td>
+	<td>Für zukünftige Verwendung</td>	
+</tr>	
+<tr>
+	<td>4</td>
+	<td>LSB von R_L</td>	
+</tr>		
+<tr>
+	<td>5</td>
+	<td>MSB von R_L</td>	
+</tr>	
+<tr>
+	<td>6</td>
+	<td>LSB von R_H</td>	
+</tr>	
+<tr>
+	<td>7</td>
+	<td>MSB von R_H</td>	
+</tr>	
+<tr>
+	<td>8</td>
+	<td>LSB des Kapazitäts-Umrechnungsfaktors mit R_H (für kleine Kapazitäten)</td>	
+</tr>	
+<tr>
+	<td>9</td>
+	<td>MSB des Kapazitäts-Umrechnungsfaktors mit R_H (für kleine Kapazitäten)</td>	
+</tr>	
+<tr>
+	<td>10</td>
+	<td>LSB des Kapazitäts-Umrechnungsfaktors mit R_L (für große Kapazitäten)</td>	
+</tr>	
+<tr>
+	<td>11</td>
+	<td>MSB des Kapazitäts-Umrechnungsfaktors mit R_L (für große Kapazitäten)</td>	
+</tr>	
+<tr>
+	<td>Ab 12</td>
+	<td>LCD-Strings (sollten nicht verändert werden)</td>	
+</tr>	
+
+</table><br><br>
+
+Zu Byte 0 (Kondensator-Erkennung):<br>
+	Der Test, ob ein Kondensator vorhanden ist, dauert relativ lange, mit über 50ms je Testvorgang ist zu rechnen<br>
+	Bei allen 6 möglichen Testvorgängen ergibt das eine Verlängerung der Testdauer um ca 0,3s bis 0,5s.<br>
+	Mit dem Konfigurations-Byte lassen sich die durchgeführten Tests festlegen.<br><br>
+
+	Bedeutungen der Bits (7 = MSB):<br>
+	7:6 Nicht verwendet<br><br>
+
+	5:4 Test-Modus<br>
+	00: Kondensator-Messung deaktiviert<br>
+	01: Kondensator-Messung für eine einstellbare Pin-Kombination (in beide Richtungen); verlängert Testdauer um ca. 120...200ms<br>
+	10: Kondensator-Messung für alle 6 Pin-Kombinationen; verlängert Testdauer um ca. 300...500ms<br><br>
+	
+	3:2 Erster Pin der gewählten Pin-Kombination (0...2), nur entscheidend wenn Bits 5:4 = 01<br><br>
+
+	1:0 Zweiter Pin der gewählten Pin-Kombination (0...2), nur entscheidend wenn Bits 5:4 = 01<br><br>
+	
+	<u>Standard:</u><br>
+	0b00100010 (0x22): Messung für alle 6 Pin-Kombinationen aktiviert<br><br>
+<hr>
+Zu Bytes 4 und 5:<br>
+	Hier ist der genaue Wert von R_L gespeichert. Der Normwert sind 680 Ohm.<br>
+	Die Angabe erfolgt in Ohm.<br><br>
+
+	<u>Standard:</u><br>
+			Byte 4 = 0xA8<br>
+			Byte 5 = 0x02<br><br>
+<hr>
+Zu Bytes 6 und 7:<br>
+	Hier ist der genaue Wert von R_H gespeichert. Der Normwert sind 470000 Ohm.<br>
+	Die Angabe erfolgt dividiert durch 100, also 470000 Ohm = 4700<br><br>
+	
+	<u>Standard:</u><br>
+			Byte 6 = 0x5C<br>
+			Byte 7 = 0x12<br><br>
+<hr>
+Zu Bytes 8 und 9:<br>
+	Hier ist der Multiplikator für die Kapazitätsmessung mit R_H (470kOhm) gespeichert. <br>
+	Dieser Multiplikator ist für kleine Kapazitäten (bis ca. 0,75µF) wirksam.<br><br>
+	
+	<u>Standard:</u><br>
+			Byte 8 = 0x8A<br>
+			Byte 9 = 0x01<br><br>
+<hr>
+Zu Bytes 10 und 11:<br>
+	Hier ist der Multiplikator für die Kapazitätsmessung mit R_L (680 Ohm) gespeichert. <br>
+	Dieser Multiplikator ist für größere Kapazitäten (ab ca. 0,75µF) wirksam.<br><br>
+	
+	<u>Standard:</u><br>
+			Byte 10 = 0x1B<br>
+			Byte 11 = 0x01<br><br>
+<hr><br>
+Durch Anpassung der genannten Konstanten an den eigenen Aufbau kann die Genauigkeit<br>
+des Testers bei der Widerstands- und Kapazitätsmessung etwas verbessert werden.<br>
+In der Regel ist diese Anpassung aber gar nicht nötig.<br>
+
+Um die Konstanten anzupassen, können sie vor dem Flashen in der .eep-Datei verändert werden.<br>
+Dafür bietet sich die Datei im Binärformat an, da sich die Intel-Hex-Datei wegen ihrer Prüfsummen <br>
+ohne passenden Editor kaum bearbeiten lässt.<br>
+Diese modifizierte Datei wird dann in den AVR geflasht.<br>
+Alternativ kann man auch erst die Orignial-Datei in den AVR flashen und den EEPROM-Inhalt nun bearbeiten.<br>
+Das ist mit fast allen AVR-Programmiertools machbar.<br><br><br>
+
+
+<a name="compile"><h3>Kompilieren der Firmware</h3></a>
+Beim Selbstkompilieren muss nur in den Projektoptionen (für AVR Studio) oder im Makefile der Controllertyp entsprechend definiert werden. <br>
+Bei der Mega48-Version werden dann einige Features (Widerstandsmessung, Messung<br>
+der Basis-Emitter-Spannung bei Bipolartransistoren, Messung der Gatekapazität bei Anreicherungs-MOSFETS und Kapazitätsmessung)<br>
+weggelassen, um das Programm auf die erforderliche Größe zu bringen.<br>
+Die Firmware kann auch für die Controller ATMega88 und ATMega168 kompiliert werden und sollte auf diesen Controllern auch lauffähig sein (wurde aber noch nicht getestet).<br><br>
+<hr>
+Mehr Infos und technische Beschreibungen zu diesem Projekt finden Sie unter <a href="http://www.mikrocontroller.net/articles/AVR-Transistortester">http://www.mikrocontroller.net/articles/AVR-Transistortester</a><br><br>
+</body>
+</html>

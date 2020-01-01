@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.qsl.net/ve2emm/pic-projects/alim/alim-e.html -->
+<HTML><HEAD><TITLE>PIC Power Supply</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="J. B." name=Author>
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR></HEAD>
+<BODY><A href="http://www.qsl.net/ve2emm/index.html#index">BACK TO HOME PAGE 
+INDEX</A> <BR>
+<HR align=left width="100%" noShade SIZE=3>
+
+<DIV align=center>
+<P><FONT color=#cc0000><FONT size=+3>General purpose PIC16F876A controlled power 
+supply</FONT></FONT> </P></DIV>
+<DIV align=center>
+<DIV align=center>
+<P><FONT color=#3333ff><FONT size=+2>CONSTANT VOLTAGE, 0&lt;25V OR CONSTANT 
+CURRANT, 1, 2, 4 and 8 Amp ver.</FONT></FONT></P></DIV>
+<CENTER></CENTER></DIV>
+<DIV align=left>
+<DIV align=left>
+<CENTER>
+<DIV align=center>
+<DIV align=left><FONT color=#3333ff><FONT size=+2>New version V3, <SMALL>April 
+25, 04</SMALL></FONT></FONT><BR></DIV></DIV></CENTER></DIV>
+<CENTER></CENTER></DIV>
+<P><B><FONT 
+size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+FRONT 
+VIEW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+INSIDE VIEW</FONT></B> <BR><IMG height=155 
+src="PIC Power Supply_files/facealim.jpg" width=320 align=absBottom> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG 
+height=240 src="PIC Power Supply_files/intalim.jpg" width=320 align=middle> </P>
+<P><B><FONT 
+size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+LCD DISPLAY</FONT></B> <BR><IMG height=90 
+src="PIC Power Supply_files/Lcdalim.jpg" width=303> </P>
+<P><B><FONT size=+1>SPECIFICATIONS</FONT></B> </P>
+<BLOCKQUOTE>VOLTAGE: <BR>&nbsp;&nbsp;&nbsp; - Ajustable from 0 &lt; 25 Volts 
+  at a resolution of 100 mV. <BR><BR>CURRENT:&nbsp; choice of 4 ranges; 
+  <BR>&nbsp;&nbsp;&nbsp; - 0 &lt; 1.000A at a resolution of 1 mA.&nbsp; JP1 and 
+  JP2 open, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; C1 = 2000uF filter cap., 
+  &nbsp; R7 = 0.5 Ohm, &nbsp; &nbsp;&nbsp; &nbsp;T1 = 24V, 
+  1Amp.<BR>&nbsp;&nbsp;&nbsp; - 0 &lt; 2.000A at a resolution of 2 mA.&nbsp; JP1 
+  ground and JP2 open, C1 = 4000uF filter cap., &nbsp; R7 = 0.25 Ohm, &nbsp; 
+  &nbsp; T1 = 24V, 2Amp.<BR>&nbsp; &nbsp; - 0 &lt; 4.000A at a resolution of 4 
+  mA.&nbsp; JP1 open and JP2 ground, C1 = 8000uF filter cap., &nbsp; R7 = 0.125 
+  Ohm, &nbsp; T1 = 24V, 4Amp.<BR>&nbsp; &nbsp; - 0 &lt; 8.000A at a resolution 
+  of 8 mA.&nbsp; JP1 and JP2 ground, &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; C1 = 
+  16000uF filter cap., R7 = 0.0625 Ohm, T1 = 24V, 8Amp.<BR><BR>2 lignes LCD 
+  display: <BR>&nbsp;&nbsp;&nbsp; - The top line shows the settings, <B><FONT 
+  size=+1>the maximum current stays displayed at all times,</FONT></B> 
+  <BR><B><FONT size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; it is not necessary 
+  to short the output terminals to set the maximum current.</FONT></B> 
+  <BR>&nbsp;&nbsp;&nbsp; - The bottom line shows the measured values. 
+  <BR>&nbsp;&nbsp;&nbsp; - The arrows at the bottom center line show who is in 
+  control, the voltage or the current. <BR>Ajustments: <BR>&nbsp;&nbsp;&nbsp; - 
+  Voltage, steps of 1 V and 0.1 V. <BR>&nbsp;&nbsp;&nbsp; - Current, steps of 1, 
+  2, 4, 8 mA and 50, 100, 200, 400 mA depending on the Amp range. 
+  <BR>&nbsp;&nbsp;&nbsp; - Memorisation of the last settings before power off, 
+  restarting with thoses same settings.</BLOCKQUOTE><A 
+href="http://www.qsl.net/ve2emm/pic-projects/alim/alm_sch_v3.gif">View the 
+schematic</A> <BR><A 
+href="http://www.qsl.net/ve2emm/pic-projects/alim/alim_v3_pl.txt">Parts list</A> 
+<BR><BR><A 
+href="http://www.qsl.net/ve2emm/pic-projects/alim/alim_v3_pcb.gif">View the 
+PCB</A><BR><A 
+href="http://www.qsl.net/ve2emm/pic-projects/alim/alim_v3_pcb+parts.gif">View 
+the PCB + parts</A> 
+<P><B><FONT size=+1>CALIBRATION</FONT></B> </P>
+<BLOCKQUOTE>LCD:<BR>- Adjust P2 near ground for a nice 
+  contrast.<BR><BR>VOLTAGE: <BR>- Adjust P1 for a supply of 5.12V. 
+  &nbsp;&nbsp;&nbsp; <BR>- Measure the voltage output terminals,&nbsp; adjust P3 
+  to for the same voltage reading on the PS LCD and the meter. <BR><BR>CURRENT: 
+  <BR>&nbsp;&nbsp;&nbsp;&nbsp; - Install a 10 Ohm resistor in series with an 
+  ammeter in series on the output terminals. <BR>&nbsp;&nbsp;&nbsp;&nbsp; - 
+  adjust P4 for a correct Amp reading on the LCD. </BLOCKQUOTE><B><FONT 
+size=+1>NOTE</FONT></B> 
+<BLOCKQUOTE>I recommand the use of a PIC16F876A, it is lower in cost and has a 
+  better EEDATA memory.</BLOCKQUOTE>
+<P>The source program in "C" and the object code (HEX) for the PIC16F876A is 
+availlable <A 
+href="http://www.qsl.net/ve2emm/pic-projects/alim/alim_v3.zip">alim_v3.zip</A>. 
+<BR>All parts can be purchased from DigiKey. <BR></P>
+<HR align=left width="100%" noShade SIZE=3>
+Fine print: <BR>&nbsp;All material on this page is distributed on a WYSIWYG 
+basis and as such I can't take any responsibility for the use of this design and 
+its results. However in saying <BR>this it must also be mentioned that every 
+effort&nbsp; has been taken to ensure that it as error free as possible. <BR>
+<HR align=left width="100%" noShade SIZE=3>
+<A href="http://www.qsl.net/ve2emm/index.html#index">BACK TO HOME PAGE INDEX</A> 
+<BR>Many thanks to Al Waller K3TKJ for graciously hosting my web pages on 
+QSL.NET. <BR><BR><BR><BR><BR><BR><BR><BR></BODY></HTML>

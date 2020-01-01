@@ -1,0 +1,5 @@
+This directory contains an alternative layout for the transistor tester,
+it's more SMD based than the original one.
+
+Notice: This is the simpler version of the board, without automated
+switch off.

@@ -1,0 +1,63 @@
+Components list  POWER SUPPLY V3 by VE2EMM, April 04
+ 
+C1 = 2000uF per AMP, 40V (adjust capacity to power supply amps)
+C2,C3,C12,C15,C18,C21 = 0.1uF CER
+C4 = 0.01uF CER
+C5A,C5B,C5C,C5D	= 0.01uF CER
+C6,C7 = 0.05uF CER
+C8 = Not used
+C9,C11,C19,C20 = 1uF CER 
+C10 = 470uF 15V EL RADIAL
+C13 = 4.7µF 50V EL RADIAL 
+C14 = 0.001uF CER
+C16,C17 = 22pF CER
+
+D1,D2,D4,D5 = 1N4148
+D3 = 1N4004
+Br1 = 1<10A BRIDGE RECTIFIER (adjust seize to power supply amps)
+DZ1 = 1N4751  30V ZENER
+IC1 = LM317KCS  TO220 
+IC2 = LM337LZ  TO92 
+IC3 = LT1491CN special HV opamp, do not substitute
+IC4 = PIC16F876A 
+Q1 = 2N3906
+Q2A to Q2D = TIP142TU  1 to 5 transistors (adjust quantity to power supply amps)
+Q3A to Q3D = 2N3904  (adjust quantity to power supply amps) 
+
+X1 = 20 mHz  HC49    DigiKey PN: 300-6042-ND
+
+LED1 = T1 3/4 RED OR GREEN LED
+LCD = LCD, 2X16, HD44780 intelligent controller DigiKey PN: 67-1758-ND
+      insulate from case
+
+P1 = 500 Ohms 
+P2 = 10 kOhms 
+P3,P4 = 5 kOhms
+
+R1 = 1 kOhms 10W 
+R2 = 1.5 kOhms
+R3,R11,R12,R13,R14,R16,R17,R25,R26,R27 = 10 kOhms
+R4 = 56 Ohms
+R5A to R5D = 0.22 Ohms  (adjust quantity to power supply amps)
+R6,R28,R29 = 47k Ohms
+R7 = as per schematic (adjust value to power supply amps)
+R8 = 240 Ohms 
+R9 = 270 Ohms 
+R10 = 390 Ohms 
+R15 = 39 kOhms 
+R18 = 39 kOhms 
+R19 = 8.2 kOhms
+R20,R22,R23,R32 = 1 kOhms 
+R21 = 5.6 kOhms
+R24 = 33 Ohms 1/2W
+R30,R31 = 4.7 kOhms
+ 
+SW1 = SPST min toggle
+SW2,SW3,SW4,SW5,SW6,SW7,SW8,SW9 = NO_SP push button
+T1 = 24 V  1<8A  (adjust seize to power supply amps)
+T2 = 6.3 V, 150 mA 
+
+MISC:
+3 Terminals
+Transistors Heat Sink, up to: 1A = 30W, 2A = 60W, 4A = 120W, 8A = 240W to dissipate
+Line filter, Case PCB, IC sockets...

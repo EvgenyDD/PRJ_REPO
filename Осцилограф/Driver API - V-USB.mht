@@ -1,0 +1,1897 @@
+From: <Saved by Mozilla 5.0 (Windows)>
+Subject: Driver API - V-USB
+Date: Mon, 10 Nov 2014 16:08:14 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_52082846.897DAA20"
+X-MAF-Information: Produced By MAF V3.0.3
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://vusb.wikidot.com/driver-api
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xml:lang=3D"en" lang=3D"en"><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8">
+    <title>Driver API - V-USB</title>
+   =20
+   =20
+   =20
+    <script src=3D"urn:snapshot-05C50C5E:http://cdn.viglink.com/api/vglnk.j=
+s" async=3D"" type=3D"text/javascript"></script><script src=3D"urn:snapshot=
+-6BF7E399:http://edge.quantserve.com/quant.js" async=3D"" type=3D"text/java=
+script"></script><script src=3D"urn:snapshot-1BCE82BE:http://stats.g.double=
+click.net/dc.js" async=3D"" type=3D"text/javascript"></script><script src=
+=3D"urn:snapshot-A6C49836:http://www.googletagservices.com/tag/js/gpt.js"=
+ type=3D"text/javascript" async=3D""></script><script type=3D"text/javascri=
+pt"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+<script type=3D"text/javascript" src=3D"urn:snapshot-E6CD29D4:http://d3g0gp=
+89917ko0.cloudfront.net/v--50456838fc8c/common--javascript/init.combined.js=
+"></script>
+    <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+   =20
+   =20
+
+
+   =20
+        <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+   =20
+    <meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8=
+">
+           =20
+   =20
+   =20
+   =20
+   =20
+    <meta http-equiv=3D"content-language" content=3D"en">
+    <script type=3D"text/javascript" src=3D"urn:snapshot-59EDD896:http://d3=
+g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--javascript/WIKIDOT.comb=
+ined.js"></script>
+       =20
+   =20
+    <style type=3D"text/css"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+body { background-position: center 24px; }
+
+--></style>
+<style type=3D"text/css" id=3D"internal-style"><!--
+
+/* Effective stylesheet produced by snapshot save */
+
+@import url("urn:snapshot-CF3ED8A5:http://d3g0gp89917ko0.cloudfront.net/v\2=
+D\2D 50456838fc8c/common--theme/base/css/style.css");
+
+@import url("urn:snapshot-8AD3FC32:http://d3g0gp89917ko0.cloudfront.net/v--=
+50456838fc8c/common--theme/webbish2/css/style.css");
+
+--></style>
+   =20
+       =20
+       =20
+       =20
+    <link rel=3D"shortcut icon" href=3D"http://vusb.wikidot.com/local--favi=
+con/favicon.gif">
+    <link rel=3D"icon" type=3D"image/gif" href=3D"http://vusb.wikidot.com/l=
+ocal--favicon/favicon.gif">
+   =20
+            <link rel=3D"apple-touch-icon" href=3D"urn:not-loaded:http://vu=
+sb.wikidot.com/common--images/apple-touch-icon-57x57.png">
+        <link rel=3D"apple-touch-icon" sizes=3D"72x72" href=3D"urn:not-load=
+ed:http://vusb.wikidot.com/common--images/apple-touch-icon-72x72.png">
+        <link rel=3D"apple-touch-icon" sizes=3D"114x114" href=3D"urn:not-lo=
+aded:http://vusb.wikidot.com/common--images/apple-touch-icon-114x114.png">
+       =20
+       =20
+            <link rel=3D"alternate" type=3D"application/wiki" title=3D"Edit=
+ this page" href=3D"javascript:void(0);">
+   =20
+        <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script src=3D"urn:snapshot-51698CD6:http://partner.googleadser=
+vices.com/gpt/pubads_impl_53.js" type=3D"text/javascript" async=3D""></scri=
+pt><iframe style=3D"visibility: hidden; display: none;" src=3D"urn:snapshot=
+-FE9192AA:http://tpc.googlesyndication.com/safeframe/1-0-0/html/container.h=
+tml"></iframe>
+   =20
+    <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+   =20
+    <script src=3D"urn:snapshot-5EA4891E:http://a.getgamers.eu/?id=3D987732=
+0" async=3D"" type=3D"text/javascript"></script></head>
+<body id=3D"html-body">
+<div id=3D"skrollr-body">
+<a name=3D"page-top"></a>
+<div id=3D"navi-bar">
+  <a class=3D"logo" href=3D"http://www.wikidot.com/">
+    <span>Wikidot.com</span>
+  </a>
+ =20
+  <div class=3D"new-site">
+    <form method=3D"get" action=3D"http://www.wikidot.com/new-site">
+      <input class=3D"text empty" name=3D"address" value=3D"site-name" type=
+=3D"text">.<a rel=3D"nofollow" href=3D"http://wikidot.com/" class=3D"vglnk"=
+><span>wikidot</span><span>.</span><span>com</span></a>
+    </form>
+  </div>
+ =20
+    <div class=3D"share">
+    <span>Share on</span>
+    <a class=3D"twitter" target=3D"_blank" rel=3D"nofollow" href=3D"http://=
+twitter.com/home?status=3DDriver%20API%20-%20V-USB+http%3A%2F%2Fvusb.wikido=
+t.com%2Fdriver-api" title=3D"Share on Twitter"><img src=3D"http://d3g0gp899=
+17ko0.cloudfront.net/v--50456838fc8c/common--images/social/twitter.png" alt=
+=3D"twitter"></a> =20
+    <a class=3D"facebook" target=3D"_blank" rel=3D"nofollow" href=3D"http:/=
+/www.facebook.com/share.php?u=3Dhttp%3A%2F%2Fvusb.wikidot.com%2Fdriver-api&=
+amp;t=3DDriver%20API%20-%20V-USB" title=3D"Share on Facebook"><img src=3D"h=
+ttp://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/f=
+acebook.gif" alt=3D"Facebook"></a> =20
+    <a class=3D"delicious" target=3D"_blank" rel=3D"nofollow" href=3D"http:=
+//delicious.com/save" title=3D"Share on Delicious"><img src=3D"http://d3g0g=
+p89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/delicious.pn=
+g" alt=3D"Delicious"></a>
+    <a class=3D"digg" target=3D"_blank" rel=3D"nofollow" href=3D"http://dig=
+g.com/submit?url=3Dhttp%3A%2F%2Fvusb.wikidot.com%2Fdriver-api&amp;title=3DD=
+river%20API%20-%20V-USB" title=3D"Post to Digg"><img src=3D"http://d3g0gp89=
+917ko0.cloudfront.net/v--50456838fc8c/common--images/social/digg.png" alt=
+=3D"Digg"></a>
+    <a class=3D"reddit" href=3D"http://www.reddit.com/submit?url=3Dhttp%3A%=
+2F%2Fvusb.wikidot.com%2Fdriver-api" rel=3D"nofollow" target=3D"_blank" titl=
+e=3D"Post to Reddit"><img src=3D"http://d3g0gp89917ko0.cloudfront.net/v--50=
+456838fc8c/common--images/social/reddit.png" alt=3D"Reddit" border=3D"0"></=
+a>
+    <a class=3D"stumbleupon" href=3D"http://www.stumbleupon.com/submit?url=
+=3Dhttp%3A%2F%2Fvusb.wikidot.com%2Fdriver-api" rel=3D"nofollow" target=3D"_=
+blank" title=3D"Post to StumbleUpon"><img src=3D"http://d3g0gp89917ko0.clou=
+dfront.net/v--50456838fc8c/common--images/social/stumble.png" alt=3D"Reddit=
+" border=3D"0"></a>
+  </div>
+   =20
+      <a class=3D"join" href=3D"javascript:void(0);" onclick=3D"">Join this=
+ site</a>
+   =20
+      <div class=3D"action-buttons">
+      <a href=3D"javascript:void(0);" onclick=3D"" title=3D"Click here to=
+ edit contents of this page.">Edit</a>
+      <a href=3D"javascript:void(0);" onclick=3D"" title=3D"Check out how=
+ this page has evolved in the past.">History</a>
+      <a href=3D"javascript:void(0);" onclick=3D"" title=3D"Edit tags for=
+ this page.">Tags</a>
+      <a href=3D"javascript:void(0);" onclick=3D"" title=3D"View wiki sourc=
+e for this page without editing.">Source</a>
+    </div>
+   =20
+  <a class=3D"random-site" href=3D"http://vusb.wikidot.com/random-site.php"=
+ title=3D"Go to a random Wikidot site.">Explore =C2=BB</a>
+  </div>
+<div id=3D"navi-bar-shadow">=C2=A0</div>
+
+
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+
+<div id=3D"container-wrap-wrap">
+    <div id=3D"container-wrap">
+        <div id=3D"container">
+            <div id=3D"header">
+              <h1><a href=3D"http://vusb.wikidot.com/"><span>V-USB</span></=
+a></h1>
+               =20
+                    <h2><span>A Firmware-Only USB Driver for the AVR</span>=
+</h2>
+               =20
+               =20
+                <!-- google_ad_section_start(weight=3Dignore) -->
+               =20
+                <div id=3D"search-top-box" class=3D"form-search">
+    <form id=3D"search-top-box-form" action=3D"http://vusb.wikidot.com/dumm=
+y" class=3D"input-append">
+        <input id=3D"search-top-box-input" class=3D"text empty search-query=
+" size=3D"15" name=3D"query" value=3D"Search this site" onfocus=3D"" type=
+=3D"text"><input class=3D"button btn" name=3D"search" value=3D"Search" type=
+=3D"submit">
+    </form>
+</div>
+               =20
+               =20
+                <div id=3D"login-status"><a href=3D"javascript:void(0);" on=
+click=3D"" class=3D"login-status-create-account btn">Create account</a> <sp=
+an>or</span> <a href=3D"javascript:void(0);" onclick=3D"" class=3D"login-st=
+atus-sign-in btn btn-primary">Sign in</a> </div>
+                <div id=3D"header-extra-div-1"><span></span></div><div id=
+=3D"header-extra-div-2"><span></span></div><div id=3D"header-extra-div-3"><=
+span></span></div>
+            </div>
+           =20
+            <div id=3D"content-wrap">
+               =20
+                    <div id=3D"side-bar">
+                       =20
+
+
+                       =20
+
+<h2><span>Navigation</span></h2>
+<ul>
+<li><a href=3D"http://vusb.wikidot.com/start">About this Wiki</a></li>
+<li><a href=3D"http://vusb.wikidot.com/hardware">Hardware Considerations</a=
+></li>
+<li><a href=3D"http://vusb.wikidot.com/usb-device-classes">USB Device Class=
+es</a></li>
+<li><a class=3D"active" href=3D"#">Driver API</a></li>
+<li><a href=3D"http://vusb.wikidot.com/host-software">Host Software</a></li>
+<li><a href=3D"http://vusb.wikidot.com/examples">Features by Example</a></l=
+i>
+<li><a href=3D"http://vusb.wikidot.com/troubleshooting">Troubleshooting</a>=
+</li>
+<li><a href=3D"http://vusb.wikidot.com/hosted-projects">Projects Hosted on=
+ Wiki</a></li>
+</ul>
+<h2><span>Utilities</span></h2>
+<ul>
+<li><a href=3D"http://vusb.wikidot.com/add-a-page">Add a Page</a></li>
+<li><a href=3D"http://vusb.wikidot.com/system:recent-changes">Recent Change=
+s</a></li>
+<li><a href=3D"http://vusb.wikidot.com/system:join">Become a Member</a></li>
+<li><a href=3D"http://vusb.wikidot.com/system:members">Site Members</a></li>
+<li><a href=3D"http://vusb.wikidot.com/admin:manage">Manage this Site</a></=
+li>
+</ul>
+<p style=3D"text-align: center;"><span style=3D"font-size:80%;"><a href=3D"=
+http://vusb.wikidot.com/nav:side">edit menu</a></span></p>
+
+                       =20
+
+
+                    </div>
+               =20
+               =20
+                <!-- google_ad_section_end -->
+               =20
+                <div id=3D"main-content">
+                    <div id=3D"action-area-top"></div>
+                   =20
+                   =20
+                        <div id=3D"page-title">
+                            Driver API
+                        </div>
+                   =20
+
+                   =20
+
+                                    <!-- wikidot_top_728x90 -->
+<div id=3D"div-gpt-ad-1410946564449-1" style=3D"display: none" class=3D"wd-=
+adunit wd-adunit-dfp wd-adunit-above_content">
+
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><div style=3D"border: 0pt none;" id=3D"google_ads_iframe_/10309=
+17/wikidot_free_sites_top_728x90_0__container__"><iframe src=3D"urn:snapsho=
+t-02BE8FA4:javascript:%22%3Chtml%3E%3Cbody%20style=3D%27background:transpar=
+ent%27%3E%3C/body%3E%3C/html%3E%22" style=3D"border: 0px none; vertical-ali=
+gn: bottom;" marginheight=3D"0" marginwidth=3D"0" scrolling=3D"no" name=3D"=
+google_ads_iframe_/1030917/wikidot_free_sites_top_728x90_0" id=3D"google_ad=
+s_iframe_/1030917/wikidot_free_sites_top_728x90_0" frameborder=3D"0" height=
+=3D"90" width=3D"728"></iframe></div><iframe src=3D"urn:snapshot-54FA3A96:j=
+avascript:%22%3Chtml%3E%3Cbody%20style=3D%27background:transparent%27%3E%3C=
+/body%3E%3C/html%3E%22" style=3D"border: 0px none; vertical-align: bottom;=
+ visibility: hidden; display: none;" marginheight=3D"0" marginwidth=3D"0"=
+ scrolling=3D"no" name=3D"google_ads_iframe_/1030917/wikidot_free_sites_top=
+_728x90_0__hidden__" id=3D"google_ads_iframe_/1030917/wikidot_free_sites_to=
+p_728x90_0__hidden__" frameborder=3D"0" height=3D"0" width=3D"0"></iframe>
+</div>
+
+           =20
+
+
+                    <div id=3D"page-content">
+                       =20
+
+<p>A short and complete API documentation can be found in the comments in=
+ the file <tt>usbdrv.h</tt> which ships with the driver. This document desc=
+ribes the most commonly used features.</p>
+<p>Please note that you should create your own <tt>usbconfig.h</tt> from th=
+e driver's <tt>usbconfig-prototype.h</tt> and go through all options when=
+ you start a new project.</p>
+<h2 id=3D"toc0"><span>Initialization and administrative calls</span></h2>
+<p>Before you enable global interrupts with <tt>sei()</tt>, you should do=
+ the following:</p>
+<ol>
+<li>Ensure that the I/O pins used for USB are all inputs and the internal=
+ pull-up resistors for these pins are disabled. This is the default state=
+ after a reset.</li>
+<li>Call <tt>usbDeviceDisconnect()</tt>, wait several 100 milliseconds and=
+ then call <tt>usbDeviceConnect()</tt>. This enforces (re-)enumeration of=
+ the device. In theory, you don't need this, but it prevents inconsistencie=
+s between host and device after hardware or watchdog resets.</li>
+<li>Call <tt>usbInit()</tt> to initialize the driver.</li>
+</ol>
+<p>Then enable interrupts with <tt>sei()</tt> and enter the main loop. The=
+ main loop is an endless loop which is expected to run at least one iterati=
+on every 50=C2=A0ms. Somewhere during the main loop <tt>usbPoll()</tt> must=
+ be called to perform administrative tasks in the driver. If the driver cal=
+ls functions in your code, it calls them from withing <tt>usbPoll()</tt>.</=
+p>
+<h2 id=3D"toc1"><span>Communicating through Control endpoint 0</span></h2>
+<p>This is the most basic functionality of USB. Messages sent to control en=
+dpoints consist of 8 bytes structured setup data (each byte has a particula=
+r meaning) and a block of arbitrary length which is either received from th=
+e device (control-in) or sent to the device (control-out). Since the length=
+ can be zero, the data block is optional.</p>
+<p>The 8 bytes setup data are described by the C type <tt>usbRequest_t</tt>=
+ which is declared in <tt>usbdrv.h</tt>:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-types">typedef</span><span class=3D"hl-code"> </span=
+><span class=3D"hl-types">struct</span><span class=3D"hl-code"> </span><spa=
+n class=3D"hl-identifier">usbRequest</span><span class=3D"hl-brackets">{</s=
+pan><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+">       </span><span class=3D"hl-identifier">bmRequestType</span><span cla=
+ss=3D"hl-code">;
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+">       </span><span class=3D"hl-identifier">bRequest</span><span class=3D=
+"hl-code">;
+    </span><span class=3D"hl-identifier">usbWord_t</span><span class=3D"hl-=
+code">   </span><span class=3D"hl-identifier">wValue</span><span class=3D"h=
+l-code">;
+    </span><span class=3D"hl-identifier">usbWord_t</span><span class=3D"hl-=
+code">   </span><span class=3D"hl-identifier">wIndex</span><span class=3D"h=
+l-code">;
+    </span><span class=3D"hl-identifier">usbWord_t</span><span class=3D"hl-=
+code">   </span><span class=3D"hl-identifier">wLength</span><span class=3D"=
+hl-code">;
+</span><span class=3D"hl-brackets">}</span><span class=3D"hl-identifier">us=
+bRequest_t</span><span class=3D"hl-code">;</span>
+</pre></div>
+</div>
+<p>The first entry is a bitmask which contains the direction of the followi=
+ng data block (control-in or control-out) and a context for the <tt>bReques=
+t</tt>. The context describes the recipient of the message (device, interfa=
+ce or endpoint and whether it's targeted at the driver, the device class or=
+ your code). For arbitrary messages in a custom class device, the recipient=
+ should be your code (which means "vendor" in USB slang). You don't need to=
+ distinguish between device, class and endpoint since it's up to you how ve=
+ndor type messages are interpreted.</p>
+<p>The second entry (<tt>bRequest</tt>) identifies the request. If your dev=
+ice supports multiple functions (e.g. turn LED on, turn LED off, query inpu=
+t status), each function can be assigned a request number. Which numbers yo=
+u use is up to you, as long as they match between the host side driver and=
+ the device.</p>
+<p>The next two entries, <tt>wValue</tt> and <tt>wIndex</tt> only have a me=
+aning for requests defined in the USB specification or a device class speci=
+fication. For vendor requests, you can send arbitrary data.</p>
+<p>The last entry (<tt>wLength</tt>) is the length of the data block which=
+ is sent or received.</p>
+<p>When the host sends or receives a control message on endpoint 0 which is=
+ addressed to "vendor" or "class", the function <tt>usbFunctionSetup()</tt>=
+ is called in your code. It has one parameter: A pointer to the 8 bytes of=
+ setup data. It is your duty to check which functionality should be perform=
+ed and whether more data should be received or returned to the host.</p>
+<p>The most basic example for <tt>usbFunctionSetup()</tt> could be a device=
+ which turns an LED on or off, depending on the value of <tt>wValue</tt> se=
+nt to request number 1:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-identifier">usbMsgLen_t</span><span class=3D"hl-code=
+"> </span><span class=3D"hl-identifier">usbFunctionSetup</span><span class=
+=3D"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span cl=
+ass=3D"hl-code"> </span><span class=3D"hl-identifier">setupData</span><span=
+ class=3D"hl-brackets">[</span><span class=3D"hl-number">8</span><span clas=
+s=3D"hl-brackets">])</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">usbRequest_t</span><span class=3D"=
+hl-code"> *</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-=
+code"> =3D </span><span class=3D"hl-brackets">(</span><span class=3D"hl-typ=
+es">void</span><span class=3D"hl-code"> *</span><span class=3D"hl-brackets"=
+>)</span><span class=3D"hl-identifier">setupData</span><span class=3D"hl-co=
+de">;   </span><span class=3D"hl-comment">// cast to structured data for pa=
+rsing</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">switch</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-code"=
+>-&gt;</span><span class=3D"hl-identifier">bRequest</span><span class=3D"hl=
+-brackets">){</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">case</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-number">1</span><span class=3D"hl-code">:
+        </span><span class=3D"hl-identifier">setLEDStatus</span><span class=
+=3D"hl-brackets">(</span><span class=3D"hl-identifier">rq</span><span class=
+=3D"hl-code">-&gt;</span><span class=3D"hl-identifier">wValue</span><span=
+ class=3D"hl-code">.</span><span class=3D"hl-identifier">bytes</span><span=
+ class=3D"hl-brackets">[</span><span class=3D"hl-number">0</span><span clas=
+s=3D"hl-brackets">])</span><span class=3D"hl-code">;  </span><span class=3D=
+"hl-comment">// evaluate low byte only</span><span class=3D"hl-code">
+        </span><span class=3D"hl-reserved">return</span><span class=3D"hl-c=
+ode"> </span><span class=3D"hl-number">0</span><span class=3D"hl-code">; =
+                          </span><span class=3D"hl-comment">// no data bloc=
+k sent or received</span><span class=3D"hl-code">
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-number">0</span><span class=3D"hl-code">;     =
+                          </span><span class=3D"hl-comment">// ignore all=
+ unknown requests</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<h2 id=3D"toc2"><span>Receiving data from the device</span></h2>
+<p>As mentioned above, control transfers can involve a data block sent back=
+ to the host. There are two ways to implement this:</p>
+<ol>
+<li>If you have all the data in a static buffer in RAM, you can directly re=
+turn the block from <tt>usbFunctionSetup()</tt> (see example below).</li>
+<li>If the data is generated on the fly, you can provide it in a separate=
+ function in chunks of 8 bytes. This is the only way of returning longer bl=
+ocks on devices with little RAM.</li>
+</ol>
+<p>The first method is easy: Provided the data is in the static variable <t=
+t>buffer</tt>, do the following:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-types">static</span><span class=3D"hl-code"> </span>=
+<span class=3D"hl-identifier">uchar</span><span class=3D"hl-code"> </span><=
+span class=3D"hl-identifier">buffer</span><span class=3D"hl-brackets">[</sp=
+an><span class=3D"hl-number">64</span><span class=3D"hl-brackets">]</span><=
+span class=3D"hl-code">;
+=20
+</span><span class=3D"hl-identifier">usbMsgLen_t</span><span class=3D"hl-co=
+de"> </span><span class=3D"hl-identifier">usbFunctionSetup</span><span clas=
+s=3D"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span=
+ class=3D"hl-code"> </span><span class=3D"hl-identifier">setupData</span><s=
+pan class=3D"hl-brackets">[</span><span class=3D"hl-number">8</span><span=
+ class=3D"hl-brackets">])</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">usbRequest_t</span><span class=3D"=
+hl-code"> *</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-=
+code"> =3D </span><span class=3D"hl-brackets">(</span><span class=3D"hl-typ=
+es">void</span><span class=3D"hl-code"> *</span><span class=3D"hl-brackets"=
+>)</span><span class=3D"hl-identifier">setupData</span><span class=3D"hl-co=
+de">;   </span><span class=3D"hl-comment">// cast to structured data for pa=
+rsing</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">switch</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-code"=
+>-&gt;</span><span class=3D"hl-identifier">bRequest</span><span class=3D"hl=
+-brackets">){</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">case</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-identifier">VENDOR_RQ_READ_BUFFER</span><span cla=
+ss=3D"hl-code">:
+        </span><span class=3D"hl-identifier">usbMsgLen_t</span><span class=
+=3D"hl-code"> </span><span class=3D"hl-identifier">len</span><span class=3D=
+"hl-code"> =3D </span><span class=3D"hl-number">64</span><span class=3D"hl-=
+code">;                     </span><span class=3D"hl-comment">// we return=
+ up to 64 bytes</span><span class=3D"hl-code">
+        </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">len</span><span class=3D"hl-code=
+"> &gt; </span><span class=3D"hl-identifier">rq</span><span class=3D"hl-cod=
+e">-&gt;</span><span class=3D"hl-identifier">wLength</span><span class=3D"h=
+l-code">.</span><span class=3D"hl-identifier">word</span><span class=3D"hl-=
+brackets">)</span><span class=3D"hl-code">          </span><span class=3D"h=
+l-comment">// if the host requests less than we have</span><span class=3D"h=
+l-code">
+            </span><span class=3D"hl-identifier">len</span><span class=3D"h=
+l-code"> =3D </span><span class=3D"hl-identifier">rq</span><span class=3D"h=
+l-code">-&gt;</span><span class=3D"hl-identifier">wLength</span><span class=
+=3D"hl-code">.</span><span class=3D"hl-identifier">word</span><span class=
+=3D"hl-code">;         </span><span class=3D"hl-comment">// return only the=
+ amount requested</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">usbMsgPtr</span><span class=3D=
+"hl-code"> =3D </span><span class=3D"hl-identifier">buffer</span><span clas=
+s=3D"hl-code">;                 </span><span class=3D"hl-comment">// tell=
+ driver where the buffer starts</span><span class=3D"hl-code">
+        </span><span class=3D"hl-reserved">return</span><span class=3D"hl-c=
+ode"> </span><span class=3D"hl-identifier">len</span><span class=3D"hl-code=
+">;                         </span><span class=3D"hl-comment">// tell drive=
+r how many bytes to send</span><span class=3D"hl-code">
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-number">0</span><span class=3D"hl-code">;     =
+                          </span><span class=3D"hl-comment">// ignore all=
+ unknown requests</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<p>The return type for usbFunctionSetup and the type for a len variable sho=
+uld be usbMsgLen_t, which is a 16bit type if USB_CFG_LONG_TRANSFERS is defi=
+ned as 1 in usbconfig.h, and a 8bit type otherwise.</p>
+<p>In the second case the data is generated dynamically. For the following=
+ example we assume that we read it with a function <tt>getData(uchar positi=
+on)</tt>. This function may read a byte from an external serial memory, an=
+ external device or whatever. Since we can't initialize <tt>usbMsgPtr</tt>=
+ to a place in RAM where the data resides, we instruct the driver to ask us=
+ for data in calls to the function <tt>usbFunctionRead()</tt>. You must def=
+ine <tt>USB_CFG_IMPLEMENT_FN_READ</tt> to 1 in <tt>usbconfig.h</tt> if you=
+ use this method.</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-types">static</span><span class=3D"hl-code"> </span>=
+<span class=3D"hl-identifier">uchar</span><span class=3D"hl-code">  </span>=
+<span class=3D"hl-identifier">currentPosition</span><span class=3D"hl-code"=
+>, </span><span class=3D"hl-identifier">bytesRemaining</span><span class=3D=
+"hl-code">;
+=20
+</span><span class=3D"hl-identifier">usbMsgLen_t</span><span class=3D"hl-co=
+de"> </span><span class=3D"hl-identifier">usbFunctionSetup</span><span clas=
+s=3D"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span=
+ class=3D"hl-code"> </span><span class=3D"hl-identifier">setupData</span><s=
+pan class=3D"hl-brackets">[</span><span class=3D"hl-number">8</span><span=
+ class=3D"hl-brackets">])</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">usbRequest_t</span><span class=3D"=
+hl-code"> *</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-=
+code"> =3D </span><span class=3D"hl-brackets">(</span><span class=3D"hl-typ=
+es">void</span><span class=3D"hl-code"> *</span><span class=3D"hl-brackets"=
+>)</span><span class=3D"hl-identifier">setupData</span><span class=3D"hl-co=
+de">;   </span><span class=3D"hl-comment">// cast to structured data for pa=
+rsing</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">switch</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-code"=
+>-&gt;</span><span class=3D"hl-identifier">bRequest</span><span class=3D"hl=
+-brackets">){</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">case</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-identifier">VENDOR_RQ_READ_BUFFER</span><span cla=
+ss=3D"hl-code">:
+        </span><span class=3D"hl-identifier">currentPosition</span><span cl=
+ass=3D"hl-code"> =3D </span><span class=3D"hl-number">0</span><span class=
+=3D"hl-code">;                </span><span class=3D"hl-comment">// initiali=
+ze position index</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">bytesRemaining</span><span cla=
+ss=3D"hl-code"> =3D </span><span class=3D"hl-identifier">rq</span><span cla=
+ss=3D"hl-code">-&gt;</span><span class=3D"hl-identifier">wLength</span><spa=
+n class=3D"hl-code">.</span><span class=3D"hl-identifier">word</span><span=
+ class=3D"hl-code">;  </span><span class=3D"hl-comment">// store the amount=
+ of data requested</span><span class=3D"hl-code">
+        </span><span class=3D"hl-reserved">return</span><span class=3D"hl-c=
+ode"> </span><span class=3D"hl-identifier">USB_NO_MSG</span><span class=3D"=
+hl-code">;                          </span><span class=3D"hl-comment">// te=
+ll driver to use usbFunctionRead()</span><span class=3D"hl-code">
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-number">0</span><span class=3D"hl-code">;     =
+                          </span><span class=3D"hl-comment">// ignore all=
+ unknown requests</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+=20
+</span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-identifier">usbFunctionRead</span><span class=3D"=
+hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span class=
+=3D"hl-code"> *</span><span class=3D"hl-identifier">data</span><span class=
+=3D"hl-code">, </span><span class=3D"hl-identifier">uchar</span><span class=
+=3D"hl-code"> </span><span class=3D"hl-identifier">len</span><span class=3D=
+"hl-brackets">)</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+"> </span><span class=3D"hl-identifier">i</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brackets"=
+>(</span><span class=3D"hl-identifier">len</span><span class=3D"hl-code">=
+ &gt; </span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-brackets">)</span><span class=3D"hl-code">                </span><sp=
+an class=3D"hl-comment">// len is max chunk size</span><span class=3D"hl-co=
+de">
+        </span><span class=3D"hl-identifier">len</span><span class=3D"hl-co=
+de"> =3D </span><span class=3D"hl-identifier">bytesRemaining</span><span cl=
+ass=3D"hl-code">;               </span><span class=3D"hl-comment">// send=
+ an incomplete chunk</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-code"> -=3D </span><span class=3D"hl-identifier">len</span><span cla=
+ss=3D"hl-code">;
+    </span><span class=3D"hl-reserved">for</span><span class=3D"hl-brackets=
+">(</span><span class=3D"hl-identifier">i</span><span class=3D"hl-code"> =
+=3D </span><span class=3D"hl-number">0</span><span class=3D"hl-code">; </sp=
+an><span class=3D"hl-identifier">i</span><span class=3D"hl-code"> &lt; </sp=
+an><span class=3D"hl-identifier">len</span><span class=3D"hl-code">; </span=
+><span class=3D"hl-identifier">i</span><span class=3D"hl-code">++</span><sp=
+an class=3D"hl-brackets">)</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">data</span><span class=3D"hl-b=
+rackets">[</span><span class=3D"hl-identifier">i</span><span class=3D"hl-br=
+ackets">]</span><span class=3D"hl-code"> =3D </span><span class=3D"hl-ident=
+ifier">getData</span><span class=3D"hl-brackets">(</span><span class=3D"hl-=
+identifier">currentPosition</span><span class=3D"hl-brackets">)</span><span=
+ class=3D"hl-code">; </span><span class=3D"hl-comment">// copy the data to=
+ the buffer</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-identifier">len</span><span class=3D"hl-code">;=
+                             </span><span class=3D"hl-comment">// return re=
+al chunk size</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<br>
+If <tt>usbFunctionRead()</tt> returns an incomplete chunk, the transfer is=
+ terminated.
+<h2 id=3D"toc3"><span>Sending data to the device</span></h2>
+<p>If the control transfer contains payload data (other than that sent in=
+ <tt>wValue</tt> and <tt>wIndex</tt>) sent to the device, that payload data=
+ is passed to the function <tt>usbFunctionWrite()</tt> in chunks of up to=
+ 8 bytes. You must define <tt>USB_CFG_IMPLEMENT_FN_WRITE</tt> to 1 in <tt>u=
+sbconfig.h</tt> if you use this method.</p>
+<p>The following example uses <tt>usbFunctionWrite()</tt> to store the payl=
+oad data in a static buffer:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-types">static</span><span class=3D"hl-code"> </span>=
+<span class=3D"hl-identifier">uchar</span><span class=3D"hl-code"> </span><=
+span class=3D"hl-identifier">buffer</span><span class=3D"hl-brackets">[</sp=
+an><span class=3D"hl-number">64</span><span class=3D"hl-brackets">]</span><=
+span class=3D"hl-code">;
+</span><span class=3D"hl-types">static</span><span class=3D"hl-code"> </spa=
+n><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code"> </span=
+><span class=3D"hl-identifier">currentPosition</span><span class=3D"hl-code=
+">, </span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-code">;
+=20
+</span><span class=3D"hl-identifier">usbMsgLen_t</span><span class=3D"hl-co=
+de"> </span><span class=3D"hl-identifier">usbFunctionSetup</span><span clas=
+s=3D"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span=
+ class=3D"hl-code"> </span><span class=3D"hl-identifier">setupData</span><s=
+pan class=3D"hl-brackets">[</span><span class=3D"hl-number">8</span><span=
+ class=3D"hl-brackets">])</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">usbRequest_t</span><span class=3D"=
+hl-code"> *</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-=
+code"> =3D </span><span class=3D"hl-brackets">(</span><span class=3D"hl-typ=
+es">void</span><span class=3D"hl-code"> *</span><span class=3D"hl-brackets"=
+>)</span><span class=3D"hl-identifier">setupData</span><span class=3D"hl-co=
+de">;   </span><span class=3D"hl-comment">// cast to structured data for pa=
+rsing</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">switch</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">rq</span><span class=3D"hl-code"=
+>-&gt;</span><span class=3D"hl-identifier">bRequest</span><span class=3D"hl=
+-brackets">){</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">case</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-identifier">VENDOR_RQ_WRITE_BUFFER</span><span cl=
+ass=3D"hl-code">:
+        </span><span class=3D"hl-identifier">currentPosition</span><span cl=
+ass=3D"hl-code"> =3D </span><span class=3D"hl-number">0</span><span class=
+=3D"hl-code">;                </span><span class=3D"hl-comment">// initiali=
+ze position index</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">bytesRemaining</span><span cla=
+ss=3D"hl-code"> =3D </span><span class=3D"hl-identifier">rq</span><span cla=
+ss=3D"hl-code">-&gt;</span><span class=3D"hl-identifier">wLength</span><spa=
+n class=3D"hl-code">.</span><span class=3D"hl-identifier">word</span><span=
+ class=3D"hl-code">;  </span><span class=3D"hl-comment">// store the amount=
+ of data requested</span><span class=3D"hl-code">
+        </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brack=
+ets">(</span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-code"> &gt; </span><span class=3D"hl-reserved">sizeof</span><span cl=
+ass=3D"hl-brackets">(</span><span class=3D"hl-identifier">buffer</span><spa=
+n class=3D"hl-brackets">))</span><span class=3D"hl-code"> </span><span clas=
+s=3D"hl-comment">// limit to buffer size</span><span class=3D"hl-code">
+            </span><span class=3D"hl-identifier">bytesRemaining</span><span=
+ class=3D"hl-code"> =3D </span><span class=3D"hl-reserved">sizeof</span><sp=
+an class=3D"hl-brackets">(</span><span class=3D"hl-identifier">buffer</span=
+><span class=3D"hl-brackets">)</span><span class=3D"hl-code">;
+        </span><span class=3D"hl-reserved">return</span><span class=3D"hl-c=
+ode"> </span><span class=3D"hl-identifier">USB_NO_MSG</span><span class=3D"=
+hl-code">;        </span><span class=3D"hl-comment">// tell driver to use=
+ usbFunctionWrite()</span><span class=3D"hl-code">
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-number">0</span><span class=3D"hl-code">;     =
+                          </span><span class=3D"hl-comment">// ignore all=
+ unknown requests</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+=20
+</span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code">=
+ </span><span class=3D"hl-identifier">usbFunctionWrite</span><span class=3D=
+"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span class=
+=3D"hl-code"> *</span><span class=3D"hl-identifier">data</span><span class=
+=3D"hl-code">, </span><span class=3D"hl-identifier">uchar</span><span class=
+=3D"hl-code"> </span><span class=3D"hl-identifier">len</span><span class=3D=
+"hl-brackets">)</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+"> </span><span class=3D"hl-identifier">i</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brackets"=
+>(</span><span class=3D"hl-identifier">len</span><span class=3D"hl-code">=
+ &gt; </span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-brackets">)</span><span class=3D"hl-code">                </span><sp=
+an class=3D"hl-comment">// if this is the last incomplete chunk</span><span=
+ class=3D"hl-code">
+        </span><span class=3D"hl-identifier">len</span><span class=3D"hl-co=
+de"> =3D </span><span class=3D"hl-identifier">bytesRemaining</span><span cl=
+ass=3D"hl-code">;               </span><span class=3D"hl-comment">// limit=
+ to the amount we can store</span><span class=3D"hl-code">
+    </span><span class=3D"hl-identifier">bytesRemaining</span><span class=
+=3D"hl-code"> -=3D </span><span class=3D"hl-identifier">len</span><span cla=
+ss=3D"hl-code">;
+    </span><span class=3D"hl-reserved">for</span><span class=3D"hl-brackets=
+">(</span><span class=3D"hl-identifier">i</span><span class=3D"hl-code"> =
+=3D </span><span class=3D"hl-number">0</span><span class=3D"hl-code">; </sp=
+an><span class=3D"hl-identifier">i</span><span class=3D"hl-code"> &lt; </sp=
+an><span class=3D"hl-identifier">len</span><span class=3D"hl-code">; </span=
+><span class=3D"hl-identifier">i</span><span class=3D"hl-code">++</span><sp=
+an class=3D"hl-brackets">)</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">buffer</span><span class=3D"hl=
+-brackets">[</span><span class=3D"hl-identifier">currentPosition</span><spa=
+n class=3D"hl-code">++</span><span class=3D"hl-brackets">]</span><span clas=
+s=3D"hl-code"> =3D </span><span class=3D"hl-identifier">data</span><span cl=
+ass=3D"hl-brackets">[</span><span class=3D"hl-identifier">i</span><span cla=
+ss=3D"hl-brackets">]</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-reserved">return</span><span class=3D"hl-code"=
+> </span><span class=3D"hl-identifier">bytesRemaining</span><span class=3D"=
+hl-code"> =3D=3D </span><span class=3D"hl-number">0</span><span class=3D"hl=
+-code">;             </span><span class=3D"hl-comment">// return 1 if we ha=
+ve all data</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<br>
+If you want to take some action when the data block is complete, perform it=
+ before returning 1 in <tt>usbFunctionWrite()</tt>.
+<h2 id=3D"toc4"><span>Using Interrupt- and Bulk-In endpoints</span></h2>
+<p>Interrupt-In endpoints are used to send data to the host spontaneously.=
+ Bulk-In endpoints are for stream type data. Since USB is a host controlled=
+ bus, the data is not actually sent on request of the device, but the host=
+ polls for the data. You can define the poll interval for interrupt endpoin=
+ts in the endpoint description. Bulk endpoints are always polled at the max=
+imum possible rate.</p>
+<p>In order to keep the "device sends data spontaneously" semantics, you pa=
+ss interrupt and bulk data by calling <tt>usbSetInterrupt()</tt> or <tt>usb=
+SetInterrupt3()</tt> for endpoint 1 and 3 respectively. Up to 8 bytes may=
+ be passed in one call. The driver keeps the data in a buffer until it is=
+ requested by the host.</p>
+<p>If your application sends notifications only, you don't care whether an=
+ unsent notification is lost. In this case you simply call <tt>usbFunctionI=
+nterrupt()</tt> without any checks.</p>
+<p>However, if no interrupt data may be lost (e.g. for stream type data),=
+ you must check whether the buffer is available before calling <tt>usbSetIn=
+terrupt()</tt>. This is done with <tt>usbInterruptIsReady()</tt> and <tt>us=
+bInterruptIsReady3()</tt> respectively. Example:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-reserved">if</span><span class=3D"hl-brackets">(</sp=
+an><span class=3D"hl-identifier">usbInterruptIsReady</span><span class=3D"h=
+l-brackets">()){</span><span class=3D"hl-code">               </span><span=
+ class=3D"hl-comment">// only if previous data was sent</span><span class=
+=3D"hl-code">
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+"> *</span><span class=3D"hl-identifier">p</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-code=
+"> </span><span class=3D"hl-identifier">len</span><span class=3D"hl-code">=
+ =3D </span><span class=3D"hl-identifier">getInterruptData</span><span clas=
+s=3D"hl-brackets">(</span><span class=3D"hl-code">&amp;</span><span class=
+=3D"hl-identifier">p</span><span class=3D"hl-brackets">)</span><span class=
+=3D"hl-code">;   </span><span class=3D"hl-comment">// obtain chunk of max=
+ 8 bytes</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brackets"=
+>(</span><span class=3D"hl-identifier">len</span><span class=3D"hl-code">=
+ &gt; </span><span class=3D"hl-number">0</span><span class=3D"hl-brackets">=
+)</span><span class=3D"hl-code">                         </span><span class=
+=3D"hl-comment">// only send if we have data</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">usbSetInterrupt</span><span cl=
+ass=3D"hl-brackets">(</span><span class=3D"hl-identifier">p</span><span cla=
+ss=3D"hl-code">, </span><span class=3D"hl-identifier">len</span><span class=
+=3D"hl-brackets">)</span><span class=3D"hl-code">;
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<h2 id=3D"toc5"><span>Using Interrupt- and Bulk-Out endpoints</span></h2>
+<p>Interrupt- and Bulk-Out endpoints are used to send stream type data to=
+ the device. When the host sends a chunk of data on the endpoint, the funct=
+ion <tt>usbFunctionWriteOut()</tt> is called. If you use more than one inte=
+rrupt- or bulk-out endpoint, the endpoint number is passed in the global va=
+riable <tt>usbRxToken</tt>. You must define <tt>USB_CFG_IMPLEMENT_FN_WRITEO=
+UT</tt> to 1 in <tt>usbconfig.h</tt> when you use this feature.</p>
+<p>Example:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-types">void</span><span class=3D"hl-code"> </span><s=
+pan class=3D"hl-identifier">usbFunctionWriteOut</span><span class=3D"hl-bra=
+ckets">(</span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-=
+code"> *</span><span class=3D"hl-identifier">data</span><span class=3D"hl-c=
+ode">, </span><span class=3D"hl-identifier">uchar</span><span class=3D"hl-c=
+ode"> </span><span class=3D"hl-identifier">len</span><span class=3D"hl-brac=
+kets">)</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+    </span><span class=3D"hl-reserved">if</span><span class=3D"hl-brackets"=
+>(</span><span class=3D"hl-identifier">usbRxToken</span><span class=3D"hl-c=
+ode"> =3D=3D </span><span class=3D"hl-number">2</span><span class=3D"hl-bra=
+ckets">){</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">processInterruptOut2Data</span=
+><span class=3D"hl-brackets">(</span><span class=3D"hl-identifier">data</sp=
+an><span class=3D"hl-code">, </span><span class=3D"hl-identifier">len</span=
+><span class=3D"hl-brackets">)</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-reserved">=
+else</span><span class=3D"hl-brackets">{</span><span class=3D"hl-code">
+        </span><span class=3D"hl-identifier">processInterruptOut4Data</span=
+><span class=3D"hl-brackets">(</span><span class=3D"hl-identifier">data</sp=
+an><span class=3D"hl-code">, </span><span class=3D"hl-identifier">len</span=
+><span class=3D"hl-brackets">)</span><span class=3D"hl-code">;
+    </span><span class=3D"hl-brackets">}</span><span class=3D"hl-code">
+</span><span class=3D"hl-brackets">}</span>
+</pre></div>
+</div>
+<h2 id=3D"toc6"><span>Intercepting standard requests</span></h2>
+<p>The driver handles all standard requests defined in the USB specificatio=
+n in a minimal way. If you are not happy with the way a request is handled,=
+ don't modify the driver. Use the macro <tt>USB_RX_USER_HOOK()</tt> in <tt>=
+usbconfig.h</tt> instead. This macro is inserted in the handling of setup=
+ data. See the source code in <tt>usbdrv.c</tt> to see what can be modified=
+. If you replace default functionality, end the macro with a <tt>return</tt=
+> statement.</p>
+<p>A simple example for such a macro is the flashing of an LED on USB traff=
+ic:</p>
+<div class=3D"code">
+<div class=3D"hl-main">
+<pre><span class=3D"hl-prepro">#define</span><span class=3D"hl-code"> </spa=
+n><span class=3D"hl-identifier">USB_RX_USER_HOOK</span><span class=3D"hl-br=
+ackets">(</span><span class=3D"hl-identifier">data</span><span class=3D"hl-=
+code">, </span><span class=3D"hl-identifier">len</span><span class=3D"hl-br=
+ackets">)</span><span class=3D"hl-code">     </span><span class=3D"hl-reser=
+ved">if</span><span class=3D"hl-brackets">(</span><span class=3D"hl-identif=
+ier">usbRxToken</span><span class=3D"hl-code"> =3D=3D </span><span class=3D=
+"hl-brackets">(</span><span class=3D"hl-identifier">uchar</span><span class=
+=3D"hl-brackets">)</span><span class=3D"hl-identifier">USBPID_SETUP</span><=
+span class=3D"hl-brackets">)</span><span class=3D"hl-code"> </span><span cl=
+ass=3D"hl-identifier">blinkLED</span><span class=3D"hl-brackets">()</span><=
+span class=3D"hl-code">;</span>
+</pre></div>
+</div>
+<p>This method is used by <a href=3D"http://www-user.tu-chemnitz.de/%7Eheha=
+/bastelecke/Rund%20um%20den%20PC/USB2LPT/ul-15.htm.en">USB2LPT</a> to flash=
+ an LED.</p>
+
+                    </div>
+
+                                    <!-- wikidot_bottom_300x250 -->
+<div id=3D"div-gpt-ad-1410946564449-0" style=3D"display: none" class=3D"wd-=
+adunit wd-adunit-dfp wd-adunit-below_content">
+
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><div style=3D"border: 0pt none;" id=3D"google_ads_iframe_/10309=
+17/wikidot_free_sites_bottom_300x250_0__container__"><iframe src=3D"urn:sna=
+pshot-BFF18073:javascript:%22%3Chtml%3E%3Cbody%20style=3D%27background:tran=
+sparent%27%3E%3C/body%3E%3C/html%3E%22" style=3D"border: 0px none; vertical=
+-align: bottom;" marginheight=3D"0" marginwidth=3D"0" scrolling=3D"no" name=
+=3D"google_ads_iframe_/1030917/wikidot_free_sites_bottom_300x250_0" id=3D"g=
+oogle_ads_iframe_/1030917/wikidot_free_sites_bottom_300x250_0" frameborder=
+=3D"0" height=3D"250" width=3D"300"></iframe></div>
+<iframe src=3D"urn:snapshot-E0FA3060:javascript:%22%3Chtml%3E%3Cbody%20styl=
+e=3D%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22" style=3D"bord=
+er: 0px none; vertical-align: bottom; visibility: hidden; display: none;"=
+ marginheight=3D"0" marginwidth=3D"0" scrolling=3D"no" name=3D"google_ads_i=
+frame_/1030917/wikidot_free_sites_bottom_300x250_0__hidden__" id=3D"google_=
+ads_iframe_/1030917/wikidot_free_sites_bottom_300x250_0__hidden__" framebor=
+der=3D"0" height=3D"0" width=3D"0"></iframe></div>
+
+           =20
+
+
+                   =20
+
+                    <div id=3D"page-info-break"></div>
+                   =20
+                        <div id=3D"page-options-container">
+                            <div id=3D"page-info">page revision: 14, last=
+ edited: <span style=3D"display: inline;" class=3D"odate time_1240358897 fo=
+rmat_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">22 Apr 2009,=
+ 03:08 (2028 days ago)</span></div>
+            <div id=3D"page-options-bottom" class=3D"page-options-bottom">
+            <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D=
+"edit-button">Edit</a>
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"tags-button=
+">Tags</a>
+
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"history-but=
+ton">History</a>
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"files-butto=
+n">Files</a>
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"print-butto=
+n">Print</a>
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"site-tools-=
+button">Site tools</a>
+<a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"more-option=
+s-button">+=C2=A0Options</a>=20
+</div>
+<div id=3D"page-options-bottom-2" class=3D"page-options-bottom form-actions=
+" style=3D"display:none">
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"edit-se=
+ctions-button">Edit Sections</a>
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"edit-ap=
+pend-button">Append</a>
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"edit-me=
+ta-button">Edit Meta</a>
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"watcher=
+s-button">Watchers</a>=20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"backlin=
+ks-button">Backlinks</a>=20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"view-so=
+urce-button">Page Source</a>=20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"parent-=
+page-button">Parent</a>=20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"page-bl=
+ock-button">Lock Page</a>   =20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"rename-=
+move-button">Rename</a>=20
+    <a href=3D"javascript:void(0);" class=3D"btn btn-default" id=3D"delete-=
+button">Delete</a>=20
+</div>
+<div id=3D"page-options-area-bottom">
+</div>
+
+                        </div>
+                   =20
+                    <div id=3D"action-area" style=3D"display: none;"></div>
+                </div>
+            </div>
+           =20
+           =20
+           =20
+            <div id=3D"footer" style=3D"display: block; visibility: visible=
+;">
+                <div class=3D"options" style=3D"display: block; visibility:=
+ visible;">
+    <a href=3D"http://www.wikidot.com/doc" id=3D"wikidot-help-button">Help<=
+/a>
+    =C2=A0|
+    <a href=3D"http://www.wikidot.com/legal:terms-of-service" id=3D"wikidot=
+-tos-button">Terms of Service</a>
+    =C2=A0|
+    <a href=3D"http://www.wikidot.com/legal:privacy-policy" id=3D"wikidot-p=
+rivacy-button">Privacy</a>
+    =C2=A0|
+    <a href=3D"javascript:void(0);" id=3D"bug-report-button" onclick=3D"">R=
+eport a bug</a>
+    =C2=A0|
+    <a href=3D"javascript:void(0);" id=3D"abuse-report-button" onclick=3D""=
+>Flag as objectionable</a>
+</div>
+Powered by <a href=3D"http://www.wikidot.com/">Wikidot.com</a>=20
+            </div>
+           =20
+                <div id=3D"license-area" class=3D"license-area">
+                    Unless otherwise stated, the content of this page is li=
+censed under <a rel=3D"license" href=3D"http://creativecommons.org/licenses=
+/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>
+                </div>
+           =20
+           =20
+           =20
+
+
+
+            <div id=3D"extrac-div-1"><span></span></div><div id=3D"extrac-d=
+iv-2"><span></span></div><div id=3D"extrac-div-3"><span></span></div>
+           =20
+           =20
+           =20
+           =20
+                <div id=3D"footer-bar">
+  <div>
+     </div>
+  <h2>Other interesting sites</h2>
+ =20
+  <div class=3D"units">
+              <div class=3D"unit">
+          <div class=3D"inner">
+            <a target=3D"_blank" class=3D"image" href=3D"http://denver.wiki=
+dot.com/">
+              <img class=3D"thumbnail" alt=3D"" src=3D"http://thumbnails.wd=
+files.com/thumbnail/site/denver.wikidot.com/80.jpg">
+            </a>
+            <h3><a target=3D"_blank" href=3D"http://denver.wikidot.com/">Sh=
+adowrun: Denver</a></h3>
+            <div class=3D"desc">         =20
+              Complicated Shadows
+            </div>
+          </div>
+        </div>
+              <div class=3D"unit">
+          <div class=3D"inner">
+            <a target=3D"_blank" class=3D"image" href=3D"http://eitriggcraf=
+ting.wikidot.com/">
+              <img class=3D"thumbnail" alt=3D"" src=3D"http://thumbnails.wd=
+files.com/thumbnail/site/eitriggcrafting.wikidot.com/80.jpg">
+            </a>
+            <h3><a target=3D"_blank" href=3D"http://eitriggcrafting.wikidot=
+.com/">Eitrigg Crafters</a></h3>
+            <div class=3D"desc">         =20
+             =20
+            </div>
+          </div>
+        </div>
+              <div class=3D"unit">
+          <div class=3D"inner">
+            <a target=3D"_blank" class=3D"image" href=3D"http://magiamester=
+ei.wikidot.com/">
+              <img class=3D"thumbnail" alt=3D"" src=3D"http://thumbnails.wd=
+files.com/thumbnail/site/magiamesterei.wikidot.com/80.jpg">
+            </a>
+            <h3><a target=3D"_blank" href=3D"http://magiamesterei.wikidot.c=
+om/">M=C3=A1gia Mesterei Wiki</a></h3>
+            <div class=3D"desc">         =20
+              Seg=C3=ADts=C3=A9g az online j=C3=A1t=C3=A9khoz
+            </div>
+          </div>
+        </div>
+              <div class=3D"unit">
+          <div class=3D"inner">
+            <a target=3D"_blank" class=3D"image" href=3D"http://arcana.wiki=
+dot.com/">
+              <img class=3D"thumbnail" alt=3D"" src=3D"http://thumbnails.wd=
+files.com/thumbnail/site/arcana.wikidot.com/80.jpg">
+            </a>
+            <h3><a target=3D"_blank" href=3D"http://arcana.wikidot.com/">Th=
+e Arcana Wiki</a></h3>
+            <div class=3D"desc">         =20
+              Distilling the Real World for Gaming
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+
+           =20
+        </div>
+       =20
+    </div>
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery.=
+ -->
+<div id=3D"extra-div-1"><span></span></div><div id=3D"extra-div-2"><span></=
+span></div><div id=3D"extra-div-3"><span></span></div>
+<div id=3D"extra-div-4"><span></span></div><div id=3D"extra-div-5"><span></=
+span></div><div id=3D"extra-div-6"><span></span></div>
+</div>
+                <!-- out_of_page -->
+
+<div id=3D"div-gpt-ad-1411637977813-0-oop">
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><div style=3D"border: 0pt none;" id=3D"google_ads_iframe_/10309=
+17/out_of_page_0__container__"><iframe src=3D"urn:snapshot-B656155B:javascr=
+ipt:%22%3Chtml%3E%3Cbody%20style=3D%27background:transparent%27%3E%3C/body%=
+3E%3C/html%3E%22" style=3D"border: 0px none; vertical-align: bottom;" margi=
+nheight=3D"0" marginwidth=3D"0" scrolling=3D"no" name=3D"google_ads_iframe_=
+/1030917/out_of_page_0" id=3D"google_ads_iframe_/1030917/out_of_page_0" fra=
+meborder=3D"0" height=3D"1" width=3D"1"></iframe></div>
+<iframe src=3D"urn:snapshot-2BAF51B0:javascript:%22%3Chtml%3E%3Cbody%20styl=
+e=3D%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22" style=3D"bord=
+er: 0px none; vertical-align: bottom; visibility: hidden; display: none;"=
+ marginheight=3D"0" marginwidth=3D"0" scrolling=3D"no" name=3D"google_ads_i=
+frame_/1030917/out_of_page_0__hidden__" id=3D"google_ads_iframe_/1030917/ou=
+t_of_page_0__hidden__" frameborder=3D"0" height=3D"0" width=3D"0"></iframe>=
+</div>
+
+           =20
+
+</div>
+<div id=3D"dummy-ondomready-block" style=3D"display: none;"></div>
+    <!-- Google Analytics load -->
+    <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+    <!-- Quantcast -->
+    <script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+    <noscript>
+        <img src=3D"<a rel=3D"nofollow" href=3D"http://pixel.quantserve.com=
+/pixel/p-edL3gsnUjJzw-.gif" class=3D"vglnk"><span>http</span><span>://</spa=
+n><span>pixel</span><span>.</span><span>quantserve</span><span>.</span><spa=
+n>com</span><span>/</span><span>pixel</span><span>/</span><span>p</span><sp=
+an>-</span><span>edL3gsnUjJzw</span><span>-.</span><span>gif</span></a>" st=
+yle=3D"display: none;" border=3D"0" height=3D"1" width=3D"1" alt=3D"Quantca=
+st"/>
+    </noscript>
+
+
+
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+<div id=3D"page-options-bottom-tips" style=3D"display: none;">
+   =20
+</div>
+<div id=3D"page-options-bottom-2-tips" style=3D"display: none;">
+   =20
+   =20
+   =20
+    <div id=3D"discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest=
+ way to do it.    </div>
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+           =20
+       =20
+       =20
+       =20
+       =20
+    </div>
+
+<div style=3D"position: absolute; z-index: 100; top: 0px; width: 100%;" id=
+=3D"odialog-hovertips"><div style=3D"visibility: visible; opacity: 0.9999;=
+ position: absolute; display: none; border: 1px solid black;" class=3D"hove=
+rtip " id=3D"edit-button-hovertip"><div class=3D"content">
+        Click here to edit contents of this page.    </div></div><div style=
+=3D"visibility: visible; opacity: 0.9999; position: absolute; display: none=
+; border: 1px solid black;" class=3D"hovertip " id=3D"edit-sections-button-=
+hovertip"><div class=3D"content">
+        Click here to toggle editing of individual sections of the page (if=
+ possible).         Watch headings for an "edit" link when available.    </=
+div></div><div style=3D"visibility: visible; opacity: 0.9999; position: abs=
+olute; display: none; border: 1px solid black;" class=3D"hovertip " id=3D"e=
+dit-append-button-hovertip"><div class=3D"content">
+        Append content without editing the whole page source.    </div></di=
+v><div style=3D"visibility: visible; opacity: 0.9999; position: absolute;=
+ display: none; border: 1px solid black;" class=3D"hovertip " id=3D"history=
+-button-hovertip"><div class=3D"content">
+        Check out how this page has evolved in the past.    </div></div><di=
+v style=3D"visibility: visible; opacity: 0.9999; position: absolute; displa=
+y: none; border: 1px solid black;" class=3D"hovertip " id=3D"files-button-h=
+overtip"><div class=3D"content">
+        View and manage file attachments for this page.    </div></div><div=
+ style=3D"visibility: visible; opacity: 0.9999; position: absolute; display=
+: none; border: 1px solid black;" class=3D"hovertip " id=3D"site-tools-butt=
+on-hovertip"><div class=3D"content">
+        A few useful tools to manage this Site.    </div></div><div style=
+=3D"visibility: visible; opacity: 0.9999; position: absolute; display: none=
+; border: 1px solid black;" class=3D"hovertip " id=3D"backlinks-button-hove=
+rtip"><div class=3D"content">
+        See pages that link to and include this page.    </div></div><div=
+ style=3D"visibility: visible; opacity: 0.9999; position: absolute; display=
+: none; border: 1px solid black;" class=3D"hovertip " id=3D"rename-move-but=
+ton-hovertip"><div class=3D"content">
+        Change the name (also URL address, possibly the category) of the pa=
+ge.    </div></div><div style=3D"visibility: visible; opacity: 0.9999; posi=
+tion: absolute; display: none; border: 1px solid black;" class=3D"hovertip=
+ " id=3D"view-source-button-hovertip"><div class=3D"content">
+        View wiki source for this page without editing.    </div></div><div=
+ style=3D"visibility: visible; opacity: 0.9999; position: absolute; display=
+: none; border: 1px solid black;" class=3D"hovertip " id=3D"parent-page-but=
+ton-hovertip"><div class=3D"content"> =20
+        View/set parent page (used for creating breadcrumbs and structured=
+ layout).    </div></div><div style=3D"visibility: visible; opacity: 0.9999=
+; position: absolute; display: none; border: 1px solid black;" class=3D"hov=
+ertip " id=3D"abuse-report-button-hovertip"><div class=3D"content">
+            Notify administrators if there is objectionable content in this=
+ page.        </div></div><div style=3D"visibility: visible; opacity: 0.999=
+9; position: absolute; display: none; border: 1px solid black;" class=3D"ho=
+vertip " id=3D"bug-report-button-hovertip"><div class=3D"content">
+            Something does not work as expected? Find out what you can do.=
+        </div></div><div style=3D"visibility: visible; opacity: 0.9999; pos=
+ition: absolute; display: none; border: 1px solid black;" class=3D"hovertip=
+ " id=3D"wikidot-help-button-hovertip"><div class=3D"content">
+            General <a rel=3D"nofollow" href=3D"http://wikidot.com/" class=
+=3D"vglnk"><span>Wikidot</span><span>.</span><span>com</span></a> documenta=
+tion and help section.        </div></div><div style=3D"visibility: visible=
+; opacity: 0.9999; position: absolute; display: none; border: 1px solid bla=
+ck;" class=3D"hovertip " id=3D"wikidot-tos-button-hovertip"><div class=3D"c=
+ontent">
+            <a rel=3D"nofollow" href=3D"http://wikidot.com/" class=3D"vglnk=
+"><span>Wikidot</span><span>.</span><span>com</span></a> Terms of Service=
+ - what you can, what you should not etc.        </div></div><div style=3D"=
+visibility: visible; opacity: 0.9999; position: absolute; display: none; bo=
+rder: 1px solid black;" class=3D"hovertip " id=3D"wikidot-privacy-button-ho=
+vertip"><div class=3D"content">
+            <a rel=3D"nofollow" href=3D"http://wikidot.com/" class=3D"vglnk=
+"><span>Wikidot</span><span>.</span><span>com</span></a> Privacy Policy. =
+        =20
+        </div></div></div></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/twitter.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kHEAgiAlxzGnwAAAJwSURBVDjL
+VZI/i2RVEMV/Vff26+nu2V4d/yBrI7oiyHwBEzETg/VPqIKImGiymBr5CcTIwHTBQAR19RuYCBqI
+Jq6gLs7oOqjjjPt6uvu9ebeqDN7YPVtwb1VyTp06VfLmVwfT7Sq/f+8wP5+UCkCEs1gXQBB9woP2
+qC2f1m15K1dZP5hN0sv7i46V9eDzMOkx52igUkYPj/PrJVzkne/+burOh4sSTAbKa5en7F6suLUq
+XLtZ82djG4LodUTAQOGBrfyvCjGsO8MIrjw44fJ0yIHBZGvAK49MMcADPAIjsAAjWFlgEcNsQIlA
+gNk4c+TBwmHhwWOTzFP3jwAwD27Up/zVFOJ/wgjy4aphUWA8SAC0AbVDos9XZtvrEV4SeO/HY27c
+blmWwmFj5OO24+a8JSdlZXejNmBhvXvfN5ABB0rAbABP3jfk+v4hnTn5wpCcVEiqiCgRsHQ46s77
+volLWWg9EFFygqRCVlVyUlQVEWgsOCnBSOHpi7oGq0Dy4N29mpwU975x1jMFSRVBzggcScI9eXMR
+XQQf7s/ZWxayKkbQNxddEzjQOZwUaC34/J+yJsgCL8ymNB588nsN4iSROxX8dNKxu1Pxde0AfNPd
+6cHK4ImdEdf/ODkbS1DpP1SFLw6WzCp4ZiezraBsXiWwO1Z+a/oRkiiqQjaP9sIgDZuA2oK3fzjm
+1Ye2uTqrGG08xAO+vd3x8a0lqsKWKCpyKs99uffR43eNXvxlaRSEnJScEln7zagIHo55YGYUd8Sd
+R8eZX+era7ltmjd+nmu5NBk+mzRVmpTcr4eUFBHpz9aM4oqZEe6n+4v2s3nTXv0PwtMvRhQD4gEA
+AAAASUVORK5CYII=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/facebook.gif
+
+R0lGODlhEAAQAKIAAGF5rEVinmB4q+vu9G2EtP///ztZmAAAACH5BAAAAAAALAAAAAAQABAAAAM4
+WLrcCibKGYGiWN4sxt6Y9xWZAZpkdp6R06bTIMpvucLUbeNKQPxAggIY6AWBw1+xAClJLI7oIgEA
+Ow==
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/delicious.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAMUExURQAAAP///93d3QAA/+4iTdsAAAAa
+SURBVHjaYmCEAmYoYBggARhggoIBEgAIMADrEAGBe3e9DgAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/digg.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAQAAACMJlQBAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACmSURBVBhXbZDBCgIxDET3//+gf9CPERRB
+XRA8LHjYgyKCongYM0mnUXSHhU7mtWkzYPhWhVRA78UCSoC+DhS3z1YgcMMJRwGKL5isxKPh8aE5
+ByLeWenlAOOtudF+ByJemmWjVAciXpi9215qbCr5Bko3mK3J5LdwIKB8pOI9WP0DKGaDn0ERYFwt
+3giIScTkCHB3tXidwANXnDvAw6vFqwSkz7Uqb59WZAoV3mcwAAAAAElFTkSuQmCC
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/reddit.png
+
+iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAIAAADZrBkAAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKWSURBVHjadFJLSGJhFP7v1U00Cmo+Bpxh
+ZAQ3wyiKim1qjFnoLFrMxhbSrrAWbcLGnYXgzGoWgemyqNBB2kSrCCcwiCAFLRUX+QCLHmQPMjT1
+zndHx3FiPPz83POfc+453/k+imEY0sNKpdLy8rJCoTAajUdHR+vr60ql0ul08vl8mvQ25N3f3z88
+PAQCAa/X6/P5aJre2dlBiNur5unpCd1cLpdUKoU7NzcXCoWKxaLVamXDTA9LJpOzs7Mdt1wuY+CD
+g4OWS3Vjq9Vq0Wg0lUrd3Nxks9m7uzuDwSAWi/V6vUaj6Z6Fury8XFxcvL295fF4uPv6+pCkUqkk
+EgnChULh+Lc1Gg2RSHR2dobQ9PQ05fF4ZDJZJpM5PT2dn19QKt/+F+ru7q7b7Z6amjo5OZHL5ZzB
+wcFKpVKtVpeWlkQiIfkZJD++E8U7whOy6cdREvhChOI3hiGLxYKVYiiKosj29rZarc7n8yzSWpWZ
+VDMKwoS+tlex8Jl5RZhv9pa3uroKDjE5Z2Vl5fDw0G63s/+mafJCQF4LyKdJwhOwLwIpEXLJRzt5
+qYCHofr7+9GW5Q1YUanT6Qi6f7Cxp2Pvh9jzx5A2MDDQ5m1vb89ms11fX+P78fHR7/fv7++fn59j
+b5ubm2tra60JQQzSLi4u8M12w1bS6bTD4ZiZmTGZTFqtdmtrCxzW63XIb2xsDDnBYDAcDkM0oJHl
+rUN3LBbDoqBAyAeS5XA4zWYTdCUSiY2NDfA+MTGB1beS/2oSTaBDgMYdiUSgWtSAffB+dXWFvXdq
+/ikDBrQaHh4eHx/vJho9ASGXy0H7IyMjrUe6EwP9o6OjwPNMHwCJnmazOR6Pdx7bZZiHy+UijPpn
+ZS0NQYDdf/wlwAArwYbfuDX2VQAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/social/stumble.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kHEQgeHoM9WKkAAAK7SURBVDjL
+bZPPax51EMY/8919s+kb0pj0UK2pxFiEok2KRLxEKd5KD714MhcvPYte9CD9G4w9VVoUUSgUCl5E
+8KIYtZqDP6tITWxNX/vavM27u++777u773dnPGwaUTsMzMAwzwzPPCNFUUwGQbAKnAaJABDub7aX
+5MAV7/0rUpbl+yKyArLXmFUZqU8ptABgTMZ4oDFFM5j4F5CZXpCiLHOBCKCwkuvD30h8imHUbpgp
+qsaBxgwL+5/EbG+VODSzCGCoOV/1vyG34h48Zoaa7gIoPd/j+PQi3vu6DlFodcIX/at0/F0ORQ8R
+uQizenJlFVvDFkM/pEGIE+HanwlHH5wEICzygrbd4ddig9MHTjI/Pvc/7uJRwoWtdxGrSVq/2SFy
+ysNT44SlH7GWXeW632R+fI53ftnm03ZGEAj4ivmJkDeeeYSh5twatAD4odWl0005s/wYoRNhx7oU
+UvBH2WLl8UOcODzFZ+2Miz/9RTXyAPQ1I616u1cWtuIhTgQnIjhxgLDaeZuPBh+zHVzjpSPTLB9s
+UqntNd2Th5kRiCDiCEWEhX1PEGlEEITcGXVIqz5L+xaZdNDt5xhwYuZZOhMdAHaygqdn9yMi0I1j
+6/X79l/7rp3a8nvrdvz8mq1+uWmlr6xStUvrm/boa5fsxxu3rRsnA4mTxEQc576+ySe/d3FhgInQ
+zT2mivoKHXkapjDyJGnGC4uznD21gJoOQxFBBM4sHebbVszP2z3EuVrWamilqPcUI09VjnhqdprX
+Tx5DpGZFkjTNnXORE0deKW+tbXD5+1t4rZVoVb1FiLKyNMfLzx+l4QSt1RlLnCQfhEH4orj6GuKE
+nUHJ5xvb3LibIRhzMxM8d+Qg080GaoaqYmr4yl+U2+32ZLPZfDMMwlMucGNOBOccshsBVP95qN3J
+hff+w8Fg8OrfVZmi7WkQCH0AAAAASUVORK5CYII=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://thumbnails.wdfiles.com/thumbnail/site/denver.wikidot.com/80.jpg
+
+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
+jQB//9k=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://thumbnails.wdfiles.com/thumbnail/site/eitriggcrafting.wikidot.com/80.jpg
+
+/9j/4AAQSkZJRgABAQIAJwAnAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4p
+LSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09P
+T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCABQAFADASIA
+AhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAUBBAYDAv/EADwQAAEDAgIFCAYJBQAAAAAAAAEA
+AgMEEQUhBhITMVEiNUFhc5Gx0RUWMlOSoRQjM0JSVWJxwUNygYPS/8QAFwEBAQEBAAAAAAAAAAAA
+AAAAAAECA//EABsRAQEBAAIDAAAAAAAAAAAAAAABEQISITFB/9oADAMBAAIRAxEAPwDSYNh7KuhM
+5hEsonIOtM9gtYcOtN2U9Q2LUbSRtDCQ0Gc59d7Kjo1I1mGvaQbmV1iLZZBN6dwIIdIXn9TQD8k7
+SfC2uHo6Oqt9Op2gsFmakzj+/BT6FoNXV2Jt2jvNdZTKJCGPsMrAxgjxUEzXykIHDZDzS3R49D0H
+J+pPJ3fWO81MmEUMoAkic4Ddy3easbUe7fu4L0xwfezCLcckFNmCYcz2ICP9jvNQcFw8C4p3EjhI
+7zTC3UEW6ggUjBqYf0B3v/6S7GKOOjoBJBE6FxlDbknMWPEngtPbqCS6VC2Fx5D7ZvgVdFXR/m49
+q7wanVKwW1xfh0WKT6ONd6PLmtvqzO8Gp9G4uYC4WPSFzqK04kM51Y7jKx2YN/8AK8sjmdfkAW/E
+xo/hWnU4e7WuM/0gqWU8YFnNa49B1QFtVXYT79Rl7/havTY6lp5Ia3jYNCs7CH3TPhRsIfdM7kFe
+1Zb2h8lLfpgcSbO4AkK01rWCzGho4AKUFcuquiNnelOk+0OEx7UNDtuN37FPkk0r5rj7ZvgUFLAa
+l0WHvZqtc0ykkEb8gtBTsj1BIyFkZcPu8EgwCmdLQOkDgGtkdcEHPIcE+pSzZarOjfvsO9OXXPHt
+FkbghA3BCKEIQgEIQgEk0r5rj7ZvgU7STSvmuPtm+BQV9HXObh5LRJ9s72W3G5u/NOIaoSNybI7O
+2sG5eKSaPuqG0JEJbqmV1724DitC0sAy1RfoFlnlMR1G4IQNwQtKEIQgEIQgEk0r5rj7ZvgU7STS
+vmuPtm+BQctG2MOFSPc1hLZnWLhuyHSmcLI5HEmKC7TcatnZ9yQYHiNRS0b44cNqKlu0J14yLbhl
+mmJxyqbvwaqB4azVMDsbghIPWGq/I634mean1gq/yKt+JnmqHyEgOkFYRycDrAf7mH+VA0gq7nWw
+epbwBczzQaBCz/rBVCxOFT26Rrtz+aBpBVZXwqf425/NXKNAkmlfNcfbN8CuEeMVjiWjDKtzrdEj
+e/eqeM11VPQsinw+ogG1DtpI4EbjlvUH/9k=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://thumbnails.wdfiles.com/thumbnail/site/magiamesterei.wikidot.com/80.jpg
+
+/9j/4AAQSkZJRgABAQIAJwAnAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4p
+LSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09P
+T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCABQAFADASIA
+AhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAAAwABAgQFBgf/xAA7EAABAwIDAggNBAMBAAAAAAAB
+AgMRABIEBSETMRQVIkFhkqHRBiNRUlNUYnFygZGTsSQyVWNFgoPB/8QAFgEBAQEAAAAAAAAAAAAA
+AAAAAAEC/8QAGREBAQEBAQEAAAAAAAAAAAAAABEBEiFR/9oADAMBAAIRAxEAPwDDax2cBQW68pSr
+pICwn8VeGfZ4gIQjEOWJnklSNPnbXbO5RlyXFBOCwYA5i0SajxVl9p/R4KeY7I06xPfrhsRm+c4k
+DavrUUAhJK06fRNQdzDOFMkIUpA3glaVf+V3zeVZYD4zBYM/C2RROLcoKROBw8eS006xJrzfhvhF
+A/UaI1GqNOekvH+EbyRfibgN0lAr0jivJvUMN1KbivJj/j8N1Kd4TXmycXn7ZFr4F2mhRT8K8IJn
+biR0or0jizJpjgGG6lLivJ/4/D9SnWE1xrGFzQspU5nuASqNRtwLegiw60N4Zph0O7POMKspEpCH
+gbtNw5FdvxXk/wDH4fqVNOT5SsSMuw8fDTrFmjug7VRAb+ZVPZUSCQCQzM+VcRTPztVwojokimle
+oSVdGpNYVIJMHksx711JK1SAoMW88XE/ioEr38vX305K9f3z7zQHua9nq09zRMcnX2arS57fbTS4
+RPL7aCzc17Ovs06S2owAkn4areM11X5OfWl4yB+8/M0Fu1Pmj6U4AG4RVLxk6XdtHYUrcQqOzvoB
+PKVtVAKge4d1RS4pJ0VE9A1or1u0MtrJ8obUfwaZK7YSG16/0KoI7ZyRy9KW2c9IeyitqLhICbY3
+3NEVLZmNzc/BQBS64o6L5ueBUrnYjaCfiFFCFD0fUqdo8g+lBXud08YnrCmueO5xI/2FWLU+aPpS
+tT5o+lBXue9InrCitXFMqXPQCCKnanzR9KcADcIoKOIUeEqTcreNxqaUuOGQkgE7yaIpeHKruENg
+/Gmn2rPraT/0TQJLCp5S9OiiWK9Irs7qHtWfWk/cTS2rPrSfuJoCWq9Irs7qVivSK7O6h7Rn1tP3
+E0tqyATwpP3E0BqVALrMn9WnQTotNOHmQZ4Sk6bitNAalQTiWgRDrRB/sFIYlq6C6yOnaCgqjIsq
+ERgm9Ok99DfyXJ0Nlx7BN2p36KP4rUoGLctRbaSDvMaCl0jNYyfInyQ3gEyN9za0/mKhj8s8H8Aw
+HcThGUJUbUyFGTExpPkrRaxJK7QiROsSSKOtC1OIWLeQSU6nnEGrUjn8FgMpxyFKwuW4RwoIC/GL
+ESJG9NHVkmAR+7KcGkndL5E9lbCUOB9birTeEg6nmnvpOFwrgMpWkbppfSKackyspCuBNSdTBJE0
+xyTKpI4Cknfokmr7alqm9pLcbgKZ1LiwUpsCfLJmlIp8R5XMnBN/OaRyPKyI4E1Hz760BMCYnnil
+UurH/9k=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://thumbnails.wdfiles.com/thumbnail/site/arcana.wikidot.com/80.jpg
+
+/9j/4AAQSkZJRgABAQIAJwAnAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4p
+LSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09P
+T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCABQAFADASIA
+AhEBAxEB/8QAGwAAAwADAQEAAAAAAAAAAAAAAgMEAAEHBQb/xAA+EAACAQIDBAYJAQQLAAAAAAAB
+AgMAEQQSIQUTMUEUIlFhktEyQlJTcYGRoeHBYnKTsQYWIyUzNHOi0vDx/8QAFwEBAQEBAAAAAAAA
+AAAAAAAAAAIBA//EABsRAQEBAAMBAQAAAAAAAAAAAAABEQMSIQJh/9oADAMBAAIRAxEAPwD5GDYe
+PikV+j4wEdkDeVPGzMcDfoeL43t0Xn4e6ut7YfErgT0aRkOYZmBsQPjy5a1PsDFYmeKQTOzKtgGL
+X152PMc+6ud5vmc04s9Ot69nMI9m7QW+XB4wX42wvH/bR/1cYZS8GPLHU2gOn2rsE3pqQJSco1WQ
+gUObUi05W9r7w11TY5UP6O4YoQMHtANbRjG1ge22WqcLsLBxqm92djGawzEK4BPP1a6YSATffDX3
+hrcUmQllSU5r2u5I/FE9f1z6TZGziqtHsfEKwHEZrn49WhnwuFkgCrsfEhgOO5e5+1dI6S1vQI+f
+4rfSDf0Ta9v+6VlkOkcwbZWyDGv917azjiFw6HX4lakn2RgmSQQ7M2ypI6ubDIbG3ctdZ6SwOqEd
+uvD7UUWI3koTh8/xRWYndHLG0pUdmUGgjRwFO9YKPVyAUDN12F25nQn/AJVQl8gzWv3V1GSxhmBu
+uqAatb9KHdqosGS5/aHlUO08dicPiQkcGHZMikM82U/StYDHTzO4xEWGQKuhXEAkm/D6VN+LmmzX
+piOO13kUa8AAf0rDBBnLb2x17KVvY8h/ws1+G/Go+NaZ4XjGbck9hnFTlb4aIYlGk1hz0HGi3MQt
+/agfIUqOaIAIUw4X/WBtWlniC5RHhgL++FMocIoQNZAb8OqONNgjCXKPdTysKk3sAUAR4bXRhvRp
+T4JoGsG3CsDZQsgamNQnr4gqAwOo1UgfXL+tPUz6BkjtzIc+VIdmSV8pIudbf+VSpuoIJPfXRLJQ
+DPH6IJW1yt6PcntT+GKXMQJYyylrKDaqlYMAQdDUhSw2PWCMOzIBR7tPdp4RR1lGg3ae7Twis3ae
+7TwijrKAN2nu08IrAiAgiNBr7Io61Qea6M0rWsLnQnl96pVQoAUADsApTTRhirYVzY2JsLHv40Ss
+0oJTNEAbWZQf1rWK3WEQiSVAQF1JHKkCXAk6Kt+PomqJLjCXBscvGoN+59aUd96j1qvpWGPrcr8D
+Q75JmUQSAWN2GUm4+fClDpJ9v6mtr0g2z7wDnxNZrT1DB7s4ZbcMtte296ZdPZP1qbLJ7cvh/NZl
+e+rTeH80FN09k/WiUK3Lh31IFksevL4fzVMHo+tp7XGg8p7NMwUgnMdARf8AnVMQOTrIFPYBalHO
+srMI766HL/KqL11Sof8AyvyqILHfgnbox8qrLHKFLIFyjiL3obJb0orfufmuVVtSgILGya/tHyrY
+CDhkty6x8qpATW7RfJPzWFIu2L+HQTWUDgnf1jr9qYqw2uC5HwPlTQsRPGLU+7ogVCm0ieE+dAlU
+hU8GPxU+VVQgLcAAClZuNpUt+6fOjhbrEZ1a/YpFB//Z
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://vusb.wikidot.com/local--favicon/favicon.gif
+
+R0lGODlhEAAQAMIEAJgGGJdLVM5KUs2Ok////////////////yH+E1dpa2lkb3QuY29tIGZhdmlj
+b24AIfkEAQoABwAsAAAAABAAEAAAAzZ4N9L+Q51H6apYsMwJcR74iWQTCgBHAewpuB7bEnI8y3iu
+4zbQ673fbsgKEHOBwxEnMRKThwQAOw==
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-FE9192AA:http://tpc.googlesyndication.com/safeframe/1-0-0/html/container.html
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dwindows-1=
+252">
+    <title>SafeFrame Container</title>
+  </head>
+  <body>
+    <script><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+ =20
+
+</body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-02BE8FA4:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dwindows-1=
+252"></head><body style=3D"background:transparent"></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-54FA3A96:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><s=
+cript type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script src=3D"urn:snapshot-53F8846D:http://pubads.g.doubleclic=
+k.net/gampad/ads?gdfp_req=3D1&amp;correlator=3D628503542492479&amp;output=
+=3Djson_html&amp;callback=3DcallbackProxy&amp;impl=3Dfif&amp;sfv=3D1-0-0&am=
+p;iu=3D%2F1030917%2Fwikidot_free_sites_top_728x90&amp;sz=3D728x90&amp;cust_=
+params=3Dw_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26w_verified%3Dtrue%26=
+w_cats%3Dsoftware%252Chardware&amp;cookie_enabled=3D1&amp;lmt=3D1415624883&=
+amp;dt=3D1415624885034&amp;cc=3D31&amp;frm=3D20&amp;biw=3D1366&amp;bih=3D63=
+1&amp;oid=3D3&amp;adx=3D0&amp;ady=3D0&amp;adk=3D3246976088&amp;gut=3Dv2&amp=
+;ifi=3D1&amp;u_tz=3D180&amp;u_his=3D1&amp;u_h=3D768&amp;u_w=3D1366&amp;u_ah=
+=3D728&amp;u_aw=3D1366&amp;u_cd=3D24&amp;u_nplug=3D7&amp;u_nmime=3D52&amp;u=
+_sd=3D1&amp;flash=3D15.0.0&amp;url=3Dhttp%3A%2F%2Fvusb.wikidot.com%2Fdriver=
+-api&amp;vrg=3D53&amp;vrp=3D53&amp;ga_vid=3D108482097.1415624885&amp;ga_sid=
+=3D1415624885&amp;ga_hid=3D2118074118&amp;ga_wpids=3DUA-18234656-1"></scrip=
+t></head><body></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-53F8846D:http://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&correlator=628503542492479&output=json_html&callback=callbackProxy&impl=fif&sfv=1-0-0&iu=%2F1030917%2Fwikidot_free_sites_top_728x90&sz=728x90&cust_params=w_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26w_verified%3Dtrue%26w_cats%3Dsoftware%252Chardware&cookie_enabled=1&lmt=1415624883&dt=1415624885034&cc=31&frm=20&biw=1366&bih=631&oid=3&adx=0&ady=0&adk=3246976088&gut=v2&ifi=1&u_tz=180&u_his=1&u_h=768&u_w=1366&u_ah=728&u_aw=1366&u_cd=24&u_nplug=7&u_nmime=52&u_sd=1&flash=15.0.0&url=http%3A%2F%2Fvusb.wikidot.com%2Fdriver-api&vrg=53&vrp=53&ga_vid=108482097.1415624885&ga_sid=1415624885&ga_hid=2118074118&ga_wpids=UA-18234656-1
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-BFF18073:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dwindows-1=
+252"></head><body style=3D"background:transparent"></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-E0FA3060:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><s=
+cript type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script src=3D"urn:snapshot-5D20057C:http://pubads.g.doubleclic=
+k.net/gampad/ads?gdfp_req=3D1&amp;correlator=3D628503542492479&amp;output=
+=3Djson_html&amp;callback=3DcallbackProxy&amp;impl=3Dfif&amp;fif_to=3D1&amp=
+;sfv=3D1-0-0&amp;iu=3D%2F1030917%2Fwikidot_free_sites_bottom_300x250&amp;sz=
+=3D300x250&amp;cust_params=3Dw_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26=
+w_verified%3Dtrue%26w_cats%3Dsoftware%252Chardware&amp;cookie_enabled=3D1&a=
+mp;lmt=3D1415624883&amp;dt=3D1415624886568&amp;cc=3D100&amp;frm=3D20&amp;bi=
+w=3D1349&amp;bih=3D631&amp;oid=3D3&amp;adx=3D0&amp;ady=3D673&amp;adk=3D3114=
+647183&amp;gut=3Dv2&amp;ifi=3D2&amp;u_tz=3D180&amp;u_his=3D1&amp;u_h=3D768&=
+amp;u_w=3D1366&amp;u_ah=3D728&amp;u_aw=3D1366&amp;u_cd=3D24&amp;u_nplug=3D7=
+&amp;u_nmime=3D52&amp;u_sd=3D1&amp;flash=3D15.0.0&amp;url=3Dhttp%3A%2F%2Fvu=
+sb.wikidot.com%2Fdriver-api&amp;vrg=3D53&amp;vrp=3D53&amp;ga_vid=3D16336753=
+77.1415624885&amp;ga_sid=3D1415624885&amp;ga_hid=3D2118074118&amp;ga_fc=3Dt=
+rue&amp;ga_wpids=3DUA-18234656-1"></script></head><body></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-5D20057C:http://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&correlator=628503542492479&output=json_html&callback=callbackProxy&impl=fif&fif_to=1&sfv=1-0-0&iu=%2F1030917%2Fwikidot_free_sites_bottom_300x250&sz=300x250&cust_params=w_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26w_verified%3Dtrue%26w_cats%3Dsoftware%252Chardware&cookie_enabled=1&lmt=1415624883&dt=1415624886568&cc=100&frm=20&biw=1349&bih=631&oid=3&adx=0&ady=673&adk=3114647183&gut=v2&ifi=2&u_tz=180&u_his=1&u_h=768&u_w=1366&u_ah=728&u_aw=1366&u_cd=24&u_nplug=7&u_nmime=52&u_sd=1&flash=15.0.0&url=http%3A%2F%2Fvusb.wikidot.com%2Fdriver-api&vrg=53&vrp=53&ga_vid=1633675377.1415624885&ga_sid=1415624885&ga_hid=2118074118&ga_fc=true&ga_wpids=UA-18234656-1
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-B656155B:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dwindows-1=
+252"></head><body style=3D"background:transparent"></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2BAF51B0:javascript:%22%3Chtml%3E%3Cbody%20style=%27background:transparent%27%3E%3C/body%3E%3C/html%3E%22
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><s=
+cript type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script src=3D"urn:snapshot-DF513AD2:http://pubads.g.doubleclic=
+k.net/gampad/ads?gdfp_req=3D1&amp;correlator=3D628503542492479&amp;output=
+=3Djson_html&amp;callback=3DcallbackProxy&amp;impl=3Dfif&amp;fif_to=3D1&amp=
+;sfv=3D1-0-0&amp;iu=3D%2F1030917%2Fout_of_page&amp;sz=3D1x1&amp;ists=3D1&am=
+p;cust_params=3Dw_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26w_verified%3D=
+true%26w_cats%3Dsoftware%252Chardware&amp;cookie_enabled=3D1&amp;lmt=3D1415=
+624883&amp;dt=3D1415624888091&amp;cc=3D100&amp;frm=3D20&amp;biw=3D1349&amp;=
+bih=3D631&amp;oid=3D3&amp;adx=3D0&amp;ady=3D2661&amp;adk=3D4120761924&amp;g=
+ut=3Dv2&amp;ifi=3D3&amp;u_tz=3D180&amp;u_his=3D1&amp;u_h=3D768&amp;u_w=3D13=
+66&amp;u_ah=3D728&amp;u_aw=3D1366&amp;u_cd=3D24&amp;u_nplug=3D7&amp;u_nmime=
+=3D52&amp;u_sd=3D1&amp;flash=3D15.0.0&amp;url=3Dhttp%3A%2F%2Fvusb.wikidot.c=
+om%2Fdriver-api&amp;vrg=3D53&amp;vrp=3D53&amp;ga_vid=3D1633675377.141562488=
+5&amp;ga_sid=3D1415624885&amp;ga_hid=3D2118074118&amp;ga_fc=3Dtrue&amp;ga_w=
+pids=3DUA-18234656-1"></script></head><body></body></html>
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-DF513AD2:http://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&correlator=628503542492479&output=json_html&callback=callbackProxy&impl=fif&fif_to=1&sfv=1-0-0&iu=%2F1030917%2Fout_of_page&sz=1x1&ists=1&cust_params=w_name%3Dvusb%26w_domain%3Dcom.wikidot.vusb%26w_verified%3Dtrue%26w_cats%3Dsoftware%252Chardware&cookie_enabled=1&lmt=1415624883&dt=1415624888091&cc=100&frm=20&biw=1349&bih=631&oid=3&adx=0&ady=2661&adk=4120761924&gut=v2&ifi=3&u_tz=180&u_his=1&u_h=768&u_w=1366&u_ah=728&u_aw=1366&u_cd=24&u_nplug=7&u_nmime=52&u_sd=1&flash=15.0.0&url=http%3A%2F%2Fvusb.wikidot.com%2Fdriver-api&vrg=53&vrp=53&ga_vid=1633675377.1415624885&ga_sid=1415624885&ga_hid=2118074118&ga_fc=true&ga_wpids=UA-18234656-1
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-CF3ED8A5:http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/css/style.css
+
+/* Effective stylesheet produced by snapshot save */
+body { margin: 0px; padding: 0px; }
+body { font-family: verdana,arial,helvetica,sans-serif; font-size: 0.82em; }
+h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS",Trebuchet,Verdana,Aria=
+l,Helvetica; }
+h1 { font-size: 190%; font-weight: normal; }
+h2 { font-weight: normal; font-size: 150%; }
+h3 { font-weight: bold; font-size: 130%; }
+img { border-width: 0px; }
+a { color: rgb(0, 0, 170); }
+a:hover { background-color: rgb(238, 238, 238); }
+h1 a { text-decoration: none; }
+form { margin: 0px; padding: 0px; }
+#container-wrap-wrap { position: relative; }
+#page-content {  }
+#container { margin: 0px; padding: 0px; }
+#header { position: relative; z-index: 30; height: 7em; }
+#header h1 { margin: 0px; padding: 0px; }
+#header h2 { margin: 0px; padding: 0px; }
+#content-wrap { padding: 0px; margin: 0px; }
+#content-wrap { min-height: 1px; }
+#side-bar { float: left; width: 14em; padding: 1em; margin: 0px 0px 1em; cl=
+ear: left; }
+#side-bar ul { padding: 0px 0px 0px 2em; margin: 0.5em 0px; }
+#page-title { margin: 0px 0px 0.5em; padding-top: 0.5em; font-size: 200%;=
+ border-bottom: 1px solid rgb(102, 102, 102); }
+#main-content { margin-left: 17em; padding: 0px 1em; }
+#page-info-break { clear: both; height: 1px; font-size: 1px; }
+#page-info { clear: both; text-align: right; font-size: 87%; margin: 2px;=
+ }
+#footer { margin-top: 5px; padding: 3px 10px; clear: both; overflow: hidden=
+; }
+#footer .options { float: right; font-size: 90%; padding: 1px 0px; }
+#license-area { padding: 0.5em 0px; color: rgb(85, 85, 85); text-align: cen=
+ter; }
+#search-top-box { position: absolute; right: 1em; top: 3em; z-index: 10; }
+#search-top-box input.empty { color: rgb(170, 170, 170); }
+#login-status { position: absolute; right: 10px; top: 10px; overflow: visib=
+le; z-index: 25; }
+.page-options-bottom { margin: 4px 0px; text-align: right; height: 1%; line=
+-height: 150%; }
+.page-options-bottom a { margin: 2px; font-size: 95%; padding: 0px 8px; }
+#action-area { width: 100%; padding: 0px 0px 1em; }
+.odate { display: none; }
+tt { font-family: "Andale Mono","Courier New",Courier,monospace; font-size:=
+ 98%; }
+pre { font-family: "Andale Mono","Courier New",Courier,monospace; }
+.code { border: 1px dashed rgb(221, 221, 221); background-color: rgb(247,=
+ 247, 247); font-family: "Andale Mono","Courier New",Courier,monospace; pad=
+ding: 0px 1em; margin: 0.4em 0px; overflow: auto; }
+input { font-size: 100%; }
+div.buttons input, input.button, button, file, a.button { margin: 0px 2px;=
+ padding: 0px 0.5em; text-decoration: none; background-color: rgb(244, 244,=
+ 244); border: 1px solid rgb(170, 170, 170); color: rgb(0, 0, 0); }
+div.buttons input:hover, input.button:hover, button:hover, a.button:hover=
+ { background-color: rgb(221, 221, 221); color: rgb(0, 0, 0); }
+input.text { border: 1px solid rgb(119, 119, 119); margin: 0px 1px; padding=
+: 1px 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+div.wd-adunit { text-align: center; margin: 20px auto; overflow: hidden; }
+.hl-code { color: rgb(0, 0, 0); }
+.hl-brackets { color: rgb(0, 0, 0); }
+.hl-comment { color: rgb(68, 153, 68); }
+.hl-identifier { color: rgb(0, 0, 0); }
+.hl-reserved { color: rgb(85, 85, 221); }
+.hl-number { color: Maroon; }
+.hl-main {  }
+.hovertip { display: none; width: 20em; border: 2px solid rgb(136, 136, 136=
+); background-color: rgb(243, 243, 243); z-index: 100; }
+.hovertip .content { padding: 0.2em 0.5em; }
+#navi-bar-shadow { height: 25px; }
+#navi-bar { font-size: 12px; font-family: verdana,arial,helvetica; height:=
+ 24px; background-color: rgb(204, 204, 204); background-image: url("http://=
+d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/images/sha=
+de2_n.png"); background-position: center bottom; border-bottom: 1px solid=
+ rgb(68, 68, 68); color: rgb(0, 0, 0); position: fixed; top: 0px; width: 10=
+0%; z-index: 9999; overflow: hidden; }
+#navi-bar a { color: rgb(17, 17, 153); background: none repeat scroll 0% 0%=
+ transparent; padding: 0px; margin: 0px; text-decoration: none; }
+#navi-bar a:hover { background-color: transparent; text-decoration: none;=
+ }
+#navi-bar a.logo { position: absolute; left: 13px; top: 2px; width: 71px;=
+ height: 20px; background-image: url("http://d3g0gp89917ko0.cloudfront.net/=
+v--50456838fc8c/common--images/navibar/logo20.png"); z-index: 999; }
+#navi-bar a.logo span { display: none; }
+#navi-bar .new-site { position: absolute; left: 120px; top: 3px; }
+#navi-bar .new-site input.text { width: 120px; text-align: center; }
+#navi-bar .new-site input.empty { color: rgb(102, 102, 102); }
+#navi-bar .share { position: absolute; left: 370px; top: 4px; }
+#navi-bar .share span { vertical-align: 3px; }
+#navi-bar .share img { width: 16px; height: 16px; }
+#navi-bar .action-buttons { display: block; position: absolute; top: 2px;=
+ right: 120px; height: 14px; padding: 2px; color: rgb(0, 0, 0); }
+#navi-bar .action-buttons a { padding: 0px 3px; color: rgb(0, 0, 0); }
+#navi-bar .join { display: block; position: absolute; left: 570px; top: 4px=
+; color: rgb(0, 0, 0); font-weight: bold; }
+#navi-bar .random-site { display: block; position: absolute; top: 2px; righ=
+t: 50px; height: 14px; padding: 2px; color: rgb(0, 0, 0); }
+#navi-bar .random-site:hover { border-color: rgb(0, 0, 0); }
+#footer-bar { width: 750px; margin: 10px auto 0px; padding-top: 10px; overf=
+low: hidden; border-top: 1px solid rgb(170, 170, 170); }
+#footer-bar h2 { font-size: 130%; padding: 5px 0px; margin: 0px; text-align=
+: center; font-weight: bold; }
+#footer-bar .units { overflow: hidden; }
+#footer-bar .unit { float: left; width: 185px; }
+#footer-bar .unit .inner { padding: 5px 10px; text-align: center; }
+#footer-bar .unit .image { display: block; height: 60px; overflow: hidden;=
+ text-decoration: none; }
+#footer-bar h3 { margin: 0px; padding: 5px 0px 3px; font-size: 100%; font-w=
+eight: bold; }
+#footer-bar a { text-decoration: none; background: none repeat scroll 0% 0%=
+ transparent; opacity: 1; }
+#footer-bar a:hover { text-decoration: none; background: none repeat scroll=
+ 0% 0% transparent; }
+#footer-bar .desc { font-size: 80%; }
+.awesome::-moz-focus-inner { border: medium none; }
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/images/shade2_n.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAkAAADICAYAAAA6JcsBAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAA
+AAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kHDwkRNRkd970AAAERSURBVFjD
+7ZnNEoMgDISzju//hr4K2wMEIgNip46DNl7qz2d23YSDFtu2UQbbIie2IURyDAG4SO790DpKewgB
+8DAbYWp4M3nSXvlCcMghhxxyyCGHHHLIIYcccuiBr929V23P6Y8Sv9nTdXKPrTSj3MuhEMIMcvY7
+YreSPX/303WNC0QwMi4U4XcRhJ1IM4IQuBNpVvop8UEESJUO28JkXObrXSun+ov2qaFrQkfeupUA
+lH9JrHHrq+uJZAarUQndChkS4a5Pyus5IA8dd0atP1I9oQwly06enJWkQJAvqnkLryTThXhblGRc
+eYg3mQiiZjxGBrMnNW33bRyLHtSAfcK0OKO+BlsqRbBqi2Qv9vcDC1gZxOHVNpEAAAAASUVORK5C
+YII=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--images/navibar/logo20.png
+
+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
+8H8CzPyI0w1ErgAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-8AD3FC32:http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/css/style.css
+
+/* Effective stylesheet produced by snapshot save */
+body { background-color: rgb(138, 138, 138); font-family: verdana,arial,hel=
+vetica,sans-serif; font-size: 0.75em; min-width: 60em; }
+a { color: rgb(6, 31, 208); }
+a:hover { background-color: transparent; text-decoration: none; }
+input { font-family: verdana,arial,helvetica,sans-serif; }
+#container-wrap { padding: 0px 0px 0px 35px; background-image: url("http://=
+d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/images=
+/sideback2_l.png"); background-repeat: repeat-y; background-position: left=
+ top; background-color: white; }
+#container { padding: 0px 35px 0px 0px; background-image: url("http://d3g0g=
+p89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/images/side=
+back2_r.png"); background-repeat: repeat-y; background-position: right top;=
+ }
+#main-content { margin-left: 15em; margin-right: 1em; }
+#main-content p { line-height: 1.4em; }
+#header { border-bottom: 1px solid rgb(136, 136, 136); height: 8em; backgro=
+und: url("http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--them=
+e/webbish2/images/webbish-header-bg.png") repeat-x scroll center top transp=
+arent; }
+#header h1 { font-size: 220%; padding: 0.5em 0px 0px 1em; font-family: aria=
+l,helvetica,sans-serif; font-weight: bold; }
+#header h2 { font-size: 180%; font-weight: bold; padding: 0px 0px 0px 3em;=
+ font-family: arial,helvetica,sans-serif; float: left; position: absolute;=
+ z-index: 20; }
+#side-bar { width: 14em; padding: 0px; background-color: rgb(249, 255, 238)=
+; border-right: 1px solid rgb(172, 191, 96); }
+#side-bar h1, #side-bar h2, #side-bar h3 { text-align: center; }
+#side-bar ul { display: block; padding: 0px; margin: 0px; list-style: outsi=
+de none none; }
+#side-bar ul li { display: block; }
+#side-bar li a { padding-top: 2px; padding-bottom: 2px; display: block; pad=
+ding-left: 1em; border-bottom: 1px solid rgb(217, 221, 207); color: rgb(30,=
+ 43, 49); text-decoration: none; }
+#side-bar li a:hover { background-color: rgb(136, 136, 136); color: white; }
+#side-bar p { padding: 5px; margin: 0px; }
+#main-content h2 { font-weight: bold; color: rgb(85, 153, 153); font-family=
+: arial,helvetica,sans-serif; }
+#page-title { font-weight: bold; color: rgb(115, 122, 84); border-color: rg=
+b(163, 170, 148); font-family: arial,helvetica,sans-serif; margin-top: 0px;=
+ }
+#footer { background-color: rgb(85, 85, 85); padding-top: 3px; padding-bott=
+om: 3px; border-top: 2px solid rgb(42, 52, 61); color: rgb(231, 233, 220);=
+ text-align: left; }
+#footer a { color: rgb(238, 238, 238); }
+#license-area { background-color: rgb(238, 238, 238); padding: 0.2em 1em;=
+ margin: 0px; }
+.page-options-bottom a, a.action-area-close { color: rgb(34, 68, 34); backg=
+round-color: rgb(238, 238, 238); text-decoration: none; }
+.page-options-bottom a:hover, a.action-area-close:hover { background-color:=
+ rgb(221, 221, 221); }
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/images/sideback2_l.png
+
+iVBORw0KGgoAAAANSUhEUgAAACMAAAAKCAIAAACxGHDwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+B3RJTUUH1goPFBYdftGPxwAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVu
+AAAAkElEQVQ4y62SQQ7DMAgEZ/r8vNloe4Ak6rkgWZb3wHphvK6LvyvJOaeqTlXVqVPzarWq6nxY
+LYEIKHPNT1hyyt00bZY5AAZxy4lMd4lBJxlIa372pgZo0kHmItg5szW92Ut8XVvP/ZfFTOmdkF+9
+E5k19nKTgJBghrl+scgeDtt5lAYdDVtOkRcEQR9Eho34BXdDZD0U92G9AAAAAElFTkSuQmCC
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/images/sideback2_r.png
+
+iVBORw0KGgoAAAANSUhEUgAAACMAAAAKCAIAAACxGHDwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+B3RJTUUH1goPFBYuwQHu0QAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVu
+AAAAm0lEQVQ4y62TMRIDIQwDd7F/mvz/C0oBXNLHHsZmKCSQhO/Xe/Xq6u6uqq6q7uqqVd1d1dW1
+lL9rYQSEBAiQEEQAMYzUAhIJB9DTQ9jLIabA1sY9InrxnXoQsIw56v0cS3x2Y+odomtIdvPMTBm1
+2GI9dDcI0Yd1yCcT/N7ckBiPpspQJBbZVuRCymVhJ34qe3pRk5xPBWYudKc+I5g+tMMsHKIAAAAA
+SUVORK5CYII=
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/webbish2/images/webbish-header-bg.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAABQCAIAAABXpYiMAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1woaEBMVpu8vZAAAAF9JREFUGNNdkMsRAyEMxST139Om
+tBzwAsmB8RjeRwPP50lNnElUQWRgaUiuh3i1sn14Zrw7c2bfvslz9dx+IRvN3aNJP7nQYms4pnfz
+7syb8dwDoz09/OljPN0880/6BaQjA5wMtST0AAAAAElFTkSuQmCC
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-05C50C5E:http://cdn.viglink.com/api/vglnk.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-6BF7E399:http://edge.quantserve.com/quant.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-1BCE82BE:http://stats.g.doubleclick.net/dc.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-A6C49836:http://www.googletagservices.com/tag/js/gpt.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-E6CD29D4:http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--javascript/init.combined.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-59EDD896:http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--javascript/WIKIDOT.combined.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-51698CD6:http://partner.googleadservices.com/gpt/pubads_impl_53.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-5EA4891E:http://a.getgamers.eu/?id=9877320
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_52082846.897DAA20--

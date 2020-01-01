@@ -1,0 +1,309 @@
+From: <Saved by Mozilla 5.0 (Windows)>
+Subject: HID API for Linux, Mac OS X, and Windows
+Date: Wed, 30 Jul 2014 13:11:40 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_EAE86929.51B823C5"
+X-MAF-Information: Produced By MAF V3.0.2.0
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_EAE86929.51B823C5
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.signal11.us/oss/hidapi/
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dwindows-1=
+252">
+<title>HID API for Linux, Mac OS X, and Windows</title>
+</head>
+
+<body leftmargin=3D"100px" rightmargin=3D"100px">
+<center><h1>HID API for Linux, Mac OS X, and Windows</h1></center>
+
+<p>
+</p><h3>About</h3>
+<p></p>
+<p>
+HIDAPI is a multi-platform library which allows an application to interface
+with USB and Bluetooth HID-Class devices on Windows, Linux, and Mac OS X.
+While it can be used to communicate with standard HID devices like
+keyboards, mice, and Joysticks, it is most useful when used with custom
+(Vendor-Defined) HID devices. Many devices do this
+in order to not require a custom driver to be written for each platform.
+HIDAPI is easy to integrate with the client application, just
+requiring a single source file to be dropped into the application. On
+Windows, HIDAPI can optionally be built into a DLL.
+</p>
+
+<p>
+Programs which use HIDAPI are driverless, meaning they do not require the
+use of a custom driver for each device on each platform.
+</p>
+
+
+<p>
+HIDAPI provides a clean and consistent interface for each platform, making=
+ it easier
+to develop applications which communicate with USB HID devices without
+having to know the details of the HID libraries and interfaces on each
+platform.
+</p>
+
+<p>
+The HIDAPI source also provides a GUI test application which can enumerate
+and communicate with any HID device attached to the system. The test GUI
+compiles and runs on all platforms supported by HIDAPI.
+</p>
+
+<p>
+</p><h3>What Does the API Look Like?</h3>
+
+<p>
+<a href=3D"http://www.signal11.us/oss/hidapi/hidapi/doxygen/html/group__API=
+.html">Doxygen HTML documentation can be found
+here.</a>
+</p>
+
+<p>
+The API provides an easy method to enumerate HID devices attached to the
+system, and easy access to the functionality of the most commonly used HID
+functions including transfer of Input, Output, and Feature Reports. The
+sample program, which communicates with a modified version of the <b>USB
+Generic HID</b> sample which is part of the <b>Microchip Application
+Library</b> (in folder "<code>Microchip Solutions\USB Device - HID - Custom
+Demos\Generic HID - Firmware</code>" when the Microchip Application
+Framework is installed), looks like this (with error checking removed for
+simplicity):
+</p>
+
+<p>
+</p><pre>#<b><font color=3D"#5F9EA0">include</font></b> <b><font color=3D"#=
+BC8F8F">&lt;stdio.h&gt;</font></b>
+#<b><font color=3D"#5F9EA0">include</font></b> <b><font color=3D"#BC8F8F">&=
+lt;stdlib.h&gt;</font></b>
+
+#<b><font color=3D"#5F9EA0">include</font></b> <b><font color=3D"#BC8F8F">"=
+hidapi.h"</font></b>
+
+
+<b><font color=3D"#228B22">int</font></b> <b><font color=3D"#0000FF">main</=
+font></b>(<b><font color=3D"#228B22">int</font></b> argc, <b><font color=3D=
+"#228B22">char</font></b>* argv[])
+{
+	<b><font color=3D"#228B22">int</font></b> res;
+	<b><font color=3D"#228B22">unsigned</font></b> <b><font color=3D"#228B22">=
+char</font></b> buf[65];
+	#define MAX_STR 255
+	wchar_t wstr[MAX_STR];
+	hid_device *handle;
+	<b><font color=3D"#228B22">int</font></b> i;
+
+	<i><font color=3D"#B22222">// Enumerate and print the HID devices on the=
+ system
+</font></i>	<b><font color=3D"#228B22">struct</font></b> hid_device_info *d=
+evs, *cur_dev;
+=09
+	devs =3D hid_enumerate(0x0, 0x0);
+	cur_dev =3D devs;=09
+	<b><font color=3D"#A020F0">while</font></b> (cur_dev) {
+		printf(<b><font color=3D"#BC8F8F">"Device Found\n  type: %04hx %04hx\n =
+ path: %s\n  serial_number: %ls"</font></b>,
+			cur_dev-&gt;vendor_id, cur_dev-&gt;product_id, cur_dev-&gt;path, cur_dev=
+-&gt;serial_number);
+		printf(<b><font color=3D"#BC8F8F">"\n"</font></b>);
+		printf(<b><font color=3D"#BC8F8F">"  Manufacturer: %ls\n"</font></b>, cur=
+_dev-&gt;manufacturer_string);
+		printf(<b><font color=3D"#BC8F8F">"  Product:      %ls\n"</font></b>, cur=
+_dev-&gt;product_string);
+		printf(<b><font color=3D"#BC8F8F">"\n"</font></b>);
+		cur_dev =3D cur_dev-&gt;next;
+	}
+	hid_free_enumeration(devs);
+
+
+	<i><font color=3D"#B22222">// Open the device using the VID, PID,
+</font></i>	<i><font color=3D"#B22222">// and optionally the Serial number.
+</font></i>	handle =3D hid_open(0x4d8, 0x3f, NULL);
+
+	<i><font color=3D"#B22222">// Read the Manufacturer String
+</font></i>	res =3D hid_get_manufacturer_string(handle, wstr, MAX_STR);
+	printf(<b><font color=3D"#BC8F8F">"Manufacturer String: %ls\n"</font></b>,=
+ wstr);
+
+	<i><font color=3D"#B22222">// Read the Product String
+</font></i>	res =3D hid_get_product_string(handle, wstr, MAX_STR);
+	printf(<b><font color=3D"#BC8F8F">"Product String: %ls\n"</font></b>, wstr=
+);
+
+	<i><font color=3D"#B22222">// Read the Serial Number String
+</font></i>	res =3D hid_get_serial_number_string(handle, wstr, MAX_STR);
+	printf(<b><font color=3D"#BC8F8F">"Serial Number String: %ls"</font></b>,=
+ wstr);
+	printf(<b><font color=3D"#BC8F8F">"\n"</font></b>);
+
+	<i><font color=3D"#B22222">// Send a Feature Report to the device
+</font></i>	buf[0] =3D 0x2; <i><font color=3D"#B22222">// First byte is rep=
+ort number
+</font></i>	buf[1] =3D 0xa0;
+	buf[2] =3D 0x0a;
+	res =3D hid_send_feature_report(handle, buf, 17);
+
+	<i><font color=3D"#B22222">// Read a Feature Report from the device
+</font></i>	buf[0] =3D 0x2;
+	res =3D hid_get_feature_report(handle, buf, <b><font color=3D"#A020F0">siz=
+eof</font></b>(buf));
+
+	<i><font color=3D"#B22222">// Print out the returned buffer.
+</font></i>	printf(<b><font color=3D"#BC8F8F">"Feature Report\n   "</font><=
+/b>);
+	<b><font color=3D"#A020F0">for</font></b> (i =3D 0; i &lt; res; i++)
+		printf(<b><font color=3D"#BC8F8F">"%02hhx "</font></b>, buf[i]);
+	printf(<b><font color=3D"#BC8F8F">"\n"</font></b>);
+
+	<i><font color=3D"#B22222">// Set the hid_read() function to be non-blocki=
+ng.
+</font></i>	hid_set_nonblocking(handle, 1);
+
+	<i><font color=3D"#B22222">// Send an Output report to toggle the LED (cmd=
+ 0x80)
+</font></i>	buf[0] =3D 1; <i><font color=3D"#B22222">// First byte is repor=
+t number
+</font></i>	buf[1] =3D 0x80;
+	res =3D hid_write(handle, buf, 65);
+
+	<i><font color=3D"#B22222">// Send an Output report to request the state=
+ (cmd 0x81)
+</font></i>	buf[1] =3D 0x81;
+	hid_write(handle, buf, 65);
+
+	<i><font color=3D"#B22222">// Read requested state
+</font></i>	res =3D hid_read(handle, buf, 65);
+	<b><font color=3D"#A020F0">if</font></b> (res &lt; 0)
+		printf(<b><font color=3D"#BC8F8F">"Unable to read()\n"</font></b>);
+
+	<i><font color=3D"#B22222">// Print out the returned buffer.
+</font></i>	<b><font color=3D"#A020F0">for</font></b> (i =3D 0; i &lt; res;=
+ i++)
+		printf(<b><font color=3D"#BC8F8F">"buf[%d]: %d\n"</font></b>, i, buf[i]);
+
+	<b><font color=3D"#A020F0">return</font></b> 0;
+}
+</pre>
+<p></p>
+
+<p>
+</p><h3>License</h3>
+HIDAPI may be used by one of three licenses as outlined in LICENSE.txt.
+These licenses are:
+<ul>
+	<li>GPL v3 (see LICENSE-gpl3.txt),</li>
+	<li>BSD (see LICENSE-bsd.txt),</li>
+	<li>The more liberal original HIDAPI license (see LICENSE-orig.txt).</li>
+</ul>
+The user of HIDAPI (the developer who uses HIDAPI in their code) can choose
+to use HIDAPI under any of the three licenses at their discretion. For exam=
+ple:
+<ol>
+	<li>An author of GPL software would likely use HIDAPI under the terms of=
+ the
+	GPL.</li>
+	<li>An author of commercial, closed-source software would likely use HIDAPI
+	under the terms of either the BSD-style license or the original HIDAPI lic=
+ense.</li>
+</ol>
+
+The idea is to make HIDAPI accessable to as many users as possible for both
+open- and closed-source applications, and to give users the flexibility to
+link with the code in any way they see fit.
+<p></p>
+
+<p>
+</p><h3>Download</h3>
+
+HIDAPI can be downloaded from <a href=3D"http://github.com/signal11/hidapi"=
+>GitHub.</a>
+A zip file is available from the
+<a href=3D"http://github.com/signal11/hidapi/downloads">Download Page.</a>
+To get the latest trunk revision (if you have git installed, run the
+following:
+<pre>   git clone git://github.com/signal11/hidapi.git
+</pre>
+
+<p></p>
+
+<p>
+</p><h3>Build Instructions</h3>
+<p></p>
+<p>
+<b>Windows:</b>
+<br>
+  Build the <code>.sln</code> file in the <code>windows/</code> directory
+using Visual Studio.
+<br><br>
+
+<b>Linux:</b>
+<br>
+  Change to the <code>linux/</code> directory and run <code>make</code>.
+<br><br>
+
+<b>Mac OS X:</b>
+<br>
+  Change to the <code>mac/</code> directory and run <code>make</code>.
+<br><br>
+
+<b>To build the Test GUI:</b>
+<br>
+</p><ul>
+  <li>
+  On Windows, build the <code>.sln</code> file in the <code>hidtest/</code>=
+ directory.
+  Make sure to first set up the externals (Fox Toolkit) as described in
+  README.txt.</li>
+  <li>On Linux and Mac, run <code>make</code> from the <code>hidtest/</code>
+directory. Make sure to first install fox-toolkit as described in README.tx=
+t</li>
+</ul>
+<p></p>
+
+<p>
+</p><h3>Contact</h3>
+<p></p>
+<p>
+A mailing list is to be set up soon. For the time being, please direct
+inquiries and questions to alan@signal11.us.
+</p>
+
+<hr>
+<p>
+</p><pre><a href=3D"http://www.signal11.us/">Signal 11 Software</a> - Updat=
+ed 2010-10-09</pre>
+<p></p>
+
+<!-- Google Analytics -->
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script><script src=3D"urn:snapshot-6F01CA5F:http://www.google-analytic=
+s.com/ga.js" type=3D"text/javascript"></script>
+<script type=3D"text/javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+
+
+</body></html>
+------=_NextPart_000_0000_EAE86929.51B823C5
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-6F01CA5F:http://www.google-analytics.com/ga.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_EAE86929.51B823C5--

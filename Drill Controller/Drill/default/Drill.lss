@@ -1,0 +1,541 @@
+
+Drill.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000260  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  00800060  00000260  000002f4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000000a  00800064  00800064  000002f8  2**0
+                  ALLOC
+  3 .debug_aranges 00000040  00000000  00000000  000002f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 000000cf  00000000  00000000  00000338  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000002d2  00000000  00000000  00000407  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000001ba  00000000  00000000  000006d9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002ff  00000000  00000000  00000893  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000a0  00000000  00000000  00000b94  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000149  00000000  00000000  00000c34  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000015c  00000000  00000000  00000d7d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  00000ed9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	10 c0       	rjmp	.+32     	; 0x22 <__ctors_end>
+   2:	28 c0       	rjmp	.+80     	; 0x54 <__bad_interrupt>
+   4:	27 c0       	rjmp	.+78     	; 0x54 <__bad_interrupt>
+   6:	26 c0       	rjmp	.+76     	; 0x54 <__bad_interrupt>
+   8:	25 c0       	rjmp	.+74     	; 0x54 <__bad_interrupt>
+   a:	24 c0       	rjmp	.+72     	; 0x54 <__bad_interrupt>
+   c:	23 c0       	rjmp	.+70     	; 0x54 <__bad_interrupt>
+   e:	22 c0       	rjmp	.+68     	; 0x54 <__bad_interrupt>
+  10:	21 c0       	rjmp	.+66     	; 0x54 <__bad_interrupt>
+  12:	20 c0       	rjmp	.+64     	; 0x54 <__bad_interrupt>
+  14:	1f c0       	rjmp	.+62     	; 0x54 <__bad_interrupt>
+  16:	1e c0       	rjmp	.+60     	; 0x54 <__bad_interrupt>
+  18:	1d c0       	rjmp	.+58     	; 0x54 <__bad_interrupt>
+  1a:	33 c0       	rjmp	.+102    	; 0x82 <__vector_13>
+  1c:	1b c0       	rjmp	.+54     	; 0x54 <__bad_interrupt>
+  1e:	1a c0       	rjmp	.+52     	; 0x54 <__bad_interrupt>
+  20:	19 c0       	rjmp	.+50     	; 0x54 <__bad_interrupt>
+
+00000022 <__ctors_end>:
+  22:	11 24       	eor	r1, r1
+  24:	1f be       	out	0x3f, r1	; 63
+  26:	cf ed       	ldi	r28, 0xDF	; 223
+  28:	cd bf       	out	0x3d, r28	; 61
+
+0000002a <__do_copy_data>:
+  2a:	10 e0       	ldi	r17, 0x00	; 0
+  2c:	a0 e6       	ldi	r26, 0x60	; 96
+  2e:	b0 e0       	ldi	r27, 0x00	; 0
+  30:	e0 e6       	ldi	r30, 0x60	; 96
+  32:	f2 e0       	ldi	r31, 0x02	; 2
+  34:	02 c0       	rjmp	.+4      	; 0x3a <.do_copy_data_start>
+
+00000036 <.do_copy_data_loop>:
+  36:	05 90       	lpm	r0, Z+
+  38:	0d 92       	st	X+, r0
+
+0000003a <.do_copy_data_start>:
+  3a:	a4 36       	cpi	r26, 0x64	; 100
+  3c:	b1 07       	cpc	r27, r17
+  3e:	d9 f7       	brne	.-10     	; 0x36 <.do_copy_data_loop>
+
+00000040 <__do_clear_bss>:
+  40:	10 e0       	ldi	r17, 0x00	; 0
+  42:	a4 e6       	ldi	r26, 0x64	; 100
+  44:	b0 e0       	ldi	r27, 0x00	; 0
+  46:	01 c0       	rjmp	.+2      	; 0x4a <.do_clear_bss_start>
+
+00000048 <.do_clear_bss_loop>:
+  48:	1d 92       	st	X+, r1
+
+0000004a <.do_clear_bss_start>:
+  4a:	ae 36       	cpi	r26, 0x6E	; 110
+  4c:	b1 07       	cpc	r27, r17
+  4e:	e1 f7       	brne	.-8      	; 0x48 <.do_clear_bss_loop>
+  50:	4f d0       	rcall	.+158    	; 0xf0 <main>
+  52:	04 c1       	rjmp	.+520    	; 0x25c <_exit>
+
+00000054 <__bad_interrupt>:
+  54:	d5 cf       	rjmp	.-86     	; 0x0 <__vectors>
+
+00000056 <Init>:
+* Description    : Initialization
+*******************************************************************************/
+void Init()
+{
+//GPIO
+    DDRA = 0xF0;
+  56:	80 ef       	ldi	r24, 0xF0	; 240
+  58:	8a bb       	out	0x1a, r24	; 26
+    DDRB = 0x04;
+  5a:	84 e0       	ldi	r24, 0x04	; 4
+  5c:	87 bb       	out	0x17, r24	; 23
+    
+	PORTA = 0x08;
+  5e:	88 e0       	ldi	r24, 0x08	; 8
+  60:	8b bb       	out	0x1b, r24	; 27
+    PORTB = 0x03;
+  62:	83 e0       	ldi	r24, 0x03	; 3
+  64:	88 bb       	out	0x18, r24	; 24
+    
+//ADC
+    ADMUX = (1<<MUX1);//(1<<REFS0)|
+  66:	82 e0       	ldi	r24, 0x02	; 2
+  68:	87 b9       	out	0x07, r24	; 7
+    ADCSRA = (1<<ADEN)|(0<<ADSC)|(1<<ADIE)|(1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0);
+  6a:	8f e8       	ldi	r24, 0x8F	; 143
+  6c:	86 b9       	out	0x06, r24	; 6
+    ADCSRB = (1<<ADLAR);
+  6e:	80 e1       	ldi	r24, 0x10	; 16
+  70:	83 b9       	out	0x03, r24	; 3
+    DIDR0 = 0;
+  72:	11 b8       	out	0x01, r1	; 1
+
+//Timer
+    TCCR1A = (1<<COM1A1)|(1<<COM1B1)|(0<<COM1A0)|(0<<COM1B0)|(0<<WGM11)|(1<<WGM10);
+  74:	81 ea       	ldi	r24, 0xA1	; 161
+  76:	8f bd       	out	0x2f, r24	; 47
+    TCCR1B = (0<<WGM13)|(1<<WGM12)|(1<<CS12)|(0<<CS11)|(0<<CS10); 
+  78:	8c e0       	ldi	r24, 0x0C	; 12
+  7a:	8e bd       	out	0x2e, r24	; 46
+
+	TCCR0B = (1<<CS02)|(1<<CS01)|(1<<CS00);
+  7c:	87 e0       	ldi	r24, 0x07	; 7
+  7e:	83 bf       	out	0x33, r24	; 51
+    
+//WatchDog
+   // WDTCSR = (1<<WDE)|(1<<WDP2);
+       
+}
+  80:	08 95       	ret
+
+00000082 <__vector_13>:
+/*******************************************************************************
+* Function Name  : ADC_vect
+* Description    : ADC Interrupt Handler
+*******************************************************************************/
+ISR(ADC_vect)
+{
+  82:	1f 92       	push	r1
+  84:	0f 92       	push	r0
+  86:	0f b6       	in	r0, 0x3f	; 63
+  88:	0f 92       	push	r0
+  8a:	11 24       	eor	r1, r1
+  8c:	2f 93       	push	r18
+  8e:	8f 93       	push	r24
+  90:	9f 93       	push	r25
+    static volatile unsigned int temp;
+    static volatile unsigned char i;
+    
+    temp += ADCH;
+  92:	80 91 68 00 	lds	r24, 0x0068
+  96:	90 91 69 00 	lds	r25, 0x0069
+  9a:	25 b1       	in	r18, 0x05	; 5
+  9c:	82 0f       	add	r24, r18
+  9e:	91 1d       	adc	r25, r1
+  a0:	90 93 69 00 	sts	0x0069, r25
+  a4:	80 93 68 00 	sts	0x0068, r24
+    
+	/*sliderValue = (uint8_t)(ADCH << 8);
+    sliderValue = ADCL;*/
+
+    if(++i >= 64)
+  a8:	80 91 67 00 	lds	r24, 0x0067
+  ac:	8f 5f       	subi	r24, 0xFF	; 255
+  ae:	80 93 67 00 	sts	0x0067, r24
+  b2:	80 91 67 00 	lds	r24, 0x0067
+  b6:	80 34       	cpi	r24, 0x40	; 64
+  b8:	98 f0       	brcs	.+38     	; 0xe0 <__stack+0x1>
+    {
+        i = 0;
+  ba:	10 92 67 00 	sts	0x0067, r1
+        sliderValue = (uint16_t)(temp >> 6);
+  be:	80 91 68 00 	lds	r24, 0x0068
+  c2:	90 91 69 00 	lds	r25, 0x0069
+  c6:	26 e0       	ldi	r18, 0x06	; 6
+  c8:	96 95       	lsr	r25
+  ca:	87 95       	ror	r24
+  cc:	2a 95       	dec	r18
+  ce:	e1 f7       	brne	.-8      	; 0xc8 <__vector_13+0x46>
+  d0:	90 93 6d 00 	sts	0x006D, r25
+  d4:	80 93 6c 00 	sts	0x006C, r24
+        temp = 0;
+  d8:	10 92 69 00 	sts	0x0069, r1
+  dc:	10 92 68 00 	sts	0x0068, r1
+    }   
+}
+  e0:	9f 91       	pop	r25
+  e2:	8f 91       	pop	r24
+  e4:	2f 91       	pop	r18
+  e6:	0f 90       	pop	r0
+  e8:	0f be       	out	0x3f, r0	; 63
+  ea:	0f 90       	pop	r0
+  ec:	1f 90       	pop	r1
+  ee:	18 95       	reti
+
+000000f0 <main>:
+/*******************************************************************************
+* Function Name  : main
+* Description    : ADC Interrupt Handler
+*******************************************************************************/
+int main()
+{
+  f0:	cf 93       	push	r28
+  f2:	df 93       	push	r29
+    Init();
+  f4:	b0 df       	rcall	.-160    	; 0x56 <Init>
+    DriveReset(); 
+  f6:	34 d0       	rcall	.+104    	; 0x160 <DriveReset>
+	DriveRotate(0);  
+  f8:	80 e0       	ldi	r24, 0x00	; 0
+  fa:	36 d0       	rcall	.+108    	; 0x168 <DriveRotate>
+
+	sei();	//Enable interrupts
+  fc:	78 94       	sei
+    ADCSRA |= (1<<ADSC); //start ADC
+  fe:	36 9a       	sbi	0x06, 6	; 6
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+ 100:	c8 e0       	ldi	r28, 0x08	; 8
+ 102:	d7 e0       	ldi	r29, 0x07	; 7
+    
+    while(1)
+    {
+		wdt_reset();
+ 104:	a8 95       	wdr
+*/
+		/* SCAN FREQ = 1 kHz */
+		_delay_loop_2(1800);//3900-500   1920 - 1000
+
+#else
+		if(BitIsReset(PINB, 1))
+ 106:	b1 99       	sbic	0x16, 1	; 22
+ 108:	07 c0       	rjmp	.+14     	; 0x118 <main+0x28>
+		{
+			DriveRotate(sliderValue);  
+ 10a:	80 91 6c 00 	lds	r24, 0x006C
+ 10e:	90 91 6d 00 	lds	r25, 0x006D
+ 112:	2a d0       	rcall	.+84     	; 0x168 <DriveRotate>
+			PORTA |= (1<<7);
+ 114:	df 9a       	sbi	0x1b, 7	; 27
+ 116:	1f c0       	rjmp	.+62     	; 0x156 <main+0x66>
+		}
+		else if(BitIsReset(PINB, 0))
+ 118:	b0 99       	sbic	0x16, 0	; 22
+ 11a:	08 c0       	rjmp	.+16     	; 0x12c <main+0x3c>
+		{
+			DriveRotate(sliderValue/2);
+ 11c:	80 91 6c 00 	lds	r24, 0x006C
+ 120:	90 91 6d 00 	lds	r25, 0x006D
+ 124:	96 95       	lsr	r25
+ 126:	87 95       	ror	r24
+ 128:	1f d0       	rcall	.+62     	; 0x168 <DriveRotate>
+ 12a:	15 c0       	rjmp	.+42     	; 0x156 <main+0x66>
+		}
+		else
+		{
+			DriveRotate(0);
+ 12c:	80 e0       	ldi	r24, 0x00	; 0
+ 12e:	1c d0       	rcall	.+56     	; 0x168 <DriveRotate>
+
+			static uint16_t counter0=0;
+			if(++counter0 >= 300)
+ 130:	80 91 6a 00 	lds	r24, 0x006A
+ 134:	90 91 6b 00 	lds	r25, 0x006B
+ 138:	01 96       	adiw	r24, 0x01	; 1
+ 13a:	90 93 6b 00 	sts	0x006B, r25
+ 13e:	80 93 6a 00 	sts	0x006A, r24
+ 142:	8c 52       	subi	r24, 0x2C	; 44
+ 144:	91 40       	sbci	r25, 0x01	; 1
+ 146:	38 f0       	brcs	.+14     	; 0x156 <main+0x66>
+			{
+				counter0 = 0;
+ 148:	10 92 6b 00 	sts	0x006B, r1
+ 14c:	10 92 6a 00 	sts	0x006A, r1
+				PORTA ^= (1<<7);
+ 150:	8b b3       	in	r24, 0x1b	; 27
+ 152:	80 58       	subi	r24, 0x80	; 128
+ 154:	8b bb       	out	0x1b, r24	; 27
+ 156:	ce 01       	movw	r24, r28
+ 158:	01 97       	sbiw	r24, 0x01	; 1
+ 15a:	f1 f7       	brne	.-4      	; 0x158 <main+0x68>
+			}
+		}
+		
+		_delay_loop_2(1800);//3900-500    1000-1920
+#endif	  
+		ADCSRA |= (1<<ADSC);
+ 15c:	36 9a       	sbi	0x06, 6	; 6
+ 15e:	d2 cf       	rjmp	.-92     	; 0x104 <main+0x14>
+
+00000160 <DriveReset>:
+signed int DGain = 15;
+signed int PGain = 30;
+
+void DriveReset()
+{
+    PwmA = 0;   
+ 160:	1b bc       	out	0x2b, r1	; 43
+ 162:	1a bc       	out	0x2a, r1	; 42
+    DisA;
+ 164:	dc 98       	cbi	0x1b, 4	; 27
+}
+ 166:	08 95       	ret
+
+00000168 <DriveRotate>:
+
+
+void DriveRotate(uint8_t amount)
+{
+ 168:	98 2f       	mov	r25, r24
+    DisA;
+ 16a:	dc 98       	cbi	0x1b, 4	; 27
+
+	if(amount <10)
+ 16c:	8a 30       	cpi	r24, 0x0A	; 10
+ 16e:	18 f4       	brcc	.+6      	; 0x176 <DriveRotate+0xe>
+	 	TCCR1A &= ~((1<<COM1A1)|(1<<COM1B1));
+ 170:	8f b5       	in	r24, 0x2f	; 47
+ 172:	8f 75       	andi	r24, 0x5F	; 95
+ 174:	02 c0       	rjmp	.+4      	; 0x17a <DriveRotate+0x12>
+	else
+		TCCR1A |= ((1<<COM1A1)|(1<<COM1B1));
+ 176:	8f b5       	in	r24, 0x2f	; 47
+ 178:	80 6a       	ori	r24, 0xA0	; 160
+ 17a:	8f bd       	out	0x2f, r24	; 47
+
+    PwmA = amount;        
+ 17c:	89 2f       	mov	r24, r25
+ 17e:	90 e0       	ldi	r25, 0x00	; 0
+ 180:	9b bd       	out	0x2b, r25	; 43
+ 182:	8a bd       	out	0x2a, r24	; 42
+}
+ 184:	08 95       	ret
+
+00000186 <DriveBreak>:
+
+
+void DriveBreak(uint8_t amount)
+{
+       
+}
+ 186:	08 95       	ret
+
+00000188 <SetFail>:
+
+void SetFail()
+{
+	failFlag = 1;
+ 188:	81 e0       	ldi	r24, 0x01	; 1
+ 18a:	80 93 66 00 	sts	0x0066, r24
+	PwmA = 0;	
+ 18e:	1b bc       	out	0x2b, r1	; 43
+ 190:	1a bc       	out	0x2a, r1	; 42
+}
+ 192:	08 95       	ret
+
+00000194 <DrivePID>:
+
+
+static uint8_t prevSpeed = 0;
+static signed int IValue = 0;
+
+	signed int speedDiff = target - current; 		// + if too slow, - if too fast	
+ 194:	9b 01       	movw	r18, r22
+ 196:	28 1b       	sub	r18, r24
+ 198:	39 0b       	sbc	r19, r25
+   /* signed int PValue = speedDiff;
+	signed int DValue = accelDiff;  */
+   
+#define COMP 10
+
+	signed int out=target*COMP;
+ 19a:	cb 01       	movw	r24, r22
+ 19c:	6a e0       	ldi	r22, 0x0A	; 10
+ 19e:	70 e0       	ldi	r23, 0x00	; 0
+ 1a0:	24 d0       	rcall	.+72     	; 0x1ea <__mulhi3>
+ 1a2:	fc 01       	movw	r30, r24
+
+//#define IGain    2
+
+   	if(abs(speedDiff) > 2)
+ 1a4:	c9 01       	movw	r24, r18
+ 1a6:	37 ff       	sbrs	r19, 7
+ 1a8:	04 c0       	rjmp	.+8      	; 0x1b2 <DrivePID+0x1e>
+ 1aa:	88 27       	eor	r24, r24
+ 1ac:	99 27       	eor	r25, r25
+ 1ae:	82 1b       	sub	r24, r18
+ 1b0:	93 0b       	sbc	r25, r19
+ 1b2:	03 97       	sbiw	r24, 0x03	; 3
+ 1b4:	44 f0       	brlt	.+16     	; 0x1c6 <DrivePID+0x32>
+	{
+		//PGain = 20;
+        out += 20*speedDiff;
+ 1b6:	c9 01       	movw	r24, r18
+ 1b8:	64 e1       	ldi	r22, 0x14	; 20
+ 1ba:	70 e0       	ldi	r23, 0x00	; 0
+ 1bc:	16 d0       	rcall	.+44     	; 0x1ea <__mulhi3>
+ 1be:	e8 0f       	add	r30, r24
+ 1c0:	f9 1f       	adc	r31, r25
+		PORTA |= (1<<7);
+ 1c2:	df 9a       	sbi	0x1b, 7	; 27
+ 1c4:	01 c0       	rjmp	.+2      	; 0x1c8 <DrivePID+0x34>
+    }
+	else
+	{
+		PORTA &= ~(1<<7);
+ 1c6:	df 98       	cbi	0x1b, 7	; 27
+	}
+
+    //out -= DGain * DValue;
+
+	//out += IGain * IValue;
+    out = out /COMP;
+ 1c8:	cf 01       	movw	r24, r30
+ 1ca:	6a e0       	ldi	r22, 0x0A	; 10
+ 1cc:	70 e0       	ldi	r23, 0x00	; 0
+ 1ce:	1f d0       	rcall	.+62     	; 0x20e <__divmodhi4>
+ 1d0:	cb 01       	movw	r24, r22
+    
+    if(out > 255)
+ 1d2:	6f 3f       	cpi	r22, 0xFF	; 255
+ 1d4:	71 05       	cpc	r23, r1
+ 1d6:	21 f0       	breq	.+8      	; 0x1e0 <DrivePID+0x4c>
+ 1d8:	1c f0       	brlt	.+6      	; 0x1e0 <DrivePID+0x4c>
+ 1da:	8f ef       	ldi	r24, 0xFF	; 255
+ 1dc:	90 e0       	ldi	r25, 0x00	; 0
+ 1de:	08 95       	ret
+        out = 255;
+
+	if(out < 0)
+ 1e0:	77 ff       	sbrs	r23, 7
+ 1e2:	02 c0       	rjmp	.+4      	; 0x1e8 <DrivePID+0x54>
+ 1e4:	80 e0       	ldi	r24, 0x00	; 0
+ 1e6:	90 e0       	ldi	r25, 0x00	; 0
+		out = 0;
+
+    return (uint8_t)out;
+}
+ 1e8:	08 95       	ret
+
+000001ea <__mulhi3>:
+ 1ea:	55 27       	eor	r21, r21
+ 1ec:	00 24       	eor	r0, r0
+
+000001ee <__mulhi3_loop>:
+ 1ee:	80 ff       	sbrs	r24, 0
+ 1f0:	02 c0       	rjmp	.+4      	; 0x1f6 <__mulhi3_skip1>
+ 1f2:	06 0e       	add	r0, r22
+ 1f4:	57 1f       	adc	r21, r23
+
+000001f6 <__mulhi3_skip1>:
+ 1f6:	66 0f       	add	r22, r22
+ 1f8:	77 1f       	adc	r23, r23
+ 1fa:	61 15       	cp	r22, r1
+ 1fc:	71 05       	cpc	r23, r1
+ 1fe:	21 f0       	breq	.+8      	; 0x208 <__mulhi3_exit>
+ 200:	96 95       	lsr	r25
+ 202:	87 95       	ror	r24
+ 204:	00 97       	sbiw	r24, 0x00	; 0
+ 206:	99 f7       	brne	.-26     	; 0x1ee <__mulhi3_loop>
+
+00000208 <__mulhi3_exit>:
+ 208:	95 2f       	mov	r25, r21
+ 20a:	80 2d       	mov	r24, r0
+ 20c:	08 95       	ret
+
+0000020e <__divmodhi4>:
+ 20e:	97 fb       	bst	r25, 7
+ 210:	09 2e       	mov	r0, r25
+ 212:	07 26       	eor	r0, r23
+ 214:	0a d0       	rcall	.+20     	; 0x22a <__divmodhi4_neg1>
+ 216:	77 fd       	sbrc	r23, 7
+ 218:	04 d0       	rcall	.+8      	; 0x222 <__divmodhi4_neg2>
+ 21a:	0c d0       	rcall	.+24     	; 0x234 <__udivmodhi4>
+ 21c:	06 d0       	rcall	.+12     	; 0x22a <__divmodhi4_neg1>
+ 21e:	00 20       	and	r0, r0
+ 220:	1a f4       	brpl	.+6      	; 0x228 <__divmodhi4_exit>
+
+00000222 <__divmodhi4_neg2>:
+ 222:	70 95       	com	r23
+ 224:	61 95       	neg	r22
+ 226:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000228 <__divmodhi4_exit>:
+ 228:	08 95       	ret
+
+0000022a <__divmodhi4_neg1>:
+ 22a:	f6 f7       	brtc	.-4      	; 0x228 <__divmodhi4_exit>
+ 22c:	90 95       	com	r25
+ 22e:	81 95       	neg	r24
+ 230:	9f 4f       	sbci	r25, 0xFF	; 255
+ 232:	08 95       	ret
+
+00000234 <__udivmodhi4>:
+ 234:	aa 1b       	sub	r26, r26
+ 236:	bb 1b       	sub	r27, r27
+ 238:	51 e1       	ldi	r21, 0x11	; 17
+ 23a:	07 c0       	rjmp	.+14     	; 0x24a <__udivmodhi4_ep>
+
+0000023c <__udivmodhi4_loop>:
+ 23c:	aa 1f       	adc	r26, r26
+ 23e:	bb 1f       	adc	r27, r27
+ 240:	a6 17       	cp	r26, r22
+ 242:	b7 07       	cpc	r27, r23
+ 244:	10 f0       	brcs	.+4      	; 0x24a <__udivmodhi4_ep>
+ 246:	a6 1b       	sub	r26, r22
+ 248:	b7 0b       	sbc	r27, r23
+
+0000024a <__udivmodhi4_ep>:
+ 24a:	88 1f       	adc	r24, r24
+ 24c:	99 1f       	adc	r25, r25
+ 24e:	5a 95       	dec	r21
+ 250:	a9 f7       	brne	.-22     	; 0x23c <__udivmodhi4_loop>
+ 252:	80 95       	com	r24
+ 254:	90 95       	com	r25
+ 256:	bc 01       	movw	r22, r24
+ 258:	cd 01       	movw	r24, r26
+ 25a:	08 95       	ret
+
+0000025c <_exit>:
+ 25c:	f8 94       	cli
+
+0000025e <__stop_program>:
+ 25e:	ff cf       	rjmp	.-2      	; 0x25e <__stop_program>
