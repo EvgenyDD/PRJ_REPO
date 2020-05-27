@@ -1,0 +1,686 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IH:\WORKSPACE\_STM32 /IH:\WORKSPACE /IH:\WORKSPACE\_STM32\TeslaController\libs\cmsis /IH:\WORKSPACE\_STM32\TeslaController /IH:\WORKSPACE\_STM32\TeslaController\libs /IH:\WORKSPACE\_STM32\TeslaController\libs\cmsis_lib\include /IH:\WORKSPACE\_STM32\TeslaController\libs\cmsis_lib /IH:\WORKSPACE\_STM32\TeslaController\libs\cmsis_boot">
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_tim.c" lastModified="15a8645edcf">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\display.h" lastModified="15bb666b557">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\display.c" lastModified="15eb2e74456">
+         <include file="..\..\..\display.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\hal_init.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis\core_cm4_simd.h" lastModified="15a18e9547e">
+      </source>
+      <source file="..\..\..\hal_init.h" lastModified="15b1b865414">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_flash.c" lastModified="15a18e82552">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x_temp.c" lastModified="15a18e8ffd6">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x.h" lastModified="15a18e8ffd3">
+      </source>
+      <source file="..\..\..\hal_init.c" lastModified="15e1a39704c">
+         <include file="..\..\..\hal_init.h"/>
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h" lastModified="15a8645ed7d">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="15a18e84dd0">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h" lastModified="15a18e84598">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h" lastModified="15a18e81ae9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h" lastModified="15a18e7c293">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_rcc.c" lastModified="15a18e7c2ae">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_can.c" lastModified="15a18e80dc9">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dac.c" lastModified="15a8645dba1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_pwr.c" lastModified="15a18e85b67">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h" lastModified="15a86460316">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_adc.c" lastModified="15a18e8eda4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="15a18e84dd2">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_iwdg.c" lastModified="15a18e845b1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_exti.c" lastModified="15a18e81af7">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15a18e7c299">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dma.c" lastModified="15a18e86534">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h" lastModified="15a18e7c2a8">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h" lastModified="15a18e80db9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h" lastModified="15a8645db86">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis\core_cmFunc.h" lastModified="15a18e95480">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h" lastModified="15a18e85b56">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\stm32f30x.h" lastModified="15a18e903b9">
+         <include file="..\..\..\libs\cmsis\core_cm4.h"/>
+         <include file="..\..\..\libs\cmsis_boot\system_stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis\core_cm4.h" lastModified="15a18e95093">
+         <include file="..\..\..\libs\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\libs\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\libs\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h" lastModified="15a18e8eda1">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h" lastModified="15a18e800d2">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h" lastModified="15a18e845c3">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\pulse.h" lastModified="15a8647f7fc">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_crc.c" lastModified="15a18e7c279">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis\core_cmInstr.h" lastModified="15a18e95485">
+      </source>
+      <source file="..\..\..\pulse.c" lastModified="15a8647f832">
+         <include file="..\..\..\pulse.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="15e1a6e6875">
+         <include file="..\..\..\hal_init.h"/>
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\display.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h" lastModified="15a18e86532">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_wwdg.c" lastModified="15a18e845c5">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_spi.c" lastModified="15a18e854bc">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h" lastModified="15a18e82550">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h" lastModified="15a18e7c264">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\startup\startup_stm32f30x.S" lastModified="15a18e8ffcd">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h" lastModified="15a18e854b9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h" lastModified="15a18e86c43">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_opamp.c" lastModified="15a86460329">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_misc.c" lastModified="15a18e86c55">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\midi.c" lastModified="156f4ff3989">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_usart.c" lastModified="15a18e800d4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\_Документы\TeslaController\libs\cmsis_lib\include /I..\..\..\..\..\_Документы\TeslaController\libs\cmsis_lib /I..\..\..\..\..\_Документы\TeslaController\libs\cmsis /I..\..\..\..\..\_Документы\TeslaController\libs\cmsis_boot /I..\..\..\..\.. /I..\..\..\..\..\_Документы\TeslaController /I..\..\..\..\..\_Документы /I..\..\..\..\..\_Документы\TeslaController\libs">
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_tim.c" lastModified="15a8645edcf">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_flash.c" lastModified="15a18e82552">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x_temp.c" lastModified="15a18e8ffd6">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x.h" lastModified="15a18e8ffd3">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h" lastModified="15a8645ed7d">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="15a18e84dd0">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h" lastModified="15a18e84598">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h" lastModified="15a18e81ae9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h" lastModified="15a18e7c293">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_rcc.c" lastModified="15a18e7c2ae">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_can.c" lastModified="15a18e80dc9">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dac.c" lastModified="15a8645dba1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_pwr.c" lastModified="15a18e85b67">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h" lastModified="15a86460316">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_adc.c" lastModified="15a18e8eda4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="15a18e84dd2">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_iwdg.c" lastModified="15a18e845b1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_exti.c" lastModified="15a18e81af7">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15a18e7c299">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dma.c" lastModified="15a18e86534">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h" lastModified="15a18e7c2a8">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h" lastModified="15a18e80db9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h" lastModified="15a8645db86">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h" lastModified="15a18e85b56">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h" lastModified="15a18e8eda1">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h" lastModified="15a18e800d2">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h" lastModified="15a18e845c3">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\pulse.h" lastModified="15a8647f7fc">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_crc.c" lastModified="15a18e7c279">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h"/>
+      </source>
+      <source file="..\..\..\pulse.c" lastModified="15a8647f832">
+         <include file="..\..\..\pulse.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h" lastModified="15a18e86532">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_wwdg.c" lastModified="15a18e845c5">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_spi.c" lastModified="15a18e854bc">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h" lastModified="15a18e82550">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h" lastModified="15a18e7c264">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\startup\startup_stm32f30x.S" lastModified="15a18e8ffcd">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h" lastModified="15a18e854b9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h" lastModified="15a18e86c43">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_opamp.c" lastModified="15a86460329">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_misc.c" lastModified="15a18e86c55">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\midi.c" lastModified="156f4ff3989">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_usart.c" lastModified="15a18e800d4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\_Doc\TeslaController\libs\cmsis /I..\..\..\..\..\_Doc /I..\..\..\..\.. /I..\..\..\..\..\_Doc\TeslaController\libs /I..\..\..\..\..\_Doc\TeslaController\libs\cmsis_lib\include /I..\..\..\..\..\_Doc\TeslaController\libs\cmsis_lib /I..\..\..\..\..\_Doc\TeslaController\libs\cmsis_boot /I..\..\..\..\..\_Doc\TeslaController">
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_tim.c" lastModified="15a8645edcf">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_flash.c" lastModified="15a18e82552">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x_temp.c" lastModified="15a18e8ffd6">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x.h" lastModified="15a18e8ffd3">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h" lastModified="15a8645ed7d">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="15a18e84dd0">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h" lastModified="15a18e84598">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h" lastModified="15a18e81ae9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h" lastModified="15a18e7c293">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_rcc.c" lastModified="15a18e7c2ae">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_can.c" lastModified="15a18e80dc9">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dac.c" lastModified="15a8645dba1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_pwr.c" lastModified="15a18e85b67">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h" lastModified="15a86460316">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_adc.c" lastModified="15a18e8eda4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="15a18e84dd2">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_iwdg.c" lastModified="15a18e845b1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_exti.c" lastModified="15a18e81af7">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15a18e7c299">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dma.c" lastModified="15a18e86534">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h" lastModified="15a18e7c2a8">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h" lastModified="15a18e80db9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dac.h" lastModified="15a8645db86">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h" lastModified="15a18e85b56">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h" lastModified="15a18e8eda1">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h" lastModified="15a18e800d2">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h" lastModified="15a18e845c3">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\pulse.h" lastModified="15a8647f7fc">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_crc.c" lastModified="15a18e7c279">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h"/>
+      </source>
+      <source file="..\..\..\pulse.c" lastModified="15a8647f832">
+         <include file="..\..\..\pulse.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h" lastModified="15a18e86532">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_wwdg.c" lastModified="15a18e845c5">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_spi.c" lastModified="15a18e854bc">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h" lastModified="15a18e82550">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h" lastModified="15a18e7c264">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\startup\startup_stm32f30x.S" lastModified="15a18e8ffcd">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h" lastModified="15a18e854b9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h" lastModified="15a18e86c43">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_opamp.c" lastModified="15a86460329">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_opamp.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_misc.c" lastModified="15a18e86c55">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\midi.c" lastModified="156f4ff3989">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_usart.c" lastModified="15a18e800d4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/ID:\!__TO THE MainB00k\TeslaController\cmsis_lib /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_boot /ID:\ /ID:\!__TO THE MainB00k\TeslaController\cmsis_lib\include /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_lib\include /ID:\!__TO THE MainB00k\TeslaController\libs /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis /ID:\!__TO THE MainB00k\TeslaController /ID:\!__TO THE MainB00k /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_lib">
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_flash.c" lastModified="15a18e82552">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x_temp.c" lastModified="15a18e8ffd6">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x.h" lastModified="15a18e8ffd3">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="15a18e84dd0">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h" lastModified="15a18e84598">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h" lastModified="15a18e81ae9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h" lastModified="15a18e7c293">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_rcc.c" lastModified="15a18e7c2ae">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_can.c" lastModified="15a18e80dc9">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_pwr.c" lastModified="15a18e85b67">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_adc.c" lastModified="15a18e8eda4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="15a18e84dd2">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_iwdg.c" lastModified="15a18e845b1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_exti.c" lastModified="15a18e81af7">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15a18e7c299">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dma.c" lastModified="15a18e86534">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h" lastModified="15a18e7c2a8">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h" lastModified="15a18e80db9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h" lastModified="15a18e85b56">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h" lastModified="15a18e8eda1">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h" lastModified="15a18e800d2">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h" lastModified="15a18e845c3">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\pulse.h" lastModified="15a8647f7fc">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_crc.c" lastModified="15a18e7c279">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h"/>
+      </source>
+      <source file="..\..\..\pulse.c" lastModified="15a8647f832">
+         <include file="..\..\..\pulse.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h" lastModified="15a18e86532">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_wwdg.c" lastModified="15a18e845c5">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_spi.c" lastModified="15a18e854bc">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h" lastModified="15a18e82550">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h" lastModified="15a18e7c264">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\startup\startup_stm32f30x.S" lastModified="15a18e8ffcd">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h" lastModified="15a18e854b9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h" lastModified="15a18e86c43">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_misc.c" lastModified="15a18e86c55">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\midi.c" lastModified="156f4ff3989">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_usart.c" lastModified="15a18e800d4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_boot /ID:\ /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_lib\include /ID:\!__TO THE MainB00k\TeslaController\libs /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis /ID:\!__TO THE MainB00k\TeslaController /ID:\!__TO THE MainB00k /ID:\!__TO THE MainB00k\TeslaController\libs\cmsis_lib">
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_flash.c" lastModified="15a18e82552">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x_temp.c" lastModified="15a18e8ffd6">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\system_stm32f30x.h" lastModified="15a18e8ffd3">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="15a18e84dd0">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h" lastModified="15a18e84598">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h" lastModified="15a18e81ae9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h" lastModified="15a18e7c293">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_rcc.c" lastModified="15a18e7c2ae">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_can.c" lastModified="15a18e80dc9">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_pwr.c" lastModified="15a18e85b67">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_adc.c" lastModified="15a18e8eda4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="15a18e84dd2">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_syscfg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_iwdg.c" lastModified="15a18e845b1">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_iwdg.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_exti.c" lastModified="15a18e81af7">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_exti.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15a18e7c299">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_gpio.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_dma.c" lastModified="15a18e86534">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h" lastModified="15a18e7c2a8">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_can.h" lastModified="15a18e80db9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_pwr.h" lastModified="15a18e85b56">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_adc.h" lastModified="15a18e8eda1">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h" lastModified="15a18e800d2">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h" lastModified="15a18e845c3">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_crc.c" lastModified="15a18e7c279">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_dma.h" lastModified="15a18e86532">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_wwdg.c" lastModified="15a18e845c5">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_wwdg.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_spi.c" lastModified="15a18e854bc">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_flash.h" lastModified="15a18e82550">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_crc.h" lastModified="15a18e7c264">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_boot\startup\startup_stm32f30x.S" lastModified="15a18e8ffcd">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_spi.h" lastModified="15a18e854b9">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h" lastModified="15a18e86c43">
+         <include file="..\..\..\libs\cmsis_boot\stm32f30x.h"/>
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_misc.c" lastModified="15a18e86c55">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_misc.h"/>
+      </source>
+      <source file="..\..\..\midi.c" lastModified="156f4ff3989">
+      </source>
+      <source file="..\..\..\libs\cmsis_lib\source\stm32f30x_usart.c" lastModified="15a18e800d4">
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_usart.h"/>
+         <include file="..\..\..\libs\cmsis_lib\include\stm32f30x_rcc.h"/>
+      </source>
+   </includePath>
+</dependencies>

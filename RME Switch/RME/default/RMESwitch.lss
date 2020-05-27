@@ -1,0 +1,1125 @@
+
+RMESwitch.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000454  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000002  00800060  00800060  000004c8  2**0
+                  ALLOC
+  2 .debug_aranges 00000020  00000000  00000000  000004c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_pubnames 00000085  00000000  00000000  000004e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000008a2  00000000  00000000  0000056d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 000001ae  00000000  00000000  00000e0f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000863  00000000  00000000  00000fbd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000070  00000000  00000000  00001820  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000127  00000000  00000000  00001890  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000072a  00000000  00000000  000019b7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 000000f0  00000000  00000000  000020e1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	1f c0       	rjmp	.+62     	; 0x42 <__bad_interrupt>
+   4:	1e c0       	rjmp	.+60     	; 0x42 <__bad_interrupt>
+   6:	1d c0       	rjmp	.+58     	; 0x42 <__bad_interrupt>
+   8:	1c c0       	rjmp	.+56     	; 0x42 <__bad_interrupt>
+   a:	1b c0       	rjmp	.+54     	; 0x42 <__bad_interrupt>
+   c:	1a c0       	rjmp	.+52     	; 0x42 <__bad_interrupt>
+   e:	19 c0       	rjmp	.+50     	; 0x42 <__bad_interrupt>
+  10:	18 c0       	rjmp	.+48     	; 0x42 <__bad_interrupt>
+  12:	17 c0       	rjmp	.+46     	; 0x42 <__bad_interrupt>
+  14:	16 c0       	rjmp	.+44     	; 0x42 <__bad_interrupt>
+  16:	15 c0       	rjmp	.+42     	; 0x42 <__bad_interrupt>
+  18:	14 c0       	rjmp	.+40     	; 0x42 <__bad_interrupt>
+  1a:	13 c0       	rjmp	.+38     	; 0x42 <__bad_interrupt>
+  1c:	12 c0       	rjmp	.+36     	; 0x42 <__bad_interrupt>
+  1e:	11 c0       	rjmp	.+34     	; 0x42 <__bad_interrupt>
+  20:	10 c0       	rjmp	.+32     	; 0x42 <__bad_interrupt>
+  22:	0f c0       	rjmp	.+30     	; 0x42 <__bad_interrupt>
+  24:	0e c0       	rjmp	.+28     	; 0x42 <__bad_interrupt>
+
+00000026 <__ctors_end>:
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf ed       	ldi	r28, 0xDF	; 223
+  2c:	cd bf       	out	0x3d, r28	; 61
+
+0000002e <__do_clear_bss>:
+  2e:	10 e0       	ldi	r17, 0x00	; 0
+  30:	a0 e6       	ldi	r26, 0x60	; 96
+  32:	b0 e0       	ldi	r27, 0x00	; 0
+  34:	01 c0       	rjmp	.+2      	; 0x38 <.do_clear_bss_start>
+
+00000036 <.do_clear_bss_loop>:
+  36:	1d 92       	st	X+, r1
+
+00000038 <.do_clear_bss_start>:
+  38:	a2 36       	cpi	r26, 0x62	; 98
+  3a:	b1 07       	cpc	r27, r17
+  3c:	e1 f7       	brne	.-8      	; 0x36 <.do_clear_bss_loop>
+  3e:	bc d0       	rcall	.+376    	; 0x1b8 <main>
+  40:	07 c2       	rjmp	.+1038   	; 0x450 <_exit>
+
+00000042 <__bad_interrupt>:
+  42:	de cf       	rjmp	.-68     	; 0x0 <__vectors>
+
+00000044 <RunningRight>:
+#define DELAY_RLX	((2500)/2)
+#define DELAY_PWRUP	((6000)/2)
+
+void RunningRight()
+{
+	LEDS_OFF;
+  44:	c5 98       	cbi	0x18, 5	; 24
+  46:	c2 98       	cbi	0x18, 2	; 24
+  48:	c0 98       	cbi	0x18, 0	; 24
+  4a:	96 98       	cbi	0x12, 6	; 18
+	LED_1(1);
+  4c:	c5 9a       	sbi	0x18, 5	; 24
+  4e:	8c e4       	ldi	r24, 0x4C	; 76
+  50:	9d e1       	ldi	r25, 0x1D	; 29
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  52:	28 ec       	ldi	r18, 0xC8	; 200
+  54:	30 e0       	ldi	r19, 0x00	; 0
+  56:	f9 01       	movw	r30, r18
+  58:	31 97       	sbiw	r30, 0x01	; 1
+  5a:	f1 f7       	brne	.-4      	; 0x58 <RunningRight+0x14>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  5c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  5e:	d9 f7       	brne	.-10     	; 0x56 <RunningRight+0x12>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_2(1);
+  60:	c2 9a       	sbi	0x18, 2	; 24
+  62:	8c e4       	ldi	r24, 0x4C	; 76
+  64:	9d e1       	ldi	r25, 0x1D	; 29
+  66:	28 ec       	ldi	r18, 0xC8	; 200
+  68:	30 e0       	ldi	r19, 0x00	; 0
+  6a:	f9 01       	movw	r30, r18
+  6c:	31 97       	sbiw	r30, 0x01	; 1
+  6e:	f1 f7       	brne	.-4      	; 0x6c <RunningRight+0x28>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  70:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  72:	d9 f7       	brne	.-10     	; 0x6a <RunningRight+0x26>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_3(1);
+  74:	c0 9a       	sbi	0x18, 0	; 24
+  76:	8c e4       	ldi	r24, 0x4C	; 76
+  78:	9d e1       	ldi	r25, 0x1D	; 29
+  7a:	28 ec       	ldi	r18, 0xC8	; 200
+  7c:	30 e0       	ldi	r19, 0x00	; 0
+  7e:	f9 01       	movw	r30, r18
+  80:	31 97       	sbiw	r30, 0x01	; 1
+  82:	f1 f7       	brne	.-4      	; 0x80 <RunningRight+0x3c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  84:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  86:	d9 f7       	brne	.-10     	; 0x7e <RunningRight+0x3a>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_4(1);
+  88:	96 9a       	sbi	0x12, 6	; 18
+  8a:	8c e4       	ldi	r24, 0x4C	; 76
+  8c:	9d e1       	ldi	r25, 0x1D	; 29
+  8e:	28 ec       	ldi	r18, 0xC8	; 200
+  90:	30 e0       	ldi	r19, 0x00	; 0
+  92:	f9 01       	movw	r30, r18
+  94:	31 97       	sbiw	r30, 0x01	; 1
+  96:	f1 f7       	brne	.-4      	; 0x94 <RunningRight+0x50>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  98:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  9a:	d9 f7       	brne	.-10     	; 0x92 <RunningRight+0x4e>
+	_delay_ms(DELAY_PWRUP/4);
+	LEDS_OFF;
+  9c:	c5 98       	cbi	0x18, 5	; 24
+  9e:	c2 98       	cbi	0x18, 2	; 24
+  a0:	c0 98       	cbi	0x18, 0	; 24
+  a2:	96 98       	cbi	0x12, 6	; 18
+}
+  a4:	08 95       	ret
+
+000000a6 <RunningLeft>:
+
+void RunningLeft()
+{
+	LEDS_ON;
+  a6:	c5 9a       	sbi	0x18, 5	; 24
+  a8:	c2 9a       	sbi	0x18, 2	; 24
+  aa:	c0 9a       	sbi	0x18, 0	; 24
+  ac:	96 9a       	sbi	0x12, 6	; 18
+  ae:	8c e4       	ldi	r24, 0x4C	; 76
+  b0:	9d e1       	ldi	r25, 0x1D	; 29
+  b2:	28 ec       	ldi	r18, 0xC8	; 200
+  b4:	30 e0       	ldi	r19, 0x00	; 0
+  b6:	f9 01       	movw	r30, r18
+  b8:	31 97       	sbiw	r30, 0x01	; 1
+  ba:	f1 f7       	brne	.-4      	; 0xb8 <RunningLeft+0x12>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  bc:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  be:	d9 f7       	brne	.-10     	; 0xb6 <RunningLeft+0x10>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_4(0);
+  c0:	96 98       	cbi	0x12, 6	; 18
+  c2:	8c e4       	ldi	r24, 0x4C	; 76
+  c4:	9d e1       	ldi	r25, 0x1D	; 29
+  c6:	28 ec       	ldi	r18, 0xC8	; 200
+  c8:	30 e0       	ldi	r19, 0x00	; 0
+  ca:	f9 01       	movw	r30, r18
+  cc:	31 97       	sbiw	r30, 0x01	; 1
+  ce:	f1 f7       	brne	.-4      	; 0xcc <RunningLeft+0x26>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  d0:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  d2:	d9 f7       	brne	.-10     	; 0xca <RunningLeft+0x24>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_3(0);
+  d4:	c0 98       	cbi	0x18, 0	; 24
+  d6:	8c e4       	ldi	r24, 0x4C	; 76
+  d8:	9d e1       	ldi	r25, 0x1D	; 29
+  da:	28 ec       	ldi	r18, 0xC8	; 200
+  dc:	30 e0       	ldi	r19, 0x00	; 0
+  de:	f9 01       	movw	r30, r18
+  e0:	31 97       	sbiw	r30, 0x01	; 1
+  e2:	f1 f7       	brne	.-4      	; 0xe0 <__stack+0x1>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  e4:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  e6:	d9 f7       	brne	.-10     	; 0xde <RunningLeft+0x38>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_2(0);
+  e8:	c2 98       	cbi	0x18, 2	; 24
+  ea:	8c e4       	ldi	r24, 0x4C	; 76
+  ec:	9d e1       	ldi	r25, 0x1D	; 29
+  ee:	28 ec       	ldi	r18, 0xC8	; 200
+  f0:	30 e0       	ldi	r19, 0x00	; 0
+  f2:	f9 01       	movw	r30, r18
+  f4:	31 97       	sbiw	r30, 0x01	; 1
+  f6:	f1 f7       	brne	.-4      	; 0xf4 <__stack+0x15>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  f8:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  fa:	d9 f7       	brne	.-10     	; 0xf2 <__stack+0x13>
+	_delay_ms(DELAY_PWRUP/4);
+	LED_1(0);
+  fc:	c5 98       	cbi	0x18, 5	; 24
+}
+  fe:	08 95       	ret
+
+00000100 <RunningRelax>:
+
+void RunningRelax()
+{
+	LEDS_OFF;
+ 100:	c5 98       	cbi	0x18, 5	; 24
+ 102:	c2 98       	cbi	0x18, 2	; 24
+ 104:	c0 98       	cbi	0x18, 0	; 24
+ 106:	96 98       	cbi	0x12, 6	; 18
+	LED_1(1);
+ 108:	c5 9a       	sbi	0x18, 5	; 24
+	LED_3(1);
+ 10a:	c0 9a       	sbi	0x18, 0	; 24
+ 10c:	80 e3       	ldi	r24, 0x30	; 48
+ 10e:	9c e0       	ldi	r25, 0x0C	; 12
+ 110:	28 ec       	ldi	r18, 0xC8	; 200
+ 112:	30 e0       	ldi	r19, 0x00	; 0
+ 114:	f9 01       	movw	r30, r18
+ 116:	31 97       	sbiw	r30, 0x01	; 1
+ 118:	f1 f7       	brne	.-4      	; 0x116 <RunningRelax+0x16>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 11a:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 11c:	d9 f7       	brne	.-10     	; 0x114 <RunningRelax+0x14>
+	_delay_ms(DELAY_RLX/4);
+	LED_2(1);
+ 11e:	c2 9a       	sbi	0x18, 2	; 24
+	LED_4(1);
+ 120:	96 9a       	sbi	0x12, 6	; 18
+	LED_1(0);
+ 122:	c5 98       	cbi	0x18, 5	; 24
+	LED_3(0);
+ 124:	c0 98       	cbi	0x18, 0	; 24
+ 126:	80 e3       	ldi	r24, 0x30	; 48
+ 128:	9c e0       	ldi	r25, 0x0C	; 12
+ 12a:	28 ec       	ldi	r18, 0xC8	; 200
+ 12c:	30 e0       	ldi	r19, 0x00	; 0
+ 12e:	f9 01       	movw	r30, r18
+ 130:	31 97       	sbiw	r30, 0x01	; 1
+ 132:	f1 f7       	brne	.-4      	; 0x130 <RunningRelax+0x30>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 134:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 136:	d9 f7       	brne	.-10     	; 0x12e <RunningRelax+0x2e>
+	_delay_ms(DELAY_RLX/4);
+	LED_2(0);
+ 138:	c2 98       	cbi	0x18, 2	; 24
+	LED_4(0);
+ 13a:	96 98       	cbi	0x12, 6	; 18
+	LED_1(1);
+ 13c:	c5 9a       	sbi	0x18, 5	; 24
+	LED_3(1);
+ 13e:	c0 9a       	sbi	0x18, 0	; 24
+ 140:	80 e3       	ldi	r24, 0x30	; 48
+ 142:	9c e0       	ldi	r25, 0x0C	; 12
+ 144:	28 ec       	ldi	r18, 0xC8	; 200
+ 146:	30 e0       	ldi	r19, 0x00	; 0
+ 148:	f9 01       	movw	r30, r18
+ 14a:	31 97       	sbiw	r30, 0x01	; 1
+ 14c:	f1 f7       	brne	.-4      	; 0x14a <RunningRelax+0x4a>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 14e:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 150:	d9 f7       	brne	.-10     	; 0x148 <RunningRelax+0x48>
+	_delay_ms(DELAY_RLX/4);
+	LED_2(1);
+ 152:	c2 9a       	sbi	0x18, 2	; 24
+	LED_4(1);
+ 154:	96 9a       	sbi	0x12, 6	; 18
+	LED_1(0);
+ 156:	c5 98       	cbi	0x18, 5	; 24
+	LED_3(0);
+ 158:	c0 98       	cbi	0x18, 0	; 24
+ 15a:	80 e3       	ldi	r24, 0x30	; 48
+ 15c:	9c e0       	ldi	r25, 0x0C	; 12
+ 15e:	28 ec       	ldi	r18, 0xC8	; 200
+ 160:	30 e0       	ldi	r19, 0x00	; 0
+ 162:	f9 01       	movw	r30, r18
+ 164:	31 97       	sbiw	r30, 0x01	; 1
+ 166:	f1 f7       	brne	.-4      	; 0x164 <RunningRelax+0x64>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 168:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 16a:	d9 f7       	brne	.-10     	; 0x162 <RunningRelax+0x62>
+	_delay_ms(DELAY_RLX/4);
+	LEDS_OFF;
+ 16c:	c5 98       	cbi	0x18, 5	; 24
+ 16e:	c2 98       	cbi	0x18, 2	; 24
+ 170:	c0 98       	cbi	0x18, 0	; 24
+ 172:	96 98       	cbi	0x12, 6	; 18
+}
+ 174:	08 95       	ret
+
+00000176 <PowerOff>:
+	eeprom_write_byte(0, powerState);		
+}
+
+void PowerOff()
+{
+	RelayPwr(0);
+ 176:	93 98       	cbi	0x12, 3	; 18
+	RunningLeft();
+ 178:	96 df       	rcall	.-212    	; 0xa6 <RunningLeft>
+	RelayFw(0);
+ 17a:	95 98       	cbi	0x12, 5	; 18
+	RelayUsb(0);
+ 17c:	94 98       	cbi	0x12, 4	; 18
+	LED_USB(0);
+ 17e:	c3 98       	cbi	0x18, 3	; 24
+	LED_FW(0);
+ 180:	c4 98       	cbi	0x18, 4	; 24
+	LED_1(1);
+ 182:	c5 9a       	sbi	0x18, 5	; 24
+
+	powerState = 0;
+ 184:	10 92 61 00 	sts	0x0061, r1
+	eeprom_write_byte(0, powerState);		
+ 188:	80 e0       	ldi	r24, 0x00	; 0
+ 18a:	90 e0       	ldi	r25, 0x00	; 0
+ 18c:	60 e0       	ldi	r22, 0x00	; 0
+ 18e:	52 d1       	rcall	.+676    	; 0x434 <__eewr_byte_tn2313>
+}
+ 190:	08 95       	ret
+
+00000192 <PowerOn>:
+	LEDS_OFF;
+}
+
+void PowerOn()
+{
+	if(switchState)
+ 192:	80 91 60 00 	lds	r24, 0x0060
+ 196:	88 23       	and	r24, r24
+ 198:	19 f0       	breq	.+6      	; 0x1a0 <PowerOn+0xe>
+	{
+		RelayFw(1);
+ 19a:	95 9a       	sbi	0x12, 5	; 18
+		LED_FW(1);
+ 19c:	c4 9a       	sbi	0x18, 4	; 24
+ 19e:	02 c0       	rjmp	.+4      	; 0x1a4 <PowerOn+0x12>
+	}
+	else
+	{
+		RelayUsb(1);
+ 1a0:	94 9a       	sbi	0x12, 4	; 18
+		LED_USB(1);
+ 1a2:	c3 9a       	sbi	0x18, 3	; 24
+	}
+
+	RunningRight();
+ 1a4:	4f df       	rcall	.-354    	; 0x44 <RunningRight>
+	RelayPwr(1);
+ 1a6:	93 9a       	sbi	0x12, 3	; 18
+
+	powerState = 1;
+ 1a8:	81 e0       	ldi	r24, 0x01	; 1
+ 1aa:	80 93 61 00 	sts	0x0061, r24
+	eeprom_write_byte(0, powerState);		
+ 1ae:	80 e0       	ldi	r24, 0x00	; 0
+ 1b0:	90 e0       	ldi	r25, 0x00	; 0
+ 1b2:	61 e0       	ldi	r22, 0x01	; 1
+ 1b4:	3f d1       	rcall	.+638    	; 0x434 <__eewr_byte_tn2313>
+}
+ 1b6:	08 95       	ret
+
+000001b8 <main>:
+}
+
+
+
+int main(void)
+{
+ 1b8:	cf 92       	push	r12
+ 1ba:	df 92       	push	r13
+ 1bc:	ff 92       	push	r15
+ 1be:	0f 93       	push	r16
+ 1c0:	1f 93       	push	r17
+ 1c2:	cf 93       	push	r28
+ 1c4:	df 93       	push	r29
+
+	DDRA = 0x00;
+ 1c6:	1a ba       	out	0x1a, r1	; 26
+	DDRB = 0x3D;
+ 1c8:	8d e3       	ldi	r24, 0x3D	; 61
+ 1ca:	87 bb       	out	0x17, r24	; 23
+	DDRD = 0x78;
+ 1cc:	88 e7       	ldi	r24, 0x78	; 120
+ 1ce:	81 bb       	out	0x11, r24	; 17
+
+	PORTA = 0x03;
+ 1d0:	83 e0       	ldi	r24, 0x03	; 3
+ 1d2:	8b bb       	out	0x1b, r24	; 27
+	PORTB = 0x02;
+ 1d4:	82 e0       	ldi	r24, 0x02	; 2
+ 1d6:	88 bb       	out	0x18, r24	; 24
+	PORTD = 0x04;
+ 1d8:	84 e0       	ldi	r24, 0x04	; 4
+ 1da:	82 bb       	out	0x12, r24	; 18
+
+	powerState = eeprom_read_byte(0)?1:0;
+ 1dc:	80 e0       	ldi	r24, 0x00	; 0
+ 1de:	90 e0       	ldi	r25, 0x00	; 0
+ 1e0:	21 d1       	rcall	.+578    	; 0x424 <__eerd_byte_tn2313>
+ 1e2:	18 2f       	mov	r17, r24
+ 1e4:	81 11       	cpse	r24, r1
+ 1e6:	11 e0       	ldi	r17, 0x01	; 1
+ 1e8:	10 93 61 00 	sts	0x0061, r17
+	switchState = eeprom_read_byte(1)?1:0;
+ 1ec:	81 e0       	ldi	r24, 0x01	; 1
+ 1ee:	90 e0       	ldi	r25, 0x00	; 0
+ 1f0:	19 d1       	rcall	.+562    	; 0x424 <__eerd_byte_tn2313>
+ 1f2:	81 11       	cpse	r24, r1
+ 1f4:	81 e0       	ldi	r24, 0x01	; 1
+ 1f6:	80 93 60 00 	sts	0x0060, r24
+
+	RelayPwr(0);
+ 1fa:	93 98       	cbi	0x12, 3	; 18
+	RelayUsb(0);
+ 1fc:	94 98       	cbi	0x12, 4	; 18
+	RelayFw(0);
+ 1fe:	95 98       	cbi	0x12, 5	; 18
+	LEDS_OFF;
+ 200:	c5 98       	cbi	0x18, 5	; 24
+ 202:	c2 98       	cbi	0x18, 2	; 24
+ 204:	c0 98       	cbi	0x18, 0	; 24
+ 206:	96 98       	cbi	0x12, 6	; 18
+	LED_FW(0);
+ 208:	c4 98       	cbi	0x18, 4	; 24
+	LED_USB(0);
+ 20a:	c3 98       	cbi	0x18, 3	; 24
+
+	//INIT
+	if(powerState==0) //config = OFF mode
+ 20c:	11 23       	and	r17, r17
+ 20e:	39 f4       	brne	.+14     	; 0x21e <main+0x66>
+	{
+		RelayPwr(0);
+ 210:	93 98       	cbi	0x12, 3	; 18
+		RelayUsb(/*!switchState*/0);
+ 212:	94 98       	cbi	0x12, 4	; 18
+		RelayFw(/*switchState*/0);
+ 214:	95 98       	cbi	0x12, 5	; 18
+		LED_FW(0);
+ 216:	c4 98       	cbi	0x18, 4	; 24
+		LED_USB(0);
+ 218:	c3 98       	cbi	0x18, 3	; 24
+		LED_1(1);
+ 21a:	c5 9a       	sbi	0x18, 5	; 24
+ 21c:	1b c0       	rjmp	.+54     	; 0x254 <main+0x9c>
+	}
+	else			//config = ON mode
+	{
+		RelayFw(switchState);
+ 21e:	88 23       	and	r24, r24
+ 220:	41 f0       	breq	.+16     	; 0x232 <main+0x7a>
+ 222:	95 9a       	sbi	0x12, 5	; 18
+ 224:	82 b3       	in	r24, 0x12	; 18
+		RelayUsb(!switchState);
+ 226:	94 98       	cbi	0x12, 4	; 18
+ 228:	82 b3       	in	r24, 0x12	; 18
+		LED_FW(switchState);
+ 22a:	c4 9a       	sbi	0x18, 4	; 24
+ 22c:	88 b3       	in	r24, 0x18	; 24
+		LED_USB(!switchState);
+ 22e:	c3 98       	cbi	0x18, 3	; 24
+ 230:	07 c0       	rjmp	.+14     	; 0x240 <main+0x88>
+		LED_USB(0);
+		LED_1(1);
+	}
+	else			//config = ON mode
+	{
+		RelayFw(switchState);
+ 232:	95 98       	cbi	0x12, 5	; 18
+ 234:	82 b3       	in	r24, 0x12	; 18
+		RelayUsb(!switchState);
+ 236:	94 9a       	sbi	0x12, 4	; 18
+ 238:	82 b3       	in	r24, 0x12	; 18
+		LED_FW(switchState);
+ 23a:	c4 98       	cbi	0x18, 4	; 24
+ 23c:	88 b3       	in	r24, 0x18	; 24
+		LED_USB(!switchState);
+ 23e:	c3 9a       	sbi	0x18, 3	; 24
+ 240:	88 b3       	in	r24, 0x18	; 24
+		RunningRight();
+ 242:	00 df       	rcall	.-512    	; 0x44 <RunningRight>
+		RelayPwr(powerState);
+ 244:	80 91 61 00 	lds	r24, 0x0061
+ 248:	88 23       	and	r24, r24
+ 24a:	11 f0       	breq	.+4      	; 0x250 <main+0x98>
+ 24c:	93 9a       	sbi	0x12, 3	; 18
+ 24e:	01 c0       	rjmp	.+2      	; 0x252 <main+0x9a>
+ 250:	93 98       	cbi	0x12, 3	; 18
+ 252:	82 b3       	in	r24, 0x12	; 18
+ 254:	00 e2       	ldi	r16, 0x20	; 32
+ 256:	1e e4       	ldi	r17, 0x4E	; 78
+		}
+		else if(ButtonStateRst)
+		{
+			if(powerState == 0)
+			{
+				switchState = 1;
+ 258:	ff 24       	eor	r15, r15
+ 25a:	f3 94       	inc	r15
+ 25c:	c8 ec       	ldi	r28, 0xC8	; 200
+ 25e:	d0 e0       	ldi	r29, 0x00	; 0
+		RelayPwr(powerState);
+	}
+
+	for(;;)
+	{
+		if(ButtonStateOn)
+ 260:	80 e4       	ldi	r24, 0x40	; 64
+ 262:	c8 2e       	mov	r12, r24
+ 264:	8c e9       	ldi	r24, 0x9C	; 156
+ 266:	d8 2e       	mov	r13, r24
+ 268:	b1 99       	sbic	0x16, 1	; 22
+ 26a:	0e c0       	rjmp	.+28     	; 0x288 <main+0xd0>
+		{
+			if(powerState) //was ON
+ 26c:	80 91 61 00 	lds	r24, 0x0061
+ 270:	88 23       	and	r24, r24
+ 272:	11 f0       	breq	.+4      	; 0x278 <main+0xc0>
+				PowerOff();
+ 274:	80 df       	rcall	.-256    	; 0x176 <PowerOff>
+ 276:	05 c0       	rjmp	.+10     	; 0x282 <main+0xca>
+			else 		//was OFF
+				PowerOn();
+ 278:	8c df       	rcall	.-232    	; 0x192 <PowerOn>
+ 27a:	03 c0       	rjmp	.+6      	; 0x282 <main+0xca>
+ 27c:	c8 01       	movw	r24, r16
+ 27e:	01 97       	sbiw	r24, 0x01	; 1
+ 280:	f1 f7       	brne	.-4      	; 0x27e <main+0xc6>
+			
+
+			//wait till button release
+			while(ButtonStateOn)
+ 282:	b1 9b       	sbis	0x16, 1	; 22
+ 284:	fb cf       	rjmp	.-10     	; 0x27c <main+0xc4>
+ 286:	ca c0       	rjmp	.+404    	; 0x41c <main+0x264>
+				_delay_ms(10);
+		}
+#define NUM_FLASH	4
+		else if(ButtonStateFw)	//FW Button was pressed
+ 288:	c9 99       	sbic	0x19, 1	; 25
+ 28a:	54 c0       	rjmp	.+168    	; 0x334 <main+0x17c>
+		{
+			if(powerState == 0)
+ 28c:	80 91 61 00 	lds	r24, 0x0061
+ 290:	88 23       	and	r24, r24
+ 292:	21 f4       	brne	.+8      	; 0x29c <main+0xe4>
+			{
+				switchState = 1;
+ 294:	f0 92 60 00 	sts	0x0060, r15
+
+				PowerOn();
+ 298:	7c df       	rcall	.-264    	; 0x192 <PowerOn>
+ 29a:	49 c0       	rjmp	.+146    	; 0x32e <main+0x176>
+				goto BtnFWEnd;
+			}
+
+			if(switchState) //FW was
+ 29c:	80 91 60 00 	lds	r24, 0x0060
+ 2a0:	88 23       	and	r24, r24
+ 2a2:	d9 f0       	breq	.+54     	; 0x2da <main+0x122>
+ 2a4:	20 e0       	ldi	r18, 0x00	; 0
+			{ //the same state - wrong state
+//				LED_USB(0);
+//				LED_FW(1);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+				{
+					LEDS_ON;
+ 2a6:	c5 9a       	sbi	0x18, 5	; 24
+ 2a8:	c2 9a       	sbi	0x18, 2	; 24
+ 2aa:	c0 9a       	sbi	0x18, 0	; 24
+ 2ac:	96 9a       	sbi	0x12, 6	; 18
+ 2ae:	82 ee       	ldi	r24, 0xE2	; 226
+ 2b0:	94 e0       	ldi	r25, 0x04	; 4
+ 2b2:	fe 01       	movw	r30, r28
+ 2b4:	31 97       	sbiw	r30, 0x01	; 1
+ 2b6:	f1 f7       	brne	.-4      	; 0x2b4 <main+0xfc>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 2b8:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 2ba:	d9 f7       	brne	.-10     	; 0x2b2 <main+0xfa>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+					LEDS_OFF;
+ 2bc:	c5 98       	cbi	0x18, 5	; 24
+ 2be:	c2 98       	cbi	0x18, 2	; 24
+ 2c0:	c0 98       	cbi	0x18, 0	; 24
+ 2c2:	96 98       	cbi	0x12, 6	; 18
+ 2c4:	82 ee       	ldi	r24, 0xE2	; 226
+ 2c6:	94 e0       	ldi	r25, 0x04	; 4
+ 2c8:	fe 01       	movw	r30, r28
+ 2ca:	31 97       	sbiw	r30, 0x01	; 1
+ 2cc:	f1 f7       	brne	.-4      	; 0x2ca <main+0x112>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 2ce:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 2d0:	d9 f7       	brne	.-10     	; 0x2c8 <main+0x110>
+
+			if(switchState) //FW was
+			{ //the same state - wrong state
+//				LED_USB(0);
+//				LED_FW(1);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+ 2d2:	2f 5f       	subi	r18, 0xFF	; 255
+ 2d4:	24 30       	cpi	r18, 0x04	; 4
+ 2d6:	39 f7       	brne	.-50     	; 0x2a6 <main+0xee>
+ 2d8:	2a c0       	rjmp	.+84     	; 0x32e <main+0x176>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+				}
+			}
+			else
+			{ //another state - change switch
+				RelayUsb(0);
+ 2da:	94 98       	cbi	0x12, 4	; 18
+				LED_USB(0);
+ 2dc:	c3 98       	cbi	0x18, 3	; 24
+ 2de:	20 e0       	ldi	r18, 0x00	; 0
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+				{
+					LEDS_ON;
+ 2e0:	c5 9a       	sbi	0x18, 5	; 24
+ 2e2:	c2 9a       	sbi	0x18, 2	; 24
+ 2e4:	c0 9a       	sbi	0x18, 0	; 24
+ 2e6:	96 9a       	sbi	0x12, 6	; 18
+					LED_FW(1);
+ 2e8:	c4 9a       	sbi	0x18, 4	; 24
+ 2ea:	82 ee       	ldi	r24, 0xE2	; 226
+ 2ec:	94 e0       	ldi	r25, 0x04	; 4
+ 2ee:	fe 01       	movw	r30, r28
+ 2f0:	31 97       	sbiw	r30, 0x01	; 1
+ 2f2:	f1 f7       	brne	.-4      	; 0x2f0 <main+0x138>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 2f4:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 2f6:	d9 f7       	brne	.-10     	; 0x2ee <main+0x136>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+					LEDS_OFF;
+ 2f8:	c5 98       	cbi	0x18, 5	; 24
+ 2fa:	c2 98       	cbi	0x18, 2	; 24
+ 2fc:	c0 98       	cbi	0x18, 0	; 24
+ 2fe:	96 98       	cbi	0x12, 6	; 18
+					LED_FW(0);
+ 300:	c4 98       	cbi	0x18, 4	; 24
+ 302:	82 ee       	ldi	r24, 0xE2	; 226
+ 304:	94 e0       	ldi	r25, 0x04	; 4
+ 306:	fe 01       	movw	r30, r28
+ 308:	31 97       	sbiw	r30, 0x01	; 1
+ 30a:	f1 f7       	brne	.-4      	; 0x308 <main+0x150>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 30c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 30e:	d9 f7       	brne	.-10     	; 0x306 <main+0x14e>
+			}
+			else
+			{ //another state - change switch
+				RelayUsb(0);
+				LED_USB(0);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+ 310:	2f 5f       	subi	r18, 0xFF	; 255
+ 312:	24 30       	cpi	r18, 0x04	; 4
+ 314:	29 f7       	brne	.-54     	; 0x2e0 <main+0x128>
+					LEDS_OFF;
+					LED_FW(0);
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+				}
+
+				RelayFw(1);
+ 316:	95 9a       	sbi	0x12, 5	; 18
+				switchState = 1;
+ 318:	f0 92 60 00 	sts	0x0060, r15
+				eeprom_write_byte(1, switchState);	
+ 31c:	81 e0       	ldi	r24, 0x01	; 1
+ 31e:	90 e0       	ldi	r25, 0x00	; 0
+ 320:	61 e0       	ldi	r22, 0x01	; 1
+ 322:	88 d0       	rcall	.+272    	; 0x434 <__eewr_byte_tn2313>
+				LED_FW(1);	
+ 324:	c4 9a       	sbi	0x18, 4	; 24
+ 326:	03 c0       	rjmp	.+6      	; 0x32e <main+0x176>
+ 328:	c8 01       	movw	r24, r16
+ 32a:	01 97       	sbiw	r24, 0x01	; 1
+ 32c:	f1 f7       	brne	.-4      	; 0x32a <main+0x172>
+			}
+
+BtnFWEnd:
+			//wait till button release
+			while(ButtonStateFw)
+ 32e:	c9 9b       	sbis	0x19, 1	; 25
+ 330:	fb cf       	rjmp	.-10     	; 0x328 <main+0x170>
+ 332:	74 c0       	rjmp	.+232    	; 0x41c <main+0x264>
+				_delay_ms(10);
+		}
+		else if(ButtonStateUsb)   //USB Button was pressed
+ 334:	c8 99       	sbic	0x19, 0	; 25
+ 336:	54 c0       	rjmp	.+168    	; 0x3e0 <main+0x228>
+		{
+			if(powerState == 0)
+ 338:	80 91 61 00 	lds	r24, 0x0061
+ 33c:	88 23       	and	r24, r24
+ 33e:	21 f4       	brne	.+8      	; 0x348 <main+0x190>
+			{
+				switchState = 0;
+ 340:	10 92 60 00 	sts	0x0060, r1
+
+				PowerOn();
+ 344:	26 df       	rcall	.-436    	; 0x192 <PowerOn>
+ 346:	49 c0       	rjmp	.+146    	; 0x3da <main+0x222>
+				goto BtnUSBEnd;
+			}
+
+			if(switchState==0)
+ 348:	80 91 60 00 	lds	r24, 0x0060
+ 34c:	88 23       	and	r24, r24
+ 34e:	d9 f4       	brne	.+54     	; 0x386 <main+0x1ce>
+ 350:	20 e0       	ldi	r18, 0x00	; 0
+			{ //the same state - USB was
+//				LED_USB(1);
+//				LED_FW(0);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+				{
+					LEDS_ON;
+ 352:	c5 9a       	sbi	0x18, 5	; 24
+ 354:	c2 9a       	sbi	0x18, 2	; 24
+ 356:	c0 9a       	sbi	0x18, 0	; 24
+ 358:	96 9a       	sbi	0x12, 6	; 18
+ 35a:	82 ee       	ldi	r24, 0xE2	; 226
+ 35c:	94 e0       	ldi	r25, 0x04	; 4
+ 35e:	fe 01       	movw	r30, r28
+ 360:	31 97       	sbiw	r30, 0x01	; 1
+ 362:	f1 f7       	brne	.-4      	; 0x360 <main+0x1a8>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 364:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 366:	d9 f7       	brne	.-10     	; 0x35e <main+0x1a6>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+					LEDS_OFF;
+ 368:	c5 98       	cbi	0x18, 5	; 24
+ 36a:	c2 98       	cbi	0x18, 2	; 24
+ 36c:	c0 98       	cbi	0x18, 0	; 24
+ 36e:	96 98       	cbi	0x12, 6	; 18
+ 370:	82 ee       	ldi	r24, 0xE2	; 226
+ 372:	94 e0       	ldi	r25, 0x04	; 4
+ 374:	fe 01       	movw	r30, r28
+ 376:	31 97       	sbiw	r30, 0x01	; 1
+ 378:	f1 f7       	brne	.-4      	; 0x376 <main+0x1be>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 37a:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 37c:	d9 f7       	brne	.-10     	; 0x374 <main+0x1bc>
+
+			if(switchState==0)
+			{ //the same state - USB was
+//				LED_USB(1);
+//				LED_FW(0);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+ 37e:	2f 5f       	subi	r18, 0xFF	; 255
+ 380:	24 30       	cpi	r18, 0x04	; 4
+ 382:	39 f7       	brne	.-50     	; 0x352 <main+0x19a>
+ 384:	2a c0       	rjmp	.+84     	; 0x3da <main+0x222>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+				}
+			}
+			else
+			{ //another state
+				RelayFw(0);
+ 386:	95 98       	cbi	0x12, 5	; 18
+				LED_FW(0);
+ 388:	c4 98       	cbi	0x18, 4	; 24
+ 38a:	20 e0       	ldi	r18, 0x00	; 0
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+				{
+					LEDS_ON;
+ 38c:	c5 9a       	sbi	0x18, 5	; 24
+ 38e:	c2 9a       	sbi	0x18, 2	; 24
+ 390:	c0 9a       	sbi	0x18, 0	; 24
+ 392:	96 9a       	sbi	0x12, 6	; 18
+					LED_USB(1);
+ 394:	c3 9a       	sbi	0x18, 3	; 24
+ 396:	82 ee       	ldi	r24, 0xE2	; 226
+ 398:	94 e0       	ldi	r25, 0x04	; 4
+ 39a:	fe 01       	movw	r30, r28
+ 39c:	31 97       	sbiw	r30, 0x01	; 1
+ 39e:	f1 f7       	brne	.-4      	; 0x39c <main+0x1e4>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 3a0:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 3a2:	d9 f7       	brne	.-10     	; 0x39a <main+0x1e2>
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+					LEDS_OFF;
+ 3a4:	c5 98       	cbi	0x18, 5	; 24
+ 3a6:	c2 98       	cbi	0x18, 2	; 24
+ 3a8:	c0 98       	cbi	0x18, 0	; 24
+ 3aa:	96 98       	cbi	0x12, 6	; 18
+					LED_USB(0);
+ 3ac:	c3 98       	cbi	0x18, 3	; 24
+ 3ae:	82 ee       	ldi	r24, 0xE2	; 226
+ 3b0:	94 e0       	ldi	r25, 0x04	; 4
+ 3b2:	fe 01       	movw	r30, r28
+ 3b4:	31 97       	sbiw	r30, 0x01	; 1
+ 3b6:	f1 f7       	brne	.-4      	; 0x3b4 <main+0x1fc>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 3b8:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 3ba:	d9 f7       	brne	.-10     	; 0x3b2 <main+0x1fa>
+			}
+			else
+			{ //another state
+				RelayFw(0);
+				LED_FW(0);
+				for(uint8_t i=0; i<NUM_FLASH; i++)
+ 3bc:	2f 5f       	subi	r18, 0xFF	; 255
+ 3be:	24 30       	cpi	r18, 0x04	; 4
+ 3c0:	29 f7       	brne	.-54     	; 0x38c <main+0x1d4>
+					LEDS_OFF;
+					LED_USB(0);
+					_delay_ms(DELAY_SW/2/NUM_FLASH);
+				}
+
+				RelayUsb(1);
+ 3c2:	94 9a       	sbi	0x12, 4	; 18
+				switchState = 0;
+ 3c4:	10 92 60 00 	sts	0x0060, r1
+				eeprom_write_byte(1, switchState);	
+ 3c8:	81 e0       	ldi	r24, 0x01	; 1
+ 3ca:	90 e0       	ldi	r25, 0x00	; 0
+ 3cc:	60 e0       	ldi	r22, 0x00	; 0
+ 3ce:	32 d0       	rcall	.+100    	; 0x434 <__eewr_byte_tn2313>
+				LED_USB(1);	
+ 3d0:	c3 9a       	sbi	0x18, 3	; 24
+ 3d2:	03 c0       	rjmp	.+6      	; 0x3da <main+0x222>
+ 3d4:	c8 01       	movw	r24, r16
+ 3d6:	01 97       	sbiw	r24, 0x01	; 1
+ 3d8:	f1 f7       	brne	.-4      	; 0x3d6 <main+0x21e>
+			}
+
+BtnUSBEnd:
+			//wait till button release
+			while(ButtonStateUsb)
+ 3da:	c8 9b       	sbis	0x19, 0	; 25
+ 3dc:	fb cf       	rjmp	.-10     	; 0x3d4 <main+0x21c>
+ 3de:	1e c0       	rjmp	.+60     	; 0x41c <main+0x264>
+				_delay_ms(10);
+		}
+		else if(ButtonStateRst)
+ 3e0:	82 99       	sbic	0x10, 2	; 16
+ 3e2:	1c c0       	rjmp	.+56     	; 0x41c <main+0x264>
+		{
+			if(powerState == 0)
+ 3e4:	80 91 61 00 	lds	r24, 0x0061
+ 3e8:	88 23       	and	r24, r24
+ 3ea:	21 f4       	brne	.+8      	; 0x3f4 <main+0x23c>
+			{
+				switchState = 1;
+ 3ec:	f0 92 60 00 	sts	0x0060, r15
+
+				PowerOn();
+ 3f0:	d0 de       	rcall	.-608    	; 0x192 <PowerOn>
+ 3f2:	12 c0       	rjmp	.+36     	; 0x418 <main+0x260>
+				goto BtnRSTEnd;
+			}
+			RelayPwr(0);
+ 3f4:	93 98       	cbi	0x12, 3	; 18
+
+			RunningLeft();
+ 3f6:	57 de       	rcall	.-850    	; 0xa6 <RunningLeft>
+
+			RelayFw(0);
+ 3f8:	95 98       	cbi	0x12, 5	; 18
+			RelayUsb(0);
+ 3fa:	94 98       	cbi	0x12, 4	; 18
+
+			RunningRelax();
+ 3fc:	81 de       	rcall	.-766    	; 0x100 <RunningRelax>
+
+			if(switchState)
+ 3fe:	80 91 60 00 	lds	r24, 0x0060
+ 402:	88 23       	and	r24, r24
+ 404:	11 f0       	breq	.+4      	; 0x40a <main+0x252>
+				RelayFw(1);
+ 406:	95 9a       	sbi	0x12, 5	; 18
+ 408:	01 c0       	rjmp	.+2      	; 0x40c <main+0x254>
+			else
+				RelayUsb(1);
+ 40a:	94 9a       	sbi	0x12, 4	; 18
+
+			RunningRight();
+ 40c:	1b de       	rcall	.-970    	; 0x44 <RunningRight>
+
+			RelayPwr(1);
+ 40e:	93 9a       	sbi	0x12, 3	; 18
+ 410:	03 c0       	rjmp	.+6      	; 0x418 <main+0x260>
+ 412:	c8 01       	movw	r24, r16
+ 414:	01 97       	sbiw	r24, 0x01	; 1
+ 416:	f1 f7       	brne	.-4      	; 0x414 <main+0x25c>
+BtnRSTEnd:
+			//wait till button release
+			while(ButtonStateRst)
+ 418:	82 9b       	sbis	0x10, 2	; 16
+ 41a:	fb cf       	rjmp	.-10     	; 0x412 <main+0x25a>
+ 41c:	c6 01       	movw	r24, r12
+ 41e:	01 97       	sbiw	r24, 0x01	; 1
+ 420:	f1 f7       	brne	.-4      	; 0x41e <main+0x266>
+ 422:	22 cf       	rjmp	.-444    	; 0x268 <main+0xb0>
+
+00000424 <__eerd_byte_tn2313>:
+ 424:	e1 99       	sbic	0x1c, 1	; 28
+ 426:	fe cf       	rjmp	.-4      	; 0x424 <__eerd_byte_tn2313>
+ 428:	1f ba       	out	0x1f, r1	; 31
+ 42a:	8e bb       	out	0x1e, r24	; 30
+ 42c:	e0 9a       	sbi	0x1c, 0	; 28
+ 42e:	99 27       	eor	r25, r25
+ 430:	8d b3       	in	r24, 0x1d	; 29
+ 432:	08 95       	ret
+
+00000434 <__eewr_byte_tn2313>:
+ 434:	26 2f       	mov	r18, r22
+
+00000436 <__eewr_r18_tn2313>:
+ 436:	e1 99       	sbic	0x1c, 1	; 28
+ 438:	fe cf       	rjmp	.-4      	; 0x436 <__eewr_r18_tn2313>
+ 43a:	1c ba       	out	0x1c, r1	; 28
+ 43c:	1f ba       	out	0x1f, r1	; 31
+ 43e:	8e bb       	out	0x1e, r24	; 30
+ 440:	2d bb       	out	0x1d, r18	; 29
+ 442:	0f b6       	in	r0, 0x3f	; 63
+ 444:	f8 94       	cli
+ 446:	e2 9a       	sbi	0x1c, 2	; 28
+ 448:	e1 9a       	sbi	0x1c, 1	; 28
+ 44a:	0f be       	out	0x3f, r0	; 63
+ 44c:	01 96       	adiw	r24, 0x01	; 1
+ 44e:	08 95       	ret
+
+00000450 <_exit>:
+ 450:	f8 94       	cli
+
+00000452 <__stop_program>:
+ 452:	ff cf       	rjmp	.-2      	; 0x452 <__stop_program>

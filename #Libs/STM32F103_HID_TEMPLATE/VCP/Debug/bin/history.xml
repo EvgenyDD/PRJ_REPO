@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=VCP.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\VCP -TC:\CooCox\CoIDE\configuration\ProgramData\VCP/arm-gcc-link.ld -g">
+      <target file="VCP.elf" lastModified="1544c6de9c9">
+         <source file="..\obj\usb_core.o" lastModified="1544c6dc114"/>
+         <source file="..\obj\stm32f10x_tim.o" lastModified="1544c6dc3aa"/>
+         <source file="..\obj\usb_int.o" lastModified="1544c6dc52b"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1544c6dc681"/>
+         <source file="..\obj\startup_stm32f10x_hd.o" lastModified="1544c6dc7c5"/>
+         <source file="..\obj\usb_desc.o" lastModified="1544c6dc91d"/>
+         <source file="..\obj\usb_regs.o" lastModified="1544c6dcb2f"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="1544c6dccbc"/>
+         <source file="..\obj\hw_config.o" lastModified="1544c6dce8b"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1544c6dd019"/>
+         <source file="..\obj\usb_prop.o" lastModified="1544c6dd1bb"/>
+         <source file="..\obj\usb_pwr.o" lastModified="1544c6dd30d"/>
+         <source file="..\obj\usb_init.o" lastModified="1544c6dd499"/>
+         <source file="..\obj\main.o" lastModified="1544c6dd645"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1544c6dd93a"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="1544c6ddb16"/>
+         <source file="..\obj\usb_sil.o" lastModified="1544c6ddc65"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="1544c6dde0d"/>
+         <source file="..\obj\stm32f10x_it.o" lastModified="1544c6ddf84"/>
+         <source file="..\obj\usb_endp.o" lastModified="1544c6de0e6"/>
+         <source file="..\obj\misc.o" lastModified="1544c6de225"/>
+         <source file="..\obj\usb_mem.o" lastModified="1544c6de377"/>
+         <source file="..\obj\usb_istr.o" lastModified="1544c6de511"/>
+      </target>
+   </processor>
+</history>

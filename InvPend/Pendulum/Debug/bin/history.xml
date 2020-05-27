@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Pendulum.map -O1 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Pendulum -TC:\CooCox\CoIDE\configuration\ProgramData\Pendulum/arm-gcc-link.ld -g -L..\..\.. -lm">
+      <target file="Pendulum.elf" lastModified="150c4d50ab6">
+         <source file="..\obj\pcd8544.o" lastModified="15081374e63"/>
+         <source file="..\obj\string.o" lastModified="15081374f41"/>
+         <source file="..\obj\stm32f10x_tim.o" lastModified="150813750c8"/>
+         <source file="..\obj\NRF24L01.o" lastModified="15081375179"/>
+         <source file="..\obj\LIS3DSH.o" lastModified="1508137520f"/>
+         <source file="..\obj\startup_stm32f10x_ld_vl.o" lastModified="1508137524e"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="150813752ae"/>
+         <source file="..\obj\hw_config.o" lastModified="15081375369"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="150813753f7"/>
+         <source file="..\obj\main.o" lastModified="150c4d5078c"/>
+         <source file="..\obj\font.o" lastModified="150813754c4"/>
+         <source file="..\obj\math_.o" lastModified="1508137551a"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="150813755b5"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="15081375623"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="150813756ef"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="15081375787"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="15081375835"/>
+         <source file="..\obj\debug.o" lastModified="150813758a4"/>
+         <source file="..\obj\stm32f10x_dma.o" lastModified="1508137590e"/>
+         <source file="..\obj\misc.o" lastModified="1508137596b"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="150813759ee"/>
+         <source file="..\obj\controller.o" lastModified="150846cf451"/>
+         <source file="..\obj\stm32f10x_iwdg.o" lastModified="15081375b03"/>
+      </target>
+   </processor>
+</history>

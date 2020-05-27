@@ -1,0 +1,24 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+value                                                                             0x0048       1
+i                                                                                 0x0049       2
+numFlash                                                                          0x004B       2
+interval                                                                          0x004D       2
+curPotValue                                                                       0x004F       2
+_seed                                                                             0x0051       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+MeasureBattery                                                                    0x00034     12
+MeasurePot                                                                        0x00040     12
+main                                                                              0x0004C    318

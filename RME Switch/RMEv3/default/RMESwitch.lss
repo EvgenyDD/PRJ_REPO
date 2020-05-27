@@ -1,0 +1,709 @@
+
+RMESwitch.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000266  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000001  00800060  00800060  000002da  2**0
+                  ALLOC
+  2 .debug_aranges 00000020  00000000  00000000  000002da  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_pubnames 0000004c  00000000  00000000  000002fa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000544  00000000  00000000  00000346  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000014b  00000000  00000000  0000088a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000594  00000000  00000000  000009d5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000060  00000000  00000000  00000f6c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000011b  00000000  00000000  00000fcc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000398  00000000  00000000  000010e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000090  00000000  00000000  0000147f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	1f c0       	rjmp	.+62     	; 0x42 <__bad_interrupt>
+   4:	1e c0       	rjmp	.+60     	; 0x42 <__bad_interrupt>
+   6:	1d c0       	rjmp	.+58     	; 0x42 <__bad_interrupt>
+   8:	1c c0       	rjmp	.+56     	; 0x42 <__bad_interrupt>
+   a:	1b c0       	rjmp	.+54     	; 0x42 <__bad_interrupt>
+   c:	1a c0       	rjmp	.+52     	; 0x42 <__bad_interrupt>
+   e:	19 c0       	rjmp	.+50     	; 0x42 <__bad_interrupt>
+  10:	18 c0       	rjmp	.+48     	; 0x42 <__bad_interrupt>
+  12:	17 c0       	rjmp	.+46     	; 0x42 <__bad_interrupt>
+  14:	16 c0       	rjmp	.+44     	; 0x42 <__bad_interrupt>
+  16:	15 c0       	rjmp	.+42     	; 0x42 <__bad_interrupt>
+  18:	14 c0       	rjmp	.+40     	; 0x42 <__bad_interrupt>
+  1a:	13 c0       	rjmp	.+38     	; 0x42 <__bad_interrupt>
+  1c:	12 c0       	rjmp	.+36     	; 0x42 <__bad_interrupt>
+  1e:	11 c0       	rjmp	.+34     	; 0x42 <__bad_interrupt>
+  20:	10 c0       	rjmp	.+32     	; 0x42 <__bad_interrupt>
+  22:	0f c0       	rjmp	.+30     	; 0x42 <__bad_interrupt>
+  24:	0e c0       	rjmp	.+28     	; 0x42 <__bad_interrupt>
+
+00000026 <__ctors_end>:
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf ed       	ldi	r28, 0xDF	; 223
+  2c:	cd bf       	out	0x3d, r28	; 61
+
+0000002e <__do_clear_bss>:
+  2e:	10 e0       	ldi	r17, 0x00	; 0
+  30:	a0 e6       	ldi	r26, 0x60	; 96
+  32:	b0 e0       	ldi	r27, 0x00	; 0
+  34:	01 c0       	rjmp	.+2      	; 0x38 <.do_clear_bss_start>
+
+00000036 <.do_clear_bss_loop>:
+  36:	1d 92       	st	X+, r1
+
+00000038 <.do_clear_bss_start>:
+  38:	a1 36       	cpi	r26, 0x61	; 97
+  3a:	b1 07       	cpc	r27, r17
+  3c:	e1 f7       	brne	.-8      	; 0x36 <.do_clear_bss_loop>
+  3e:	a0 d0       	rcall	.+320    	; 0x180 <main>
+  40:	10 c1       	rjmp	.+544    	; 0x262 <_exit>
+
+00000042 <__bad_interrupt>:
+  42:	de cf       	rjmp	.-68     	; 0x0 <__vectors>
+
+00000044 <RunningRight>:
+
+#define wdt_reset() __asm__ __volatile__ ("wdr")
+
+void RunningRight()
+{
+	LEDS_OFF;
+  44:	c5 98       	cbi	0x18, 5	; 24
+  46:	c2 98       	cbi	0x18, 2	; 24
+  48:	c0 98       	cbi	0x18, 0	; 24
+  4a:	96 98       	cbi	0x12, 6	; 18
+	LED_1(1);
+  4c:	c5 9a       	sbi	0x18, 5	; 24
+  4e:	88 e8       	ldi	r24, 0x88	; 136
+  50:	93 e1       	ldi	r25, 0x13	; 19
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  52:	24 e6       	ldi	r18, 0x64	; 100
+  54:	30 e0       	ldi	r19, 0x00	; 0
+  56:	f9 01       	movw	r30, r18
+  58:	31 97       	sbiw	r30, 0x01	; 1
+  5a:	f1 f7       	brne	.-4      	; 0x58 <RunningRight+0x14>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  5c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  5e:	d9 f7       	brne	.-10     	; 0x56 <RunningRight+0x12>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  60:	a8 95       	wdr
+	LED_2(1);
+  62:	c2 9a       	sbi	0x18, 2	; 24
+  64:	88 e8       	ldi	r24, 0x88	; 136
+  66:	93 e1       	ldi	r25, 0x13	; 19
+  68:	24 e6       	ldi	r18, 0x64	; 100
+  6a:	30 e0       	ldi	r19, 0x00	; 0
+  6c:	f9 01       	movw	r30, r18
+  6e:	31 97       	sbiw	r30, 0x01	; 1
+  70:	f1 f7       	brne	.-4      	; 0x6e <RunningRight+0x2a>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  72:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  74:	d9 f7       	brne	.-10     	; 0x6c <RunningRight+0x28>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  76:	a8 95       	wdr
+	LED_3(1);
+  78:	c0 9a       	sbi	0x18, 0	; 24
+  7a:	88 e8       	ldi	r24, 0x88	; 136
+  7c:	93 e1       	ldi	r25, 0x13	; 19
+  7e:	24 e6       	ldi	r18, 0x64	; 100
+  80:	30 e0       	ldi	r19, 0x00	; 0
+  82:	f9 01       	movw	r30, r18
+  84:	31 97       	sbiw	r30, 0x01	; 1
+  86:	f1 f7       	brne	.-4      	; 0x84 <RunningRight+0x40>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  88:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  8a:	d9 f7       	brne	.-10     	; 0x82 <RunningRight+0x3e>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  8c:	a8 95       	wdr
+	LED_4(1);
+  8e:	96 9a       	sbi	0x12, 6	; 18
+  90:	88 e8       	ldi	r24, 0x88	; 136
+  92:	93 e1       	ldi	r25, 0x13	; 19
+  94:	24 e6       	ldi	r18, 0x64	; 100
+  96:	30 e0       	ldi	r19, 0x00	; 0
+  98:	f9 01       	movw	r30, r18
+  9a:	31 97       	sbiw	r30, 0x01	; 1
+  9c:	f1 f7       	brne	.-4      	; 0x9a <RunningRight+0x56>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  9e:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  a0:	d9 f7       	brne	.-10     	; 0x98 <RunningRight+0x54>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  a2:	a8 95       	wdr
+	LEDS_OFF;
+  a4:	c5 98       	cbi	0x18, 5	; 24
+  a6:	c2 98       	cbi	0x18, 2	; 24
+  a8:	c0 98       	cbi	0x18, 0	; 24
+  aa:	96 98       	cbi	0x12, 6	; 18
+}
+  ac:	08 95       	ret
+
+000000ae <RunningLeft>:
+
+void RunningLeft()
+{
+	LEDS_ON;
+  ae:	c5 9a       	sbi	0x18, 5	; 24
+  b0:	c2 9a       	sbi	0x18, 2	; 24
+  b2:	c0 9a       	sbi	0x18, 0	; 24
+  b4:	96 9a       	sbi	0x12, 6	; 18
+  b6:	88 e8       	ldi	r24, 0x88	; 136
+  b8:	93 e1       	ldi	r25, 0x13	; 19
+  ba:	24 e6       	ldi	r18, 0x64	; 100
+  bc:	30 e0       	ldi	r19, 0x00	; 0
+  be:	f9 01       	movw	r30, r18
+  c0:	31 97       	sbiw	r30, 0x01	; 1
+  c2:	f1 f7       	brne	.-4      	; 0xc0 <RunningLeft+0x12>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  c4:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  c6:	d9 f7       	brne	.-10     	; 0xbe <RunningLeft+0x10>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  c8:	a8 95       	wdr
+	LED_4(0);
+  ca:	96 98       	cbi	0x12, 6	; 18
+  cc:	88 e8       	ldi	r24, 0x88	; 136
+  ce:	93 e1       	ldi	r25, 0x13	; 19
+  d0:	24 e6       	ldi	r18, 0x64	; 100
+  d2:	30 e0       	ldi	r19, 0x00	; 0
+  d4:	f9 01       	movw	r30, r18
+  d6:	31 97       	sbiw	r30, 0x01	; 1
+  d8:	f1 f7       	brne	.-4      	; 0xd6 <RunningLeft+0x28>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  da:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  dc:	d9 f7       	brne	.-10     	; 0xd4 <RunningLeft+0x26>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  de:	a8 95       	wdr
+	LED_3(0);
+  e0:	c0 98       	cbi	0x18, 0	; 24
+  e2:	88 e8       	ldi	r24, 0x88	; 136
+  e4:	93 e1       	ldi	r25, 0x13	; 19
+  e6:	24 e6       	ldi	r18, 0x64	; 100
+  e8:	30 e0       	ldi	r19, 0x00	; 0
+  ea:	f9 01       	movw	r30, r18
+  ec:	31 97       	sbiw	r30, 0x01	; 1
+  ee:	f1 f7       	brne	.-4      	; 0xec <__stack+0xd>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  f0:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  f2:	d9 f7       	brne	.-10     	; 0xea <__stack+0xb>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+  f4:	a8 95       	wdr
+	LED_2(0);
+  f6:	c2 98       	cbi	0x18, 2	; 24
+  f8:	88 e8       	ldi	r24, 0x88	; 136
+  fa:	93 e1       	ldi	r25, 0x13	; 19
+  fc:	24 e6       	ldi	r18, 0x64	; 100
+  fe:	30 e0       	ldi	r19, 0x00	; 0
+ 100:	f9 01       	movw	r30, r18
+ 102:	31 97       	sbiw	r30, 0x01	; 1
+ 104:	f1 f7       	brne	.-4      	; 0x102 <__stack+0x23>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 106:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 108:	d9 f7       	brne	.-10     	; 0x100 <__stack+0x21>
+	_delay_ms(DELAY_PWRUP/4);
+	wdt_reset();
+ 10a:	a8 95       	wdr
+	LED_1(0);
+ 10c:	c5 98       	cbi	0x18, 5	; 24
+}
+ 10e:	08 95       	ret
+
+00000110 <HandlePressI>:
+
+
+static void HandlePressI()
+{
+	if(switchState == STATE_OFF)
+ 110:	80 91 60 00 	lds	r24, 0x0060
+ 114:	88 23       	and	r24, r24
+ 116:	31 f4       	brne	.+12     	; 0x124 <HandlePressI+0x14>
+	{
+		LED_USB(1);
+ 118:	c3 9a       	sbi	0x18, 3	; 24
+		RelayUsb(1);
+ 11a:	94 9a       	sbi	0x12, 4	; 18
+		switchState = STATE_USB;
+ 11c:	81 e0       	ldi	r24, 0x01	; 1
+ 11e:	80 93 60 00 	sts	0x0060, r24
+ 122:	08 95       	ret
+	}
+	else if(switchState == STATE_USB)
+ 124:	81 30       	cpi	r24, 0x01	; 1
+ 126:	29 f4       	brne	.+10     	; 0x132 <HandlePressI+0x22>
+	{
+		LED_USB(0);
+ 128:	c3 98       	cbi	0x18, 3	; 24
+		RelayUsb(0);
+ 12a:	94 98       	cbi	0x12, 4	; 18
+		switchState = STATE_OFF;
+ 12c:	10 92 60 00 	sts	0x0060, r1
+ 130:	08 95       	ret
+	}
+	else if(switchState == STATE_FW)
+ 132:	82 30       	cpi	r24, 0x02	; 2
+ 134:	41 f4       	brne	.+16     	; 0x146 <HandlePressI+0x36>
+	{
+		LED_FW(0);
+ 136:	c4 98       	cbi	0x18, 4	; 24
+		RelayFw(0);
+ 138:	95 98       	cbi	0x12, 5	; 18
+
+		RunningRight();
+ 13a:	84 df       	rcall	.-248    	; 0x44 <RunningRight>
+
+		LED_USB(1);
+ 13c:	c3 9a       	sbi	0x18, 3	; 24
+		RelayUsb(1);
+ 13e:	94 9a       	sbi	0x12, 4	; 18
+		switchState = STATE_USB;
+ 140:	81 e0       	ldi	r24, 0x01	; 1
+ 142:	80 93 60 00 	sts	0x0060, r24
+ 146:	08 95       	ret
+
+00000148 <HandlePressII>:
+	}
+}
+
+static void HandlePressII()
+{
+	if(switchState == STATE_OFF)
+ 148:	80 91 60 00 	lds	r24, 0x0060
+ 14c:	88 23       	and	r24, r24
+ 14e:	31 f4       	brne	.+12     	; 0x15c <HandlePressII+0x14>
+	{
+		LED_FW(1);
+ 150:	c4 9a       	sbi	0x18, 4	; 24
+		RelayFw(1);
+ 152:	95 9a       	sbi	0x12, 5	; 18
+		switchState = STATE_FW;
+ 154:	82 e0       	ldi	r24, 0x02	; 2
+ 156:	80 93 60 00 	sts	0x0060, r24
+ 15a:	08 95       	ret
+	}
+	else if(switchState == STATE_FW)
+ 15c:	82 30       	cpi	r24, 0x02	; 2
+ 15e:	29 f4       	brne	.+10     	; 0x16a <HandlePressII+0x22>
+	{
+		LED_FW(0);
+ 160:	c4 98       	cbi	0x18, 4	; 24
+		RelayFw(0);
+ 162:	95 98       	cbi	0x12, 5	; 18
+		switchState = STATE_OFF;
+ 164:	10 92 60 00 	sts	0x0060, r1
+ 168:	08 95       	ret
+	}
+	else if(switchState == STATE_USB)
+ 16a:	81 30       	cpi	r24, 0x01	; 1
+ 16c:	41 f4       	brne	.+16     	; 0x17e <HandlePressII+0x36>
+	{
+		LED_USB(0);
+ 16e:	c3 98       	cbi	0x18, 3	; 24
+		RelayUsb(0);
+ 170:	94 98       	cbi	0x12, 4	; 18
+
+		RunningLeft();
+ 172:	9d df       	rcall	.-198    	; 0xae <RunningLeft>
+
+		LED_FW(1);
+ 174:	c4 9a       	sbi	0x18, 4	; 24
+		RelayFw(1);
+ 176:	95 9a       	sbi	0x12, 5	; 18
+		switchState = STATE_FW;
+ 178:	82 e0       	ldi	r24, 0x02	; 2
+ 17a:	80 93 60 00 	sts	0x0060, r24
+ 17e:	08 95       	ret
+
+00000180 <main>:
+	}
+}
+
+
+int main(void)
+{
+ 180:	0f 93       	push	r16
+ 182:	1f 93       	push	r17
+ 184:	cf 93       	push	r28
+ 186:	df 93       	push	r29
+	DDRA = 0x00;
+ 188:	1a ba       	out	0x1a, r1	; 26
+	DDRB = 0x3D;
+ 18a:	8d e3       	ldi	r24, 0x3D	; 61
+ 18c:	87 bb       	out	0x17, r24	; 23
+	DDRD = 0x78;
+ 18e:	88 e7       	ldi	r24, 0x78	; 120
+ 190:	81 bb       	out	0x11, r24	; 17
+
+	PORTA = 0x03;
+ 192:	83 e0       	ldi	r24, 0x03	; 3
+ 194:	8b bb       	out	0x1b, r24	; 27
+	PORTB = 0x02;
+ 196:	82 e0       	ldi	r24, 0x02	; 2
+ 198:	88 bb       	out	0x18, r24	; 24
+	PORTD = 0x04;
+ 19a:	84 e0       	ldi	r24, 0x04	; 4
+ 19c:	82 bb       	out	0x12, r24	; 18
+
+	//reset watchdog
+	wdt_reset();
+ 19e:	a8 95       	wdr
+	//set up WDT interrupt
+	WDTCSR = (1<<WDCE)|(1<<WDE);
+ 1a0:	88 e1       	ldi	r24, 0x18	; 24
+ 1a2:	81 bd       	out	0x21, r24	; 33
+	//Start watchdog timer with 4s prescaller
+	WDTCSR = (1<<WDE)|(1<<WDP0)|(1<<WDP2);
+ 1a4:	8d e0       	ldi	r24, 0x0D	; 13
+ 1a6:	81 bd       	out	0x21, r24	; 33
+
+	RelayUsb(0);
+ 1a8:	94 98       	cbi	0x12, 4	; 18
+	RelayFw(0);
+ 1aa:	95 98       	cbi	0x12, 5	; 18
+
+	LEDS_OFF;
+ 1ac:	c5 98       	cbi	0x18, 5	; 24
+ 1ae:	c2 98       	cbi	0x18, 2	; 24
+ 1b0:	c0 98       	cbi	0x18, 0	; 24
+ 1b2:	96 98       	cbi	0x12, 6	; 18
+	LED_FW(0);
+ 1b4:	c4 98       	cbi	0x18, 4	; 24
+	LED_USB(0);
+ 1b6:	c3 98       	cbi	0x18, 3	; 24
+
+	switchState = STATE_OFF;
+ 1b8:	10 92 60 00 	sts	0x0060, r1
+ 1bc:	c4 e6       	ldi	r28, 0x64	; 100
+ 1be:	d0 e0       	ldi	r29, 0x00	; 0
+
+	for(;;)
+	{
+		if(ButtonState1)
+ 1c0:	00 e2       	ldi	r16, 0x20	; 32
+ 1c2:	1e e4       	ldi	r17, 0x4E	; 78
+ 1c4:	b1 99       	sbic	0x16, 1	; 22
+ 1c6:	16 c0       	rjmp	.+44     	; 0x1f4 <main+0x74>
+		{			
+			HandlePressII();			
+ 1c8:	bf df       	rcall	.-130    	; 0x148 <HandlePressII>
+ 1ca:	09 c0       	rjmp	.+18     	; 0x1de <main+0x5e>
+
+			//wait till button release
+			while(ButtonState1)
+			{
+				LED_1(1);
+ 1cc:	c5 9a       	sbi	0x18, 5	; 24
+ 1ce:	88 ee       	ldi	r24, 0xE8	; 232
+ 1d0:	93 e0       	ldi	r25, 0x03	; 3
+ 1d2:	fe 01       	movw	r30, r28
+ 1d4:	31 97       	sbiw	r30, 0x01	; 1
+ 1d6:	f1 f7       	brne	.-4      	; 0x1d4 <main+0x54>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1d8:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 1da:	d9 f7       	brne	.-10     	; 0x1d2 <main+0x52>
+				_delay_ms(100);
+				wdt_reset();
+ 1dc:	a8 95       	wdr
+		if(ButtonState1)
+		{			
+			HandlePressII();			
+
+			//wait till button release
+			while(ButtonState1)
+ 1de:	b1 9b       	sbis	0x16, 1	; 22
+ 1e0:	f5 cf       	rjmp	.-22     	; 0x1cc <main+0x4c>
+			{
+				LED_1(1);
+				_delay_ms(100);
+				wdt_reset();
+			}
+			LED_1(0);
+ 1e2:	c5 98       	cbi	0x18, 5	; 24
+ 1e4:	88 ee       	ldi	r24, 0xE8	; 232
+ 1e6:	93 e0       	ldi	r25, 0x03	; 3
+ 1e8:	fe 01       	movw	r30, r28
+ 1ea:	31 97       	sbiw	r30, 0x01	; 1
+ 1ec:	f1 f7       	brne	.-4      	; 0x1ea <main+0x6a>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1ee:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 1f0:	d9 f7       	brne	.-10     	; 0x1e8 <main+0x68>
+ 1f2:	32 c0       	rjmp	.+100    	; 0x258 <main+0xd8>
+			_delay_ms(100);
+		}
+		else if(ButtonStateFw)	//FW Button was pressed
+ 1f4:	c9 99       	sbic	0x19, 1	; 25
+ 1f6:	0f c0       	rjmp	.+30     	; 0x216 <main+0x96>
+		{
+			HandlePressII();	
+ 1f8:	a7 df       	rcall	.-178    	; 0x148 <HandlePressII>
+ 1fa:	09 c0       	rjmp	.+18     	; 0x20e <main+0x8e>
+
+			//wait till button release
+			while(ButtonStateFw)
+			{
+				LED_2(1);
+ 1fc:	c2 9a       	sbi	0x18, 2	; 24
+ 1fe:	88 ee       	ldi	r24, 0xE8	; 232
+ 200:	93 e0       	ldi	r25, 0x03	; 3
+ 202:	fe 01       	movw	r30, r28
+ 204:	31 97       	sbiw	r30, 0x01	; 1
+ 206:	f1 f7       	brne	.-4      	; 0x204 <main+0x84>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 208:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 20a:	d9 f7       	brne	.-10     	; 0x202 <main+0x82>
+				_delay_ms(100);
+				wdt_reset();
+ 20c:	a8 95       	wdr
+		else if(ButtonStateFw)	//FW Button was pressed
+		{
+			HandlePressII();	
+
+			//wait till button release
+			while(ButtonStateFw)
+ 20e:	c9 9b       	sbis	0x19, 1	; 25
+ 210:	f5 cf       	rjmp	.-22     	; 0x1fc <main+0x7c>
+			{
+				LED_2(1);
+				_delay_ms(100);
+				wdt_reset();
+			}
+			LED_2(0);
+ 212:	c2 98       	cbi	0x18, 2	; 24
+ 214:	21 c0       	rjmp	.+66     	; 0x258 <main+0xd8>
+		}
+		else if(ButtonStateUsb)   //USB Button was pressed
+ 216:	c8 99       	sbic	0x19, 0	; 25
+ 218:	0f c0       	rjmp	.+30     	; 0x238 <main+0xb8>
+		{
+			HandlePressI();	
+ 21a:	7a df       	rcall	.-268    	; 0x110 <HandlePressI>
+ 21c:	09 c0       	rjmp	.+18     	; 0x230 <main+0xb0>
+
+			//wait till button release
+			while(ButtonStateUsb)
+			{
+				LED_3(1);
+ 21e:	c0 9a       	sbi	0x18, 0	; 24
+ 220:	88 ee       	ldi	r24, 0xE8	; 232
+ 222:	93 e0       	ldi	r25, 0x03	; 3
+ 224:	fe 01       	movw	r30, r28
+ 226:	31 97       	sbiw	r30, 0x01	; 1
+ 228:	f1 f7       	brne	.-4      	; 0x226 <main+0xa6>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 22a:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 22c:	d9 f7       	brne	.-10     	; 0x224 <main+0xa4>
+				_delay_ms(100);
+				wdt_reset();
+ 22e:	a8 95       	wdr
+		else if(ButtonStateUsb)   //USB Button was pressed
+		{
+			HandlePressI();	
+
+			//wait till button release
+			while(ButtonStateUsb)
+ 230:	c8 9b       	sbis	0x19, 0	; 25
+ 232:	f5 cf       	rjmp	.-22     	; 0x21e <main+0x9e>
+			{
+				LED_3(1);
+				_delay_ms(100);
+				wdt_reset();
+			}
+			LED_3(0);
+ 234:	c0 98       	cbi	0x18, 0	; 24
+ 236:	10 c0       	rjmp	.+32     	; 0x258 <main+0xd8>
+		}
+		else if(ButtonState4)
+ 238:	82 99       	sbic	0x10, 2	; 16
+ 23a:	0e c0       	rjmp	.+28     	; 0x258 <main+0xd8>
+		{
+			HandlePressI();
+ 23c:	69 df       	rcall	.-302    	; 0x110 <HandlePressI>
+ 23e:	09 c0       	rjmp	.+18     	; 0x252 <main+0xd2>
+
+			//wait till button release
+			while(ButtonState4)
+			{
+				LED_4(1);
+ 240:	96 9a       	sbi	0x12, 6	; 18
+ 242:	88 ee       	ldi	r24, 0xE8	; 232
+ 244:	93 e0       	ldi	r25, 0x03	; 3
+ 246:	fe 01       	movw	r30, r28
+ 248:	31 97       	sbiw	r30, 0x01	; 1
+ 24a:	f1 f7       	brne	.-4      	; 0x248 <main+0xc8>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 24c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 24e:	d9 f7       	brne	.-10     	; 0x246 <main+0xc6>
+				_delay_ms(100);
+				wdt_reset();
+ 250:	a8 95       	wdr
+		else if(ButtonState4)
+		{
+			HandlePressI();
+
+			//wait till button release
+			while(ButtonState4)
+ 252:	82 9b       	sbis	0x10, 2	; 16
+ 254:	f5 cf       	rjmp	.-22     	; 0x240 <main+0xc0>
+			{
+				LED_4(1);
+				_delay_ms(100);
+				wdt_reset();
+			}
+			LED_4(0);
+ 256:	96 98       	cbi	0x12, 6	; 18
+ 258:	c8 01       	movw	r24, r16
+ 25a:	01 97       	sbiw	r24, 0x01	; 1
+ 25c:	f1 f7       	brne	.-4      	; 0x25a <main+0xda>
+		}
+
+		_delay_ms(20);
+		wdt_reset();
+ 25e:	a8 95       	wdr
+ 260:	b1 cf       	rjmp	.-158    	; 0x1c4 <main+0x44>
+
+00000262 <_exit>:
+ 262:	f8 94       	cli
+
+00000264 <__stop_program>:
+ 264:	ff cf       	rjmp	.-2      	; 0x264 <__stop_program>

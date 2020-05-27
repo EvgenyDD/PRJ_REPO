@@ -1,0 +1,6 @@
+Added Component: Designator=NT?(NET_TIE)
+Added Component: Designator=NT?(NET_TIE)
+Added Pin To Net: NetName=NetNT?_1 Pin=NT?-1
+Added Pin To Net: NetName=NetNT?_1 Pin=NT?-1
+Added Pin To Net: NetName=GND Pin=NT?-2
+Added Pin To Net: NetName=VCC Pin=NT?-2

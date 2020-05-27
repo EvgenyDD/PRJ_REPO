@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544\src -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544\cmsis_boot -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544\cmsis_lib -ID:\WORKSPACE\ARM\PowerMonitor -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544 -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544\cmsis -ID:\WORKSPACE -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544\pcd8544\cmsis_lib\include -ID:\WORKSPACE\ARM -I..\..\..\..\..\Users\Evgeny\Desktop\RTOS\40_pcd8544">
+      <target file="IICServo.o" lastModified="14502a205f3">
+         <source file="D:\WORKSPACE\ARM\PowerMonitor\IICServo.c" lastModified="14502a200c5"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="144f4fa484e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13ce37ba220"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="144f4fa4940">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="13ce51c61a0"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="144f4fa4bdf">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="144de6f3a16"/>
+      </target>
+      <target file="pcd8544.o" lastModified="144f5007c51">
+         <source file="..\..\..\src\pcd8544.c" lastModified="144d671ea65"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="144f4fa48b0">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13ce7e62060"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="144f4fa45e7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13ce37b8ab0"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="144f4fa4a7d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="144df616534"/>
+      </target>
+      <target file="main.o" lastModified="1450a83ce81">
+         <source file="..\..\..\main.c" lastModified="1450a83ca8b"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="144f4fa49db">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="13ce37ba9f0"/>
+      </target>
+      <target file="spi.o" lastModified="144f4fa451f">
+         <source file="..\..\..\spi.c" lastModified="144df6f4e4d"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="144f4fa47ce">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13ce37b9a50"/>
+      </target>
+      <target file="misc.o" lastModified="144f4fa4ade">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13ce56b8370"/>
+      </target>
+   </processor>
+</history>

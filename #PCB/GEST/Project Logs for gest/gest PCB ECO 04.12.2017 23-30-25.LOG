@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=C103 Old Footprint=ERA-0603 New Footprint=0603x
+Added Component: Designator=C104(0603x)
+Added Component: Designator=C105(0603x)
+Added Pin To Net: NetName=GND Pin=C104-1
+Added Pin To Net: NetName=3.3V Pin=C104-2
+Added Pin To Net: NetName=GND Pin=C105-1
+Added Pin To Net: NetName=3.3V Pin=C105-2

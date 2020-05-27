@@ -1,0 +1,41 @@
+http://www.librepilot.org/
+
+http://opwiki.readthedocs.io/en/latest/user_manual/index.html
+
+http://opwiki.readthedocs.io/en/latest/user_manual/revo/revo.html - Revo manual
+http://opwiki.readthedocs.io/en/latest/user_manual/revo/index.html
+
+https://librepilot.atlassian.net/wiki/display/LPDOC/User+Manual
+https://librepilot.atlassian.net/wiki/display/LPDOC/Developer+Manual
+https://librepilot.atlassian.net/wiki/display/LPDOC/Make+basics
+https://librepilot.atlassian.net/wiki/display/LPDOC/Windows+Building+and+Packaging
+
+
+OSD:
+http://apmcopter.ru/apm/apm-setup/minimosd-proshivka-nastroyka-podklyuchenie.html
+https://github.com/night-ghost/minimosd-extra
+
+
+BUY:
+6.00$	OSD
+	http://www.ebay.com/itm/On-Screen-Display-OSD-Board-MinimOSD-APM-Telemetry-to-APM2-0-APM2-5-APM-1-2-GU-/351633402468?hash=item51defbea64:g:frYAAOSwoydWndlg
+	http://www.banggood.com/ru/MICRO-MinimOSD-Minim-OSD-Mini-OSD-W-KV-Team-MOD-For-Naze32-Flight-Controller-p-990556.html
+
+16.00$	GPS 
+	http://www.ebay.com/itm/Flight-Controller-GPS-Module-with-Compass-Engine-for-Ublox-NEO-M8N-6M-Quad-BG-/112021075426?	var=&hash=item1a14f9f5e2:m:m04w45_rkn8YAVvy7PgASzA
+
+4.79$	MPU-6000 MPU
+	http://www.ebay.com/itm/New-1PCS-MPU-6000-Six-axis-sensor-MPU6000-INVENSENSE-Chip-Supports-Spi-		Interface-/371310180202?hash=item5673cfb76a:g:OW8AAOSwDNdV0~PA
+
+7.00$	MS5611-01BA03 Altimeter
+	http://www.ebay.com/itm/MS5611-01BA03-MS5611-Manu-MEAS-Encapsulation-LGA-Pressure-Meter-Altimeter-		Sensor-/400985239627?hash=item5d5c95304b:g:gaIAAOSwAL9UdUJU
+
+3.30$	HMC5883L Compass
+	http://www.ebay.com/itm/5PCS-Compass-Magnetometer-IC-HONEYWELL-LCC-16-HMC5883L-HMC5883L-TR-HMC5883-L883			-/361426522797?hash=item5426b312ad:g:a9QAAOSwAYtWNH1x
+	http://aliexpress.com/wholesale?catId=0&initiative_id=SB_20160609004748&SearchText=HMC5883L
+
+11,40$	RFM22 Radio Modem 2x
+	http://www.ebay.com/sch/i.html?_odkw=oplink		+mini&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xrfm2.TRS0&_nkw=rfm22&_sacat=0
+	http://aliexpress.com/item/SI4432-wireless-module-1000meters-long-distance-240-960mhz-Special-		promotions/929600736.html
+	http://aliexpress.com/wholesale?catId=0&initiative_id=SB_20160609004839&SearchText=rfm22
+

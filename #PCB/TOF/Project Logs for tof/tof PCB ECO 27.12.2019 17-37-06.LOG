@@ -1,0 +1,69 @@
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Added Component: Designator=C1(RC_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,07"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "C0603C104M4RACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "CAP CER 0.1UF 25V X7R 0603"; VariantName = "[No Variations]"
+Added Component: Designator=C2(RC_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,07"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "C0603C104M4RACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "CAP CER 0.1UF 25V X7R 0603"; VariantName = "[No Variations]"
+Added Component: Designator=R1(rr_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "RC0402FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RES SMD 1K OHM 1% 1/16W 0402"; VariantName = "[No Variations]"
+Added Component: Designator=R2(rr_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "RC0402FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RES SMD 1K OHM 1% 1/16W 0402"; VariantName = "[No Variations]"
+Added Component: Designator=R3(rr_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "RC0402FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RES SMD 1K OHM 1% 1/16W 0402"; VariantName = "[No Variations]"
+Added Component: Designator=R4(rr_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0,1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Order Number"; Value = "RC0402FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RES SMD 1K OHM 1% 1/16W 0402"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=VCC Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VCC Pin=C2-2
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Pin To Net: NetName=VCC Pin=R2-2
+Added Pin To Net: NetName=VCC Pin=R3-2
+Added Pin To Net: NetName=VCC Pin=R4-2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-5
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=U1-9
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=U1-10
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=U1-7
+Added Net: Name=NetR4_1
+Added Member To Class: ClassName=tof Member=Component C1 100nF 25V
+Added Member To Class: ClassName=tof Member=Component C2 100nF 25V
+Added Member To Class: ClassName=tof Member=Component R1 1k
+Added Member To Class: ClassName=tof Member=Component R2 1k
+Added Member To Class: ClassName=tof Member=Component R3 1k
+Added Member To Class: ClassName=tof Member=Component R4 1k

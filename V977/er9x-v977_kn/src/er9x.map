@@ -1,0 +1,1788 @@
+Archive member included because of file (symbol)
+
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              obj/menus.o (__mulsi3)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              obj/audio.o (__udivmodqi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                              obj/menus.o (__divmodqi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              obj/er9x.o (__udivmodhi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                              obj/er9x.o (__divmodhi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              obj/menus.o (__udivmodsi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              obj/menus.o (__divmodsi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o (exit)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              obj/er9x.o (__do_copy_data)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              obj/er9x.o (__do_clear_bss)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+                              obj/er9x.o (__do_global_ctors)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o) (__tablejump__)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+                              obj/menus.o (memmove)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                              obj/pers.o (memset)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+                              obj/file.o (__eerd_block_m64)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o) (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+audioQueue::driver()::toneCounter
+                    0x1               obj/er9x.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+LOAD obj/er9x.o
+LOAD obj/stamp.o
+LOAD obj/menus.o
+LOAD obj/pers.o
+LOAD obj/file.o
+LOAD obj/lcd.o
+LOAD obj/drivers.o
+LOAD obj/templates.o
+LOAD obj/pulses.o
+LOAD obj/audio.o
+LOAD obj/nrf24l01.o
+LOAD obj/kn_nrf24l01.o
+LOAD obj/spi.o
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0xfe44
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x0000008c       0x46 obj/audio.o
+ *(.progmem*)
+ .progmem.data  0x000000d2      0x195 obj/er9x.o
+                0x00000145                stickScramble
+                0x0000012f                Str_ON
+                0x00000133                modi12x3
+                0x000000ea                Str_Switches
+                0x0000012b                Str_OFF
+                0x000000d2                bchout_ar
+ .progmem.data  0x00000267       0x4c obj/stamp.o
+                0x00000267                Stamps
+ .progmem.data  0x000002b3      0xe3c obj/menus.o
+                0x000003af                Str_telemItems
+                0x000002c2                Str_Chans_Gv
+                0x000003dd                TelemIndex
+                0x000002b3                Str_Switch_warn
+                0x00000368                Curve_Str
+ .progmem.data  0x000010ef       0x7f obj/pers.o
+ .progmem.data  0x0000116e      0x756 obj/lcd.o
+ .progmem.data  0x000018c4        0x8 obj/drivers.o
+ .progmem.data  0x000018cc       0x7d obj/templates.o
+                0x000018cc                n_Templates
+ .progmem.data  0x00001949      0x200 obj/pulses.o
+                0x00001b4a                . = ALIGN (0x2)
+ *fill*         0x00001b49        0x1 00
+                0x00001b4a                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00001b4a        0x0 linker stubs
+ *(.trampolines*)
+                0x00001b4a                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00001b4a                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00001b4a        0x2 obj/er9x.o
+                0x00001b4c                __ctors_end = .
+                0x00001b4c                __dtors_start = .
+ *(.dtors)
+                0x00001b4c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00001b4c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+                0x00001b4c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00001b4c        0xc c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00001b58       0x16 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00001b58                __do_copy_data
+ .init4         0x00001b6e       0x10 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001b6e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00001b7e       0x16 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+                0x00001b7e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00001b94        0x8 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+ *(.init9)
+ *(.text)
+ .text          0x00001b9c        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+                0x00001b9c                __vector_22
+                0x00001b9c                __vector_28
+                0x00001b9c                __vector_1
+                0x00001b9c                __vector_32
+                0x00001b9c                __vector_34
+                0x00001b9c                __bad_interrupt
+                0x00001b9c                __vector_6
+                0x00001b9c                __vector_31
+                0x00001b9c                __vector_3
+                0x00001b9c                __vector_23
+                0x00001b9c                __vector_30
+                0x00001b9c                __vector_17
+                0x00001b9c                __vector_19
+                0x00001b9c                __vector_7
+                0x00001b9c                __vector_5
+                0x00001b9c                __vector_33
+                0x00001b9c                __vector_4
+                0x00001b9c                __vector_9
+                0x00001b9c                __vector_2
+                0x00001b9c                __vector_21
+                0x00001b9c                __vector_29
+                0x00001b9c                __vector_8
+                0x00001b9c                __vector_14
+                0x00001b9c                __vector_18
+                0x00001b9c                __vector_20
+ .text          0x00001ba0     0x24ae obj/er9x.o
+                0x00001c08                CS_STATE(unsigned char)
+                0x00001d06                getTrimValue(unsigned char, unsigned char)
+                0x000035ee                procOneVoiceAlarm(t_voiceAlarm*, unsigned char)
+                0x00002878                putsDrSwitches(unsigned char, unsigned char, signed char, unsigned char)
+                0x00002066                anaIn(unsigned char)
+                0x00003fdc                putsChnRaw(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00001e10                setVolume(unsigned char)
+                0x000023d4                setTrimValue(unsigned char, unsigned char, int)
+                0x00002c60                getFlightPhase()
+                0x00001cb2                getTrimFlightPhase(unsigned char, unsigned char)
+                0x00001d88                chainMenu(void (*)(unsigned char))
+                0x00002704                checkIncDec(signed char, signed char, signed char, unsigned char)
+                0x00004044                putsChn(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000237e                REG100_100(signed char)
+                0x00001bda                modeFixValue(unsigned char)
+                0x00001d74                lastPopMenu()
+                0x000033f8                pushMenu(void (*)(unsigned char))
+                0x0000273c                checkIncDec_hm(signed char, signed char, signed char)
+                0x00002018                calcStickScroll(unsigned char)
+                0x00001dca                putVoiceQueueLong(unsigned int)
+                0x00002d46                perMain()
+                0x000023a0                calc100toRESX(signed char)
+                0x00002728                checkIncDec_hg(signed char, signed char, signed char)
+                0x000038d2                processVoiceAlarms()
+                0x00001c26                limitaddress(unsigned char)
+                0x00002786                almess(char const*, unsigned char)
+                0x00002730                checkIncDec_hm0(signed char, signed char)
+                0x00003544                checkTHR()
+                0x00002212                __vector_25
+                0x00001c70                getRawTrimValue(unsigned char, unsigned char)
+                0x00001da2                backlightKey()
+                0x000026f4                checkIncDec_hmu0(int, unsigned char)
+                0x000029b2                getSwitch(signed char, bool, unsigned char)
+                0x00001e1e                putVoiceQueue(unsigned char)
+                0x000028e2                putsMomentDrSwitches(unsigned char, unsigned char, signed char, unsigned char)
+                0x00003322                alertx(char const*, bool)
+                0x00003458                checkSwitches()
+                0x00003428                popMenu(bool)
+                0x00002c98                check_backlight_voice()
+                0x00001ba0                audioQueue::driver()
+                0x000020fe                getADC_osmp()
+                0x0000231c                calc1000toRESX(int)
+                0x000027d4                putsDblSizeName(unsigned char)
+                0x00003dbc                main
+                0x0000253c                getCurrentSwitchStates()
+                0x00001d54                validatePlusMinus125(int)
+                0x0000298e                doVoiceAlarmSource(t_voiceAlarm*)
+                0x00001fc8                pollRotary()
+                0x0000271c                checkIncDec_hg0(signed char, signed char)
+                0x00002918                getValue(unsigned char)
+                0x00001c16                mixaddress(unsigned char)
+                0x00002466                __vector_15
+                0x000024fe                checkSlaveMode()
+                0x00001e32                t_voice::voice_process()
+                0x00002564                checkIncDec16(int, int, int, unsigned char)
+                0x000038f6                mainSequence()
+                0x00001bf8                get_tmr10ms()
+                0x00001c36                checkThrottlePosition(int, unsigned char, int)
+                0x000033a8                alert(char const*)
+                0x00002388                IS_EXPO_THROTTLE(unsigned char)
+                0x00002744                alertMessages(char const*, char const*)
+                0x000020ca                stickMoveValue()
+                0x00001e26                putVoiceQueueUpper(unsigned char)
+                0x000020b2                tanaIn(unsigned char)
+                0x00002308                isAgvar(unsigned char)
+                0x00003f3a                putsTmrMode(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00002cdc                doBackLightVoice(unsigned char)
+                0x000027cc                message(char const*)
+                0x00002152                __vector_10
+                0x0000212e                __vector_16
+                0x0000234a                REG(signed char, signed char, signed char)
+                0x00002864                putWarnSwitch(unsigned char, unsigned char)
+ .text          0x0000404e        0x0 obj/stamp.o
+ .text          0x0000404e     0x8278 obj/menus.o
+                0x0000afdc                menuProcModelSelect(unsigned char)
+                0x0000ac94                menuProcGlobals(unsigned char)
+                0x00004530                lcd_xlabel_decimal(unsigned char, char const*, unsigned int, unsigned char, unsigned char)
+                0x000073d8                voice_telem_item(unsigned char)
+                0x000049a4                dispFlightModename(unsigned char, unsigned char, unsigned char)
+                0x00007ad6                setStickCenter()
+                0x000059ea                menuRangeBind(unsigned char)
+                0x000045ee                DO_SQUARE(unsigned char, unsigned char, unsigned char)
+                0x0000560e                switchDisplay(unsigned char, unsigned char)
+                0x00004556                menu_lcd_HYPHINV(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000471e                editName(unsigned char, unsigned char, unsigned char*, unsigned char, unsigned char)
+                0x0000852c                drawCurve(unsigned char)
+                0x00004694                doMainScreenGrphics()
+                0x0000a9d8                menuPhaseOne(unsigned char)
+                0x000042d0                resetTimern(unsigned char)
+                0x00005a50                timer()
+                0x00005a2c                menuMixersLimit(unsigned char)
+                0x000050a0                putsTelemetryChannel(unsigned char, unsigned char, signed char, int, unsigned char, unsigned char)
+                0x0000b3b4                menuProcMix(unsigned char)
+                0x0000493e                putsChnOpRaw(unsigned char, unsigned char, t_MixData*, unsigned char)
+                0x00007876                edit_dr_switch(unsigned char, unsigned char, signed char, unsigned char, unsigned char)
+                0x0000ae68                MState2::check_columns(unsigned char, unsigned char)
+                0x00004350                isqrt32(unsigned long)
+                0x00004a02                menu_lcd_onoff(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00005668                get_dr_state(unsigned char)
+                0x0000c0ee                menuProcCurveOne(unsigned char)
+                0x0000bd14                menuScaleOne(unsigned char)
+                0x00007f5a                menuProc0(unsigned char)
+                0x0000ae7e                menuProcVoiceAlarm(unsigned char)
+                0x0000589a                menuProcStatistic(unsigned char)
+                0x0000575e                calcExpo(unsigned char, int)
+                0x000074f0                menuDeleteDupModel(unsigned char)
+                0x0000963e                menuProcVoiceOne(unsigned char)
+                0x00005e88                perOut(int*, unsigned char)
+                0x00004338                resetTimer1()
+                0x000040a0                convertTelemConstant(unsigned char, signed char)
+                0x0000409c                telemItemValid(unsigned char)
+                0x00004644                telltale(unsigned char, signed char, signed char)
+                0x00004996                displayNext()
+                0x0000bc22                menuProcTemplates(unsigned char)
+                0x00005e40                trace()
+                0x000044c6                reachMixerCountLimit()
+                0x0000413a                qRotary()
+                0x00004496                evalOffset(signed char, unsigned char)
+                0x00004ace                gvarMenuItem(unsigned char, unsigned char, signed char, signed char, signed char, unsigned char)
+                0x00007782                doPopup(char const*, unsigned char, unsigned char)
+                0x000040d2                get_telemetry_value(unsigned char)
+                0x00004156                MAXCOL(unsigned char, unsigned char const*, unsigned char)
+                0x0000b29c                menuModelPhases(unsigned char)
+                0x000056c8                moveMix(unsigned char, unsigned char)
+                0x00004a8e                TITLEP(char const*)
+                0x00007642                deleteMix(unsigned char)
+                0x00004348                resetTimer2()
+                0x00004574                putc_0_1(unsigned char, unsigned char, unsigned char)
+                0x000042bc                idx2char(unsigned char)
+                0x0000846e                drawFunction(unsigned char, unsigned char)
+                0x00004586                put_curve(unsigned char, unsigned char, signed char, unsigned char)
+                0x0000749c                putsTrimMode(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x000043c0                intpol(int, unsigned char)
+                0x000071ca                perOutPhase(int*, unsigned char)
+                0x00004078                c_to_f(int)
+                0x000049ce                displayTimer(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x000085e4                MState2::check(unsigned char, unsigned char const*, unsigned char, unsigned char)
+                0x000044da                yesNoMenuExit(char const*)
+                0x00007690                menuDeleteMix(unsigned char)
+                0x00008a00                menuProcModelIndex(unsigned char)
+                0x0000404e                m_to_ft(int)
+                0x0000b770                menuProcMixOne(unsigned char)
+                0x0000c02e                menuProcCurve(unsigned char)
+                0x000045c2                hyphinvMenuItem_m(unsigned char, unsigned char, unsigned char)
+                0x000079f8                editExpoVals(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000429e                char2idx(char)
+                0x00009bca                menuProcIndex(unsigned char)
+                0x000041a0                expou(unsigned int, unsigned int)
+                0x00004b62                putsAttIdxTelemItems(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00004238                expo(int, int)
+                0x00004f04                calc_scaler(unsigned char, unsigned char*, unsigned char*)
+                0x00004a9c                dispGvar(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00004ec8                scalerDecimal(unsigned char, unsigned char, unsigned char)
+ .text          0x0000c2c6      0x798 obj/pers.o
+                0x0000c332                eeCheck(bool)
+                0x0000c2e0                evalChkSum()
+                0x0000c2fc                eeDirty(unsigned char)
+                0x0000c2c6                setNameP(char*, char const*)
+                0x0000c614                eeModelExists(unsigned char)
+                0x0000c72e                modelDefaultWrite(unsigned char)
+                0x0000c61c                eeDuplicateModel(unsigned char)
+                0x0000c806                eeLoadModel(unsigned char)
+                0x0000c584                eeReadGeneral()
+                0x0000c4bc                eeWaitComplete()
+                0x0000c6c0                eeLoadModelName(unsigned char, char*, unsigned char)
+                0x0000c4dc                eeGeneralDefault()
+                0x0000c7b6                eeWriteGeneral()
+ .text          0x0000ca5e      0x834 obj/file.o
+                0x0000ca5e                EFile::exists(unsigned char)
+                0x0000ca76                EFile::size()
+                0x0000d064                EFile::readRlc(unsigned char*, unsigned int)
+                0x0000d126                EFile::rm(unsigned char)
+                0x0000cf46                EFile::writeRlc(unsigned char, unsigned char, unsigned char*, unsigned int, unsigned char)
+                0x0000cb02                EeFsGetFree()
+                0x0000cc82                EFile::swap(unsigned char, unsigned char)
+                0x0000ce3e                EFile::write(unsigned char*, unsigned char)
+                0x0000cd46                EFile::closeTrunc()
+                0x0000cb22                EFile::read(unsigned char*, unsigned int)
+                0x0000ca92                EFile::openRd(unsigned char)
+                0x0000cdc8                EFile::create(unsigned char, unsigned char, unsigned int)
+                0x0000d1a8                EeFsck()
+                0x0000d15c                EeFsFormat()
+                0x0000cc08                EeFsOpen()
+ .text          0x0000d292      0x9fc obj/lcd.o
+                0x0000d6b8                lcd_hline(unsigned char, unsigned char, signed char)
+                0x0000d4c6                lcd_putsn_P(unsigned char, unsigned char, char const*, unsigned char)
+                0x0000d528                lcd_puts_Pleft(unsigned char, char const*)
+                0x0000d538                lcd_puts_Pskip(unsigned char, char const*, unsigned char)
+                0x0000d932                lcd_outdezNAtt(unsigned char, unsigned char, long, unsigned char, signed char)
+                0x0000db58                lcd_2_digits(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000dbf0                putsTime(unsigned char, unsigned char, int, unsigned char, unsigned char)
+                0x0000d63e                lcd_hlineStip(unsigned char, unsigned char, signed char, unsigned char)
+                0x0000d85c                lcd_init()
+                0x0000dbbc                putsVolts(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000d7b0                lcd_hbar(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000dbb4                lcd_outdez(unsigned char, unsigned char, int)
+                0x0000dbe4                putsVBat(unsigned char, unsigned char, unsigned char)
+                0x0000d55e                lcd_puts_P(unsigned char, unsigned char, char const*)
+                0x0000d5f0                lcd_write_bits(unsigned char*, unsigned char)
+                0x0000d45c                lcd_putsnAtt(unsigned char, unsigned char, char const*, unsigned char, unsigned char)
+                0x0000d4d2                lcd_putsAtt(unsigned char, unsigned char, char const*, unsigned char)
+                0x0000d610                lcd_plot(unsigned char, unsigned char)
+                0x0000d834                lcdSetRefVolt(unsigned char)
+                0x0000d4aa                lcd_putsAttIdx(unsigned char, unsigned char, char const*, unsigned char, unsigned char)
+                0x0000dc78                lcd_clear()
+                0x0000db86                lcd_outdezAtt(unsigned char, unsigned char, int, unsigned char)
+                0x0000d822                lcdSendCtl(unsigned char)
+                0x0000d5b4                lcd_char_inverse(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000d566                lcd_outhex4(unsigned char, unsigned char, unsigned int)
+                0x0000d852                lcdSetContrast()
+                0x0000d314                lcd_putcAtt(unsigned char, unsigned char, char, unsigned char)
+                0x0000d454                lcd_putc(unsigned char, unsigned char, char)
+                0x0000d292                lcd_img(unsigned char, unsigned char, unsigned char const*, unsigned char)
+                0x0000d6c0                lcd_vline(unsigned char, unsigned char, signed char)
+                0x0000d8aa                refreshDiplay()
+                0x0000d74e                lcd_rect(unsigned char, unsigned char, unsigned char, unsigned char)
+ .text          0x0000dc8e      0x33e obj/drivers.o
+                0x0000dd72                keyState(EnumKeys)
+                0x0000dc98                Key::input(bool, EnumKeys)
+                0x0000df60                eeWriteBlockCmp(void const*, unsigned int, unsigned int)
+                0x0000dc8e                getEvent()
+                0x0000de4c                per10ms()
+                0x0000de12                pauseEvents(unsigned char)
+                0x0000de30                killEvents(unsigned char)
+ .text          0x0000dfcc      0x4cc obj/templates.o
+                0x0000e076                clearCurves()
+                0x0000e092                clearMixes()
+                0x0000dfcc                setSwitch(unsigned char, unsigned char, signed char, signed char)
+                0x0000e0a8                applyTemplate(unsigned char)
+                0x0000e066                setMix(unsigned char, unsigned char)
+ .text          0x0000e498      0xa44 obj/pulses.o
+                0x0000e7c8                putPcmBit(unsigned char)
+                0x0000e838                putPcmHead()
+                0x0000e8a4                setupPulsesDsm2(unsigned char)
+                0x0000ed52                __vector_24
+                0x0000ee00                __vector_12
+                0x0000edd4                startPulses()
+                0x0000e5d2                __vector_11
+                0x0000e62c                __vector_13
+                0x0000e498                setPpmTimers()
+                0x0000ecde                __vector_27
+                0x0000e4ae                setupPulsesPPM(unsigned char)
+                0x0000e9e6                setupPulses()
+                0x0000e6b4                set_timer3_capture()
+                0x0000e7ee                putPcmByte(unsigned char)
+                0x0000e6fa                __vector_26
+                0x0000e858                scaleForPXX(unsigned char)
+                0x0000e6d8                set_timer3_ppm()
+                0x0000e78e                putPcmPart(unsigned char)
+ .text          0x0000eedc      0x61c obj/audio.o
+                0x0000eef6                audioQueue::audioQueue()
+                0x0000f3e2                voice_numeric(int, unsigned char, unsigned char)
+                0x0000f3b8                audioEvent(unsigned char, unsigned int)
+                0x0000f3c8                audioVoiceDefevent(unsigned char, unsigned char)
+                0x0000ef02                audioQueue::busy()
+                0x0000ef0c                audioQueue::freeslots()
+                0x0000f004                audioQueue::play(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000f3aa                audioDefevent(unsigned char)
+                0x0000eedc                audioQueue::aqinit()
+                0x0000ef26                audioQueue::heartbeat()
+                0x0000eefc                audioQueue::audioQueue()
+                0x0000f118                audioQueue::event(unsigned char, unsigned char)
+ .text          0x0000f4f8      0x332 obj/nrf24l01.o
+                0x0000f7f4                NRF24L01_SetBitrate(unsigned char)
+                0x0000f64e                NRF24L01_WritePayload(unsigned char*, unsigned char)
+                0x0000f69c                NRF24L01_WriteRegisterMulti(unsigned char, unsigned char const*, unsigned char)
+                0x0000f51c                NRF24L01_Initialize()
+                0x0000f548                NRF24L01_FlushTx()
+                0x0000f77e                NRF24L01_Reset()
+                0x0000f7bc                NRF24L01_SetPower(unsigned char)
+                0x0000f5c8                NRF24L01_ReadRegisterMulti(unsigned char, unsigned char*, unsigned char)
+                0x0000f622                NRF24L01_ReadReg(unsigned char)
+                0x0000f550                NRF24L01_Activate(unsigned char)
+                0x0000f6f6                NRF24L01_WriteReg(unsigned char, unsigned char)
+                0x0000f72a                NRF24L01_SetTxRxMode(TXRX_State)
+                0x0000f540                NRF24L01_FlushRx()
+                0x0000f578                NRF24L01_ReadPayload(unsigned char*, unsigned char)
+ .text          0x0000f82a      0x452 obj/kn_nrf24l01.o
+                0x0000fbd8                kn_initAll(unsigned char)
+                0x0000faae                kn_callback()
+ .text          0x0000fc7c       0x1c obj/spi.o
+                0x0000fc88                SPI_Init()
+                0x0000fc7c                SPI_Send(unsigned int)
+                0x0000fc94                SPI_DeInit()
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+ .text          0x0000fc98        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x0000fc98                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000fc98       0x3e c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x0000fc98                __mulsi3
+ .text.libgcc   0x0000fcd6       0x18 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x0000fcd6                __udivmodqi4
+ .text.libgcc   0x0000fcee       0x1a c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                0x0000fcee                __divmodqi4
+ .text.libgcc   0x0000fd08       0x28 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000fd08                __udivmodhi4
+ .text.libgcc   0x0000fd30       0x26 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x0000fd30                __divmodhi4
+                0x0000fd30                _div
+ .text.libgcc   0x0000fd56       0x44 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x0000fd56                __udivmodsi4
+ .text.libgcc   0x0000fd9a       0x36 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000fd9a                __divmodsi4
+ .text.libgcc   0x0000fdd0        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000fdd0        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000fdd0        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000fdd0        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x0000fdd0        0xc c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+                0x0000fdd4                __tablejump__
+                0x0000fdd0                __tablejump2__
+ .text.avr-libc
+                0x0000fddc       0x24 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+                0x0000fddc                memmove
+ .text.avr-libc
+                0x0000fe00        0xe c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x0000fe00                memset
+ .text.avr-libc
+                0x0000fe0e       0x20 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+                0x0000fe12                __eerd_blraw_m64
+                0x0000fe0e                __eerd_block_m64
+ .text.avr-libc
+                0x0000fe2e       0x12 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x0000fe2e                memcpy
+                0x0000fe40                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000fe40        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000fe40                exit
+                0x0000fe40                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000fe40        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000fe44                _etext = .
+
+.data           0x00800100       0x2c load address 0x0000fe44
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+ .data          0x00800100        0x6 obj/er9x.o
+                0x00800100                AlarmControl
+                0x00800104                BandGap
+ .data          0x00800106        0x0 obj/stamp.o
+ .data          0x00800106        0x4 obj/menus.o
+                0x00800106                g_latency
+ .data          0x0080010a        0x0 obj/pers.o
+ .data          0x0080010a        0x0 obj/file.o
+ .data          0x0080010a        0x0 obj/lcd.o
+ .data          0x0080010a        0x0 obj/drivers.o
+ .data          0x0080010a        0x0 obj/templates.o
+ .data          0x0080010a       0x16 obj/pulses.o
+                0x0080010a                pulses2MHzptr
+ .data          0x00800120        0x0 obj/audio.o
+ .data          0x00800120        0x0 obj/nrf24l01.o
+ .data          0x00800120        0xc obj/kn_nrf24l01.o
+ .data          0x0080012c        0x0 obj/spi.o
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+ .data          0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080012c                . = ALIGN (0x2)
+                0x0080012c                _edata = .
+                0x0080012c                PROVIDE (__data_end, .)
+
+.bss            0x0080012c      0xd3b
+                0x0080012c                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080012c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+ .bss           0x0080012c      0x527 obj/er9x.o
+                0x00800635                s_anaFilt
+                0x008005ee                CsTimer
+                0x0080061e                StepSize
+                0x0080056e                SlaveMode
+                0x008005ed                sysFlags
+                0x00800606                StickScrollAllowed
+                0x008005aa                Tevent
+                0x008005a1                Rotary
+                0x0080059f                CurrentVolume
+                0x0080012c                Last_switch
+                0x00800613                EnterMenu
+                0x00800607                StickScrollTimer
+                0x00800624                g_ppmIns
+                0x0080056d                Main_running
+                0x00800138                g_eeGeneral
+                0x00800634                ppmInState
+                0x008005b5                audio
+                0x00800646                checkSlaveMode()::checkDelay
+                0x00800645                g_tmr16KHz
+                0x0080056b                AlertMessage
+                0x00800587                Nvs_state
+                0x00800621                g_LightOffCounter
+                0x008001aa                g_model
+                0x00800608                g_menuStack
+                0x0080056f                Vs_state
+                0x00800614                P1values
+                0x008005a0                ppmInValid
+                0x00800620                tick10ms
+                0x00800623                stickMoved
+                0x0080058f                Nvs_timer
+                0x00800647                checkSlaveMode()::lastSlaveMode
+                0x008005ab                TimerConfig
+                0x0080061f                g_vbat100mV
+                0x00800612                g_menuStackPtr
+ .bss           0x00800653        0x0 obj/stamp.o
+ .bss           0x00800653      0x292 obj/menus.o
+                0x0080075f                bpanaCenter
+                0x0080070c                g_posHorz
+                0x00800653                Xmem
+                0x00800712                DupSub
+                0x008006e8                scrollLR
+                0x00800871                Fade
+                0x008006ea                scrollUD
+                0x008006b6                calibratedStick
+                0x008006eb                InverseBlink
+                0x00800710                s_moveMode
+                0x0080075a                Inactivity
+                0x008006e5                s_editMode
+                0x008006e4                s_pgOfs
+                0x008006b0                CalcScaleNest
+                0x0080068b                PopupData
+                0x0080070d                M_longMenuTimer
+                0x00800760                Output
+                0x00800711                DupIfNonzero
+                0x008006b1                ThrottleStickyOn
+                0x008006ec                g_chans512
+                0x008006e6                s_editing
+                0x008006c4                ex_chans
+                0x008006e9                scroll_disabled
+                0x0080070e                s_mixMaxSel
+                0x008006af                RotaryState
+                0x008006b2                phyStick
+                0x0080068f                s_timer
+                0x008006e7                s_noHi
+                0x00800713                TimeGlobals
+                0x0080070f                mixToDelete
+                0x00800870                CurrentPhase
+                0x0080071a                chans
+ .bss           0x008008e5       0x20 obj/pers.o
+                0x008008f7                theWriteFile
+                0x008008e5                theFile
+                0x008008ee                theFile2
+                0x00800900                Ee_lock
+ .bss           0x00800905       0x40 obj/file.o
+                0x00800905                eeFs
+ .bss           0x00800945      0x404 obj/lcd.o
+                0x00800946                displayBuf
+                0x00800d48                LcdLock
+                0x00800945                lcd_lastPos
+                0x00800d46                plotType
+                0x00800d47                EepromActive
+ .bss           0x00800d49       0x32 obj/drivers.o
+                0x00800d79                g_blinkTmr10ms
+                0x00800d49                s_evt
+                0x00800d4a                keys
+                0x00800d77                g_tmr10ms
+ .bss           0x00800d7b        0x0 obj/templates.o
+ .bss           0x00800d7b       0xa0 obj/pulses.o
+                0x00800e0c                Current_protocol
+                0x00800e0e                PausePulses
+                0x00800e0d                pxxFlag
+                0x00800d7b                pulses2MHz
+                0x00800e11                PcmControl
+                0x00800e0b                heartbeat
+                0x00800e0f                B3_comp_value
+ .bss           0x00800e1b       0x2a obj/audio.o
+                0x00800e1b                Voice
+ .bss           0x00800e45        0x1 obj/nrf24l01.o
+ .bss           0x00800e46       0x20 obj/kn_nrf24l01.o
+ .bss           0x00800e66        0x0 obj/spi.o
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+ .bss           0x00800e66        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800e66        0x1 obj/er9x.o
+                0x00800e66                audioQueue::driver()::toneCounter
+                0x00800e67                PROVIDE (__bss_end, .)
+                0x0000fe44                __data_load_start = LOADADDR (.data)
+                0x0000fe70                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800e67        0x0
+                0x00800e67                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800e67                PROVIDE (__noinit_end, .)
+                0x00800e67                _end = .
+                0x00800e67                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x180
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 obj/er9x.o
+ .debug_aranges
+                0x00000020       0x20 obj/menus.o
+ .debug_aranges
+                0x00000040       0x20 obj/pers.o
+ .debug_aranges
+                0x00000060       0x20 obj/file.o
+ .debug_aranges
+                0x00000080       0x20 obj/lcd.o
+ .debug_aranges
+                0x000000a0       0x20 obj/drivers.o
+ .debug_aranges
+                0x000000c0       0x20 obj/templates.o
+ .debug_aranges
+                0x000000e0       0x20 obj/pulses.o
+ .debug_aranges
+                0x00000100       0x20 obj/audio.o
+ .debug_aranges
+                0x00000120       0x20 obj/nrf24l01.o
+ .debug_aranges
+                0x00000140       0x20 obj/kn_nrf24l01.o
+ .debug_aranges
+                0x00000160       0x20 obj/spi.o
+
+.debug_pubnames
+                0x00000000     0x1991
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x777 obj/er9x.o
+ .debug_pubnames
+                0x00000777       0x1d obj/stamp.o
+ .debug_pubnames
+                0x00000794      0x799 obj/menus.o
+ .debug_pubnames
+                0x00000f2d      0x12a obj/pers.o
+ .debug_pubnames
+                0x00001057      0x114 obj/file.o
+ .debug_pubnames
+                0x0000116b      0x258 obj/lcd.o
+ .debug_pubnames
+                0x000013c3       0xae obj/drivers.o
+ .debug_pubnames
+                0x00001471       0x6c obj/templates.o
+ .debug_pubnames
+                0x000014dd      0x1c0 obj/pulses.o
+ .debug_pubnames
+                0x0000169d      0x127 obj/audio.o
+ .debug_pubnames
+                0x000017c4      0x161 obj/nrf24l01.o
+ .debug_pubnames
+                0x00001925       0x31 obj/kn_nrf24l01.o
+ .debug_pubnames
+                0x00001956       0x3b obj/spi.o
+
+.debug_info     0x00000000    0x1bd8b
+ *(.debug_info)
+ .debug_info    0x00000000     0x3e57 obj/er9x.o
+ .debug_info    0x00003e57     0x133f obj/stamp.o
+ .debug_info    0x00005196     0x7eb6 obj/menus.o
+ .debug_info    0x0000d04c     0x1e30 obj/pers.o
+ .debug_info    0x0000ee7c     0x1d0e obj/file.o
+ .debug_info    0x00010b8a     0x250e obj/lcd.o
+ .debug_info    0x00013098     0x1972 obj/drivers.o
+ .debug_info    0x00014a0a     0x1b90 obj/templates.o
+ .debug_info    0x0001659a     0x1d64 obj/pulses.o
+ .debug_info    0x000182fe     0x19bd obj/audio.o
+ .debug_info    0x00019cbb      0x7c4 obj/nrf24l01.o
+ .debug_info    0x0001a47f     0x183f obj/kn_nrf24l01.o
+ .debug_info    0x0001bcbe       0xcd obj/spi.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x2c8b
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x616 obj/er9x.o
+ .debug_abbrev  0x00000616      0x177 obj/stamp.o
+ .debug_abbrev  0x0000078d      0x4ea obj/menus.o
+ .debug_abbrev  0x00000c77      0x48b obj/pers.o
+ .debug_abbrev  0x00001102      0x43a obj/file.o
+ .debug_abbrev  0x0000153c      0x3e4 obj/lcd.o
+ .debug_abbrev  0x00001920      0x3c0 obj/drivers.o
+ .debug_abbrev  0x00001ce0      0x301 obj/templates.o
+ .debug_abbrev  0x00001fe1      0x422 obj/pulses.o
+ .debug_abbrev  0x00002403      0x37d obj/audio.o
+ .debug_abbrev  0x00002780      0x215 obj/nrf24l01.o
+ .debug_abbrev  0x00002995      0x280 obj/kn_nrf24l01.o
+ .debug_abbrev  0x00002c15       0x76 obj/spi.o
+
+.debug_line     0x00000000     0xb5d7
+ *(.debug_line)
+ .debug_line    0x00000000     0x234e obj/er9x.o
+ .debug_line    0x0000234e       0xcd obj/stamp.o
+ .debug_line    0x0000241b     0x5360 obj/menus.o
+ .debug_line    0x0000777b      0x7ea obj/pers.o
+ .debug_line    0x00007f65      0x6f3 obj/file.o
+ .debug_line    0x00008658      0xbb9 obj/lcd.o
+ .debug_line    0x00009211      0x43c obj/drivers.o
+ .debug_line    0x0000964d      0x4d4 obj/templates.o
+ .debug_line    0x00009b21      0xa51 obj/pulses.o
+ .debug_line    0x0000a572      0x6bb obj/audio.o
+ .debug_line    0x0000ac2d      0x42f obj/nrf24l01.o
+ .debug_line    0x0000b05c      0x4a2 obj/kn_nrf24l01.o
+ .debug_line    0x0000b4fe       0xd9 obj/spi.o
+
+.debug_frame    0x00000000     0x13b0
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x4e0 obj/er9x.o
+ .debug_frame   0x000004e0      0x5d0 obj/menus.o
+ .debug_frame   0x00000ab0       0xf0 obj/pers.o
+ .debug_frame   0x00000ba0      0x160 obj/file.o
+ .debug_frame   0x00000d00      0x210 obj/lcd.o
+ .debug_frame   0x00000f10       0x80 obj/drivers.o
+ .debug_frame   0x00000f90       0x70 obj/templates.o
+ .debug_frame   0x00001000      0x130 obj/pulses.o
+ .debug_frame   0x00001130       0xd0 obj/audio.o
+ .debug_frame   0x00001200      0x120 obj/nrf24l01.o
+ .debug_frame   0x00001320       0x50 obj/kn_nrf24l01.o
+ .debug_frame   0x00001370       0x40 obj/spi.o
+
+.debug_str      0x00000000     0x4cb6
+ *(.debug_str)
+ .debug_str     0x00000000     0x1b33 obj/er9x.o
+                               0x1d9b (size before relaxing)
+ .debug_str     0x00001b33       0x11 obj/stamp.o
+                                0xa98 (size before relaxing)
+ .debug_str     0x00001b44     0x1687 obj/menus.o
+                               0x2606 (size before relaxing)
+ .debug_str     0x000031cb      0x3ad obj/pers.o
+                                0xf06 (size before relaxing)
+ .debug_str     0x00003578      0x15f obj/file.o
+                                0xd73 (size before relaxing)
+ .debug_str     0x000036d7      0x4ef obj/lcd.o
+                               0x102a (size before relaxing)
+ .debug_str     0x00003bc6      0x199 obj/drivers.o
+                                0xe62 (size before relaxing)
+ .debug_str     0x00003d5f       0xfe obj/templates.o
+                                0xbcc (size before relaxing)
+ .debug_str     0x00003e5d      0x32f obj/pulses.o
+                                0xf72 (size before relaxing)
+ .debug_str     0x0000418c       0xdd obj/audio.o
+                                0xe48 (size before relaxing)
+ .debug_str     0x00004269      0x80f obj/nrf24l01.o
+                                0x941 (size before relaxing)
+ .debug_str     0x00004a78      0x1ef obj/kn_nrf24l01.o
+                               0x11f9 (size before relaxing)
+ .debug_str     0x00004c67       0x4f obj/spi.o
+                                 0xf2 (size before relaxing)
+
+.debug_loc      0x00000000     0xc91b
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x22b0 obj/er9x.o
+ .debug_loc     0x000022b0     0x6dd2 obj/menus.o
+ .debug_loc     0x00009082      0x4bc obj/pers.o
+ .debug_loc     0x0000953e      0x887 obj/file.o
+ .debug_loc     0x00009dc5     0x13c4 obj/lcd.o
+ .debug_loc     0x0000b189      0x3c7 obj/drivers.o
+ .debug_loc     0x0000b550      0x548 obj/templates.o
+ .debug_loc     0x0000ba98      0x500 obj/pulses.o
+ .debug_loc     0x0000bf98      0x572 obj/audio.o
+ .debug_loc     0x0000c50a      0x3b2 obj/nrf24l01.o
+ .debug_loc     0x0000c8bc       0x47 obj/kn_nrf24l01.o
+ .debug_loc     0x0000c903       0x18 obj/spi.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(er9x.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x440
+ .debug_ranges  0x00000000       0x78 obj/er9x.o
+ .debug_ranges  0x00000078      0x2a8 obj/menus.o
+ .debug_ranges  0x00000320       0x48 obj/file.o
+ .debug_ranges  0x00000368       0x90 obj/lcd.o
+ .debug_ranges  0x000003f8       0x18 obj/templates.o
+ .debug_ranges  0x00000410       0x30 obj/pulses.o
+
+Cross Reference Table
+
+Symbol                                            File
+AlarmControl                                      obj/er9x.o
+                                                  obj/menus.o
+AlertMessage                                      obj/er9x.o
+B3_comp_value                                     obj/pulses.o
+BandGap                                           obj/er9x.o
+                                                  obj/menus.o
+CS_STATE(unsigned char)                           obj/er9x.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+CalcScaleNest                                     obj/menus.o
+                                                  obj/er9x.o
+CsTimer                                           obj/er9x.o
+CurrentPhase                                      obj/menus.o
+                                                  obj/kn_nrf24l01.o
+                                                  obj/er9x.o
+CurrentVolume                                     obj/er9x.o
+Current_protocol                                  obj/pulses.o
+Curve_Str                                         obj/menus.o
+                                                  obj/er9x.o
+DO_SQUARE(unsigned char, unsigned char, unsigned char) obj/menus.o
+DupIfNonzero                                      obj/menus.o
+DupSub                                            obj/menus.o
+EFile::closeTrunc()                               obj/file.o
+                                                  obj/pers.o
+EFile::create(unsigned char, unsigned char, unsigned int) obj/file.o
+                                                  obj/pers.o
+EFile::exists(unsigned char)                      obj/file.o
+                                                  obj/pers.o
+EFile::openRd(unsigned char)                      obj/file.o
+                                                  obj/pers.o
+EFile::read(unsigned char*, unsigned int)         obj/file.o
+                                                  obj/pers.o
+EFile::readRlc(unsigned char*, unsigned int)      obj/file.o
+                                                  obj/pers.o
+EFile::rm(unsigned char)                          obj/file.o
+                                                  obj/menus.o
+EFile::size()                                     obj/file.o
+                                                  obj/pers.o
+EFile::swap(unsigned char, unsigned char)         obj/file.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+EFile::write(unsigned char*, unsigned char)       obj/file.o
+                                                  obj/pers.o
+EFile::writeRlc(unsigned char, unsigned char, unsigned char*, unsigned int, unsigned char) obj/file.o
+                                                  obj/pers.o
+EeFsFormat()                                      obj/file.o
+                                                  obj/pers.o
+EeFsGetFree()                                     obj/file.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+EeFsOpen()                                        obj/file.o
+                                                  obj/pers.o
+EeFsck()                                          obj/file.o
+                                                  obj/pers.o
+Ee_lock                                           obj/pers.o
+                                                  obj/drivers.o
+EepromActive                                      obj/lcd.o
+                                                  obj/pers.o
+EnterMenu                                         obj/er9x.o
+Fade                                              obj/menus.o
+IS_EXPO_THROTTLE(unsigned char)                   obj/er9x.o
+                                                  obj/menus.o
+Inactivity                                        obj/menus.o
+                                                  obj/drivers.o
+InverseBlink                                      obj/menus.o
+Key::input(bool, EnumKeys)                        obj/drivers.o
+Last_switch                                       obj/er9x.o
+LcdLock                                           obj/lcd.o
+                                                  obj/er9x.o
+MAXCOL(unsigned char, unsigned char const*, unsigned char) obj/menus.o
+MState2::check(unsigned char, unsigned char const*, unsigned char, unsigned char) obj/menus.o
+MState2::check_columns(unsigned char, unsigned char) obj/menus.o
+M_longMenuTimer                                   obj/menus.o
+Main_running                                      obj/er9x.o
+NRF24L01_Activate(unsigned char)                  obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_FlushRx()                                obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_FlushTx()                                obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_Initialize()                             obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_ReadPayload(unsigned char*, unsigned char) obj/nrf24l01.o
+NRF24L01_ReadReg(unsigned char)                   obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_ReadRegisterMulti(unsigned char, unsigned char*, unsigned char) obj/nrf24l01.o
+NRF24L01_Reset()                                  obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_SetBitrate(unsigned char)                obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_SetPower(unsigned char)                  obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_SetTxRxMode(TXRX_State)                  obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_WritePayload(unsigned char*, unsigned char) obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_WriteReg(unsigned char, unsigned char)   obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+NRF24L01_WriteRegisterMulti(unsigned char, unsigned char const*, unsigned char) obj/nrf24l01.o
+                                                  obj/kn_nrf24l01.o
+Nvs_state                                         obj/er9x.o
+Nvs_timer                                         obj/er9x.o
+Output                                            obj/menus.o
+P1values                                          obj/er9x.o
+                                                  obj/menus.o
+PausePulses                                       obj/pulses.o
+                                                  obj/menus.o
+PcmControl                                        obj/pulses.o
+PopupData                                         obj/menus.o
+                                                  obj/er9x.o
+REG(signed char, signed char, signed char)        obj/er9x.o
+                                                  obj/menus.o
+REG100_100(signed char)                           obj/er9x.o
+                                                  obj/menus.o
+Rotary                                            obj/er9x.o
+                                                  obj/drivers.o
+                                                  obj/menus.o
+RotaryState                                       obj/menus.o
+                                                  obj/er9x.o
+SPI_DeInit()                                      obj/spi.o
+                                                  obj/kn_nrf24l01.o
+SPI_Init()                                        obj/spi.o
+                                                  obj/kn_nrf24l01.o
+SPI_Send(unsigned int)                            obj/spi.o
+                                                  obj/nrf24l01.o
+SlaveMode                                         obj/er9x.o
+                                                  obj/pulses.o
+Stamps                                            obj/stamp.o
+                                                  obj/menus.o
+StepSize                                          obj/er9x.o
+                                                  obj/menus.o
+StickScrollAllowed                                obj/er9x.o
+                                                  obj/menus.o
+StickScrollTimer                                  obj/er9x.o
+                                                  obj/drivers.o
+Str_Chans_Gv                                      obj/menus.o
+                                                  obj/er9x.o
+Str_OFF                                           obj/er9x.o
+                                                  obj/menus.o
+Str_ON                                            obj/er9x.o
+                                                  obj/menus.o
+Str_Switch_warn                                   obj/menus.o
+Str_Switches                                      obj/er9x.o
+                                                  obj/menus.o
+Str_telemItems                                    obj/menus.o
+TITLEP(char const*)                               obj/menus.o
+TelemIndex                                        obj/menus.o
+Tevent                                            obj/er9x.o
+                                                  obj/menus.o
+ThrottleStickyOn                                  obj/menus.o
+TimeGlobals                                       obj/menus.o
+TimerConfig                                       obj/er9x.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+Voice                                             obj/audio.o
+                                                  obj/er9x.o
+Vs_state                                          obj/er9x.o
+Xmem                                              obj/menus.o
+                                                  obj/pers.o
+__bad_interrupt                                   c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__bss_end                                         c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__ctors_end                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+__ctors_start                                     c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+__data_end                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__divmodhi4                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                                                  obj/kn_nrf24l01.o
+                                                  obj/audio.o
+                                                  obj/pulses.o
+                                                  obj/lcd.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+__divmodqi4                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                                                  obj/menus.o
+__divmodsi4                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                                                  obj/menus.o
+__do_clear_bss                                    c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                                                  obj/kn_nrf24l01.o
+                                                  obj/nrf24l01.o
+                                                  obj/audio.o
+                                                  obj/pulses.o
+                                                  obj/drivers.o
+                                                  obj/lcd.o
+                                                  obj/file.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+__do_copy_data                                    c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  obj/kn_nrf24l01.o
+                                                  obj/audio.o
+                                                  obj/pulses.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+__do_global_ctors                                 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+                                                  obj/er9x.o
+__eerd_block_m64                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+                                                  obj/file.o
+__eerd_blraw_m64                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega64.o)
+__heap_end                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__init                                            c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__mulsi3                                          c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                                                  obj/menus.o
+__stack                                           c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__tablejump2__                                    c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+__tablejump__                                     c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_tablejump.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ctors.o)
+__udivmodhi4                                      c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                                                  obj/er9x.o
+__udivmodqi4                                      c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                                                  obj/audio.o
+__udivmodsi4                                      c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                                                  obj/menus.o
+__vector_1                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_10                                       obj/er9x.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_11                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_12                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_13                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_14                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_15                                       obj/er9x.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_16                                       obj/er9x.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_17                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_18                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_19                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_2                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_20                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_21                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_22                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_23                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_24                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_25                                       obj/er9x.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_26                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_27                                       obj/pulses.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_28                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_29                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_3                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_30                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_31                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_32                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_33                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_34                                       c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_4                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_5                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_6                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_7                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_8                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_9                                        c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vector_default                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+__vectors                                         c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+_div                                              c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+_exit                                             c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+alert(char const*)                                obj/er9x.o
+                                                  obj/pers.o
+alertMessages(char const*, char const*)           obj/er9x.o
+alertx(char const*, bool)                         obj/er9x.o
+                                                  obj/pers.o
+almess(char const*, unsigned char)                obj/er9x.o
+anaIn(unsigned char)                              obj/er9x.o
+                                                  obj/menus.o
+applyTemplate(unsigned char)                      obj/templates.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+audio                                             obj/er9x.o
+                                                  obj/audio.o
+audioDefevent(unsigned char)                      obj/audio.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+audioEvent(unsigned char, unsigned int)           obj/audio.o
+                                                  obj/er9x.o
+audioQueue::aqinit()                              obj/audio.o
+audioQueue::audioQueue()                          obj/audio.o
+audioQueue::audioQueue()                          obj/audio.o
+                                                  obj/er9x.o
+audioQueue::busy()                                obj/audio.o
+                                                  obj/er9x.o
+audioQueue::driver()                              obj/er9x.o
+audioQueue::driver()::toneCounter                 obj/er9x.o
+audioQueue::event(unsigned char, unsigned char)   obj/audio.o
+audioQueue::freeslots()                           obj/audio.o
+audioQueue::heartbeat()                           obj/audio.o
+                                                  obj/er9x.o
+audioQueue::play(unsigned char, unsigned char, unsigned char, unsigned char) obj/audio.o
+audioVoiceDefevent(unsigned char, unsigned char)  obj/audio.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+backlightKey()                                    obj/er9x.o
+                                                  obj/menus.o
+bchout_ar                                         obj/er9x.o
+                                                  obj/templates.o
+                                                  obj/menus.o
+bpanaCenter                                       obj/menus.o
+c_to_f(int)                                       obj/menus.o
+calc1000toRESX(int)                               obj/er9x.o
+                                                  obj/menus.o
+calc100toRESX(signed char)                        obj/er9x.o
+                                                  obj/menus.o
+calcExpo(unsigned char, int)                      obj/menus.o
+calcStickScroll(unsigned char)                    obj/er9x.o
+calc_scaler(unsigned char, unsigned char*, unsigned char*) obj/menus.o
+calibratedStick                                   obj/menus.o
+                                                  obj/er9x.o
+chainMenu(void (*)(unsigned char))                obj/er9x.o
+                                                  obj/menus.o
+chans                                             obj/menus.o
+char2idx(char)                                    obj/menus.o
+                                                  obj/pers.o
+checkIncDec(signed char, signed char, signed char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+checkIncDec16(int, int, int, unsigned char)       obj/er9x.o
+                                                  obj/menus.o
+checkIncDec_hg(signed char, signed char, signed char) obj/er9x.o
+                                                  obj/menus.o
+checkIncDec_hg0(signed char, signed char)         obj/er9x.o
+                                                  obj/menus.o
+checkIncDec_hm(signed char, signed char, signed char) obj/er9x.o
+                                                  obj/menus.o
+checkIncDec_hm0(signed char, signed char)         obj/er9x.o
+                                                  obj/menus.o
+checkIncDec_hmu0(int, unsigned char)              obj/er9x.o
+                                                  obj/menus.o
+checkSlaveMode()                                  obj/er9x.o
+checkSlaveMode()::checkDelay                      obj/er9x.o
+checkSlaveMode()::lastSlaveMode                   obj/er9x.o
+checkSwitches()                                   obj/er9x.o
+                                                  obj/menus.o
+checkTHR()                                        obj/er9x.o
+                                                  obj/menus.o
+checkThrottlePosition(int, unsigned char, int)    obj/er9x.o
+check_backlight_voice()                           obj/er9x.o
+clearCurves()                                     obj/templates.o
+clearMixes()                                      obj/templates.o
+                                                  obj/menus.o
+convertTelemConstant(unsigned char, signed char)  obj/menus.o
+deleteMix(unsigned char)                          obj/menus.o
+dispFlightModename(unsigned char, unsigned char, unsigned char) obj/menus.o
+dispGvar(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+displayBuf                                        obj/lcd.o
+displayNext()                                     obj/menus.o
+displayTimer(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+doBackLightVoice(unsigned char)                   obj/er9x.o
+doMainScreenGrphics()                             obj/menus.o
+doPopup(char const*, unsigned char, unsigned char) obj/menus.o
+doVoiceAlarmSource(t_voiceAlarm*)                 obj/er9x.o
+drawCurve(unsigned char)                          obj/menus.o
+drawFunction(unsigned char, unsigned char)        obj/menus.o
+editExpoVals(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+editName(unsigned char, unsigned char, unsigned char*, unsigned char, unsigned char) obj/menus.o
+edit_dr_switch(unsigned char, unsigned char, signed char, unsigned char, unsigned char) obj/menus.o
+eeCheck(bool)                                     obj/pers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+eeDirty(unsigned char)                            obj/pers.o
+                                                  obj/templates.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+eeDuplicateModel(unsigned char)                   obj/pers.o
+                                                  obj/menus.o
+eeFs                                              obj/file.o
+eeGeneralDefault()                                obj/pers.o
+                                                  obj/er9x.o
+eeLoadModel(unsigned char)                        obj/pers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+eeLoadModelName(unsigned char, char*, unsigned char) obj/pers.o
+                                                  obj/menus.o
+eeModelExists(unsigned char)                      obj/pers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+eeReadGeneral()                                   obj/pers.o
+                                                  obj/er9x.o
+eeWaitComplete()                                  obj/pers.o
+                                                  obj/templates.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+eeWriteBlockCmp(void const*, unsigned int, unsigned int) obj/drivers.o
+                                                  obj/file.o
+eeWriteGeneral()                                  obj/pers.o
+                                                  obj/er9x.o
+evalChkSum()                                      obj/pers.o
+                                                  obj/menus.o
+evalOffset(signed char, unsigned char)            obj/menus.o
+ex_chans                                          obj/menus.o
+                                                  obj/er9x.o
+exit                                              c:/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+expo(int, int)                                    obj/menus.o
+expou(unsigned int, unsigned int)                 obj/menus.o
+g_LightOffCounter                                 obj/er9x.o
+                                                  obj/menus.o
+g_blinkTmr10ms                                    obj/drivers.o
+                                                  obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+g_chans512                                        obj/menus.o
+                                                  obj/kn_nrf24l01.o
+                                                  obj/pulses.o
+                                                  obj/er9x.o
+g_eeGeneral                                       obj/er9x.o
+                                                  obj/audio.o
+                                                  obj/pulses.o
+                                                  obj/templates.o
+                                                  obj/lcd.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+g_latency                                         obj/menus.o
+                                                  obj/pulses.o
+                                                  obj/er9x.o
+g_menuStack                                       obj/er9x.o
+g_menuStackPtr                                    obj/er9x.o
+g_model                                           obj/er9x.o
+                                                  obj/pulses.o
+                                                  obj/templates.o
+                                                  obj/file.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+g_posHorz                                         obj/menus.o
+g_ppmIns                                          obj/er9x.o
+                                                  obj/menus.o
+g_tmr10ms                                         obj/drivers.o
+                                                  obj/er9x.o
+g_tmr16KHz                                        obj/er9x.o
+g_vbat100mV                                       obj/er9x.o
+                                                  obj/lcd.o
+                                                  obj/menus.o
+getADC_osmp()                                     obj/er9x.o
+getCurrentSwitchStates()                          obj/er9x.o
+                                                  obj/menus.o
+getEvent()                                        obj/drivers.o
+                                                  obj/er9x.o
+getFlightPhase()                                  obj/er9x.o
+                                                  obj/menus.o
+getRawTrimValue(unsigned char, unsigned char)     obj/er9x.o
+                                                  obj/menus.o
+getSwitch(signed char, bool, unsigned char)       obj/er9x.o
+                                                  obj/pulses.o
+                                                  obj/menus.o
+getTrimFlightPhase(unsigned char, unsigned char)  obj/er9x.o
+getTrimValue(unsigned char, unsigned char)        obj/er9x.o
+                                                  obj/kn_nrf24l01.o
+                                                  obj/menus.o
+getValue(unsigned char)                           obj/er9x.o
+                                                  obj/menus.o
+get_dr_state(unsigned char)                       obj/menus.o
+get_telemetry_value(unsigned char)                obj/menus.o
+                                                  obj/er9x.o
+get_tmr10ms()                                     obj/er9x.o
+                                                  obj/file.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+gvarMenuItem(unsigned char, unsigned char, signed char, signed char, signed char, unsigned char) obj/menus.o
+heartbeat                                         obj/pulses.o
+                                                  obj/kn_nrf24l01.o
+                                                  obj/pers.o
+                                                  obj/er9x.o
+hyphinvMenuItem_m(unsigned char, unsigned char, unsigned char) obj/menus.o
+idx2char(unsigned char)                           obj/menus.o
+                                                  obj/pers.o
+intpol(int, unsigned char)                        obj/menus.o
+isAgvar(unsigned char)                            obj/er9x.o
+isqrt32(unsigned long)                            obj/menus.o
+keyState(EnumKeys)                                obj/drivers.o
+                                                  obj/pulses.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+keys                                              obj/drivers.o
+killEvents(unsigned char)                         obj/drivers.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+kn_callback()                                     obj/kn_nrf24l01.o
+                                                  obj/er9x.o
+kn_initAll(unsigned char)                         obj/kn_nrf24l01.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lastPopMenu()                                     obj/er9x.o
+                                                  obj/menus.o
+lcdSendCtl(unsigned char)                         obj/lcd.o
+lcdSetContrast()                                  obj/lcd.o
+                                                  obj/menus.o
+lcdSetRefVolt(unsigned char)                      obj/lcd.o
+                                                  obj/er9x.o
+lcd_2_digits(unsigned char, unsigned char, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_char_inverse(unsigned char, unsigned char, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_clear()                                       obj/lcd.o
+                                                  obj/er9x.o
+lcd_hbar(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) obj/lcd.o
+lcd_hline(unsigned char, unsigned char, signed char) obj/lcd.o
+                                                  obj/menus.o
+lcd_hlineStip(unsigned char, unsigned char, signed char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_img(unsigned char, unsigned char, unsigned char const*, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_init()                                        obj/lcd.o
+                                                  obj/er9x.o
+lcd_lastPos                                       obj/lcd.o
+                                                  obj/menus.o
+lcd_outdez(unsigned char, unsigned char, int)     obj/lcd.o
+                                                  obj/menus.o
+lcd_outdezAtt(unsigned char, unsigned char, int, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_outdezNAtt(unsigned char, unsigned char, long, unsigned char, signed char) obj/lcd.o
+lcd_outhex4(unsigned char, unsigned char, unsigned int) obj/lcd.o
+                                                  obj/menus.o
+lcd_plot(unsigned char, unsigned char)            obj/lcd.o
+                                                  obj/menus.o
+lcd_putc(unsigned char, unsigned char, char)      obj/lcd.o
+                                                  obj/menus.o
+lcd_putcAtt(unsigned char, unsigned char, char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_putsAtt(unsigned char, unsigned char, char const*, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_putsAttIdx(unsigned char, unsigned char, char const*, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_puts_P(unsigned char, unsigned char, char const*) obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_puts_Pleft(unsigned char, char const*)        obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_puts_Pskip(unsigned char, char const*, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_putsnAtt(unsigned char, unsigned char, char const*, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+lcd_putsn_P(unsigned char, unsigned char, char const*, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_rect(unsigned char, unsigned char, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+lcd_vline(unsigned char, unsigned char, signed char) obj/lcd.o
+                                                  obj/menus.o
+lcd_write_bits(unsigned char*, unsigned char)     obj/lcd.o
+lcd_xlabel_decimal(unsigned char, char const*, unsigned int, unsigned char, unsigned char) obj/menus.o
+limitaddress(unsigned char)                       obj/er9x.o
+                                                  obj/menus.o
+m_to_ft(int)                                      obj/menus.o
+main                                              obj/er9x.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm64.o
+mainSequence()                                    obj/er9x.o
+                                                  obj/drivers.o
+memcpy                                            c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+memmove                                           c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memmove.o)
+                                                  obj/templates.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+memset                                            c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                                                  obj/file.o
+                                                  obj/pers.o
+menuDeleteDupModel(unsigned char)                 obj/menus.o
+menuDeleteMix(unsigned char)                      obj/menus.o
+menuMixersLimit(unsigned char)                    obj/menus.o
+menuModelPhases(unsigned char)                    obj/menus.o
+menuPhaseOne(unsigned char)                       obj/menus.o
+menuProc0(unsigned char)                          obj/menus.o
+                                                  obj/er9x.o
+menuProcCurve(unsigned char)                      obj/menus.o
+menuProcCurveOne(unsigned char)                   obj/menus.o
+menuProcGlobals(unsigned char)                    obj/menus.o
+menuProcIndex(unsigned char)                      obj/menus.o
+menuProcMix(unsigned char)                        obj/menus.o
+menuProcMixOne(unsigned char)                     obj/menus.o
+menuProcModelIndex(unsigned char)                 obj/menus.o
+menuProcModelSelect(unsigned char)                obj/menus.o
+                                                  obj/er9x.o
+menuProcStatistic(unsigned char)                  obj/menus.o
+menuProcTemplates(unsigned char)                  obj/menus.o
+menuProcVoiceAlarm(unsigned char)                 obj/menus.o
+menuProcVoiceOne(unsigned char)                   obj/menus.o
+menuRangeBind(unsigned char)                      obj/menus.o
+menuScaleOne(unsigned char)                       obj/menus.o
+menu_lcd_HYPHINV(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+menu_lcd_onoff(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+message(char const*)                              obj/er9x.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+mixToDelete                                       obj/menus.o
+mixaddress(unsigned char)                         obj/er9x.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+modeFixValue(unsigned char)                       obj/er9x.o
+                                                  obj/pers.o
+                                                  obj/menus.o
+modelDefaultWrite(unsigned char)                  obj/pers.o
+modi12x3                                          obj/er9x.o
+                                                  obj/menus.o
+moveMix(unsigned char, unsigned char)             obj/menus.o
+n_Templates                                       obj/templates.o
+                                                  obj/menus.o
+pauseEvents(unsigned char)                        obj/drivers.o
+                                                  obj/er9x.o
+per10ms()                                         obj/drivers.o
+                                                  obj/er9x.o
+perMain()                                         obj/er9x.o
+perOut(int*, unsigned char)                       obj/menus.o
+perOutPhase(int*, unsigned char)                  obj/menus.o
+                                                  obj/er9x.o
+phyStick                                          obj/menus.o
+                                                  obj/er9x.o
+plotType                                          obj/lcd.o
+                                                  obj/menus.o
+pollRotary()                                      obj/er9x.o
+popMenu(bool)                                     obj/er9x.o
+                                                  obj/menus.o
+ppmInState                                        obj/er9x.o
+ppmInValid                                        obj/er9x.o
+                                                  obj/menus.o
+procOneVoiceAlarm(t_voiceAlarm*, unsigned char)   obj/er9x.o
+processVoiceAlarms()                              obj/er9x.o
+pulses2MHz                                        obj/pulses.o
+pulses2MHzptr                                     obj/pulses.o
+pushMenu(void (*)(unsigned char))                 obj/er9x.o
+                                                  obj/menus.o
+putPcmBit(unsigned char)                          obj/pulses.o
+putPcmByte(unsigned char)                         obj/pulses.o
+putPcmHead()                                      obj/pulses.o
+putPcmPart(unsigned char)                         obj/pulses.o
+putVoiceQueue(unsigned char)                      obj/er9x.o
+                                                  obj/audio.o
+putVoiceQueueLong(unsigned int)                   obj/er9x.o
+                                                  obj/menus.o
+putVoiceQueueUpper(unsigned char)                 obj/er9x.o
+                                                  obj/audio.o
+                                                  obj/menus.o
+putWarnSwitch(unsigned char, unsigned char)       obj/er9x.o
+put_curve(unsigned char, unsigned char, signed char, unsigned char) obj/menus.o
+putc_0_1(unsigned char, unsigned char, unsigned char) obj/menus.o
+putsAttIdxTelemItems(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+putsChn(unsigned char, unsigned char, unsigned char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+putsChnOpRaw(unsigned char, unsigned char, t_MixData*, unsigned char) obj/menus.o
+putsChnRaw(unsigned char, unsigned char, unsigned char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+putsDblSizeName(unsigned char)                    obj/er9x.o
+                                                  obj/menus.o
+putsDrSwitches(unsigned char, unsigned char, signed char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+putsMomentDrSwitches(unsigned char, unsigned char, signed char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+putsTelemetryChannel(unsigned char, unsigned char, signed char, int, unsigned char, unsigned char) obj/menus.o
+putsTime(unsigned char, unsigned char, int, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+putsTmrMode(unsigned char, unsigned char, unsigned char, unsigned char) obj/er9x.o
+                                                  obj/menus.o
+putsTrimMode(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o
+putsVBat(unsigned char, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+putsVolts(unsigned char, unsigned char, unsigned char, unsigned char) obj/lcd.o
+                                                  obj/menus.o
+pxxFlag                                           obj/pulses.o
+                                                  obj/menus.o
+qRotary()                                         obj/menus.o
+reachMixerCountLimit()                            obj/menus.o
+refreshDiplay()                                   obj/lcd.o
+                                                  obj/er9x.o
+resetTimer1()                                     obj/menus.o
+                                                  obj/pers.o
+resetTimer2()                                     obj/menus.o
+                                                  obj/pers.o
+resetTimern(unsigned char)                        obj/menus.o
+s_anaFilt                                         obj/er9x.o
+s_editMode                                        obj/menus.o
+                                                  obj/er9x.o
+s_editing                                         obj/menus.o
+s_evt                                             obj/drivers.o
+                                                  obj/er9x.o
+s_mixMaxSel                                       obj/menus.o
+s_moveMode                                        obj/menus.o
+s_noHi                                            obj/menus.o
+s_pgOfs                                           obj/menus.o
+s_timer                                           obj/menus.o
+scaleForPXX(unsigned char)                        obj/pulses.o
+scalerDecimal(unsigned char, unsigned char, unsigned char) obj/menus.o
+scrollLR                                          obj/menus.o
+scrollUD                                          obj/menus.o
+scroll_disabled                                   obj/menus.o
+                                                  obj/er9x.o
+setMix(unsigned char, unsigned char)              obj/templates.o
+setNameP(char*, char const*)                      obj/pers.o
+setPpmTimers()                                    obj/pulses.o
+setStickCenter()                                  obj/menus.o
+setSwitch(unsigned char, unsigned char, signed char, signed char) obj/templates.o
+setTrimValue(unsigned char, unsigned char, int)   obj/er9x.o
+                                                  obj/menus.o
+setVolume(unsigned char)                          obj/er9x.o
+                                                  obj/menus.o
+set_timer3_capture()                              obj/pulses.o
+set_timer3_ppm()                                  obj/pulses.o
+setupPulses()                                     obj/pulses.o
+setupPulsesDsm2(unsigned char)                    obj/pulses.o
+setupPulsesPPM(unsigned char)                     obj/pulses.o
+startPulses()                                     obj/pulses.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+stickMoveValue()                                  obj/er9x.o
+                                                  obj/menus.o
+stickMoved                                        obj/er9x.o
+                                                  obj/menus.o
+stickScramble                                     obj/er9x.o
+                                                  obj/menus.o
+switchDisplay(unsigned char, unsigned char)       obj/menus.o
+sysFlags                                          obj/er9x.o
+                                                  obj/pers.o
+t_voice::voice_process()                          obj/er9x.o
+tanaIn(unsigned char)                             obj/er9x.o
+telemItemValid(unsigned char)                     obj/menus.o
+                                                  obj/er9x.o
+telltale(unsigned char, signed char, signed char) obj/menus.o
+theFile                                           obj/pers.o
+theFile2                                          obj/pers.o
+theWriteFile                                      obj/pers.o
+tick10ms                                          obj/er9x.o
+                                                  obj/menus.o
+timer()                                           obj/menus.o
+trace()                                           obj/menus.o
+validatePlusMinus125(int)                         obj/er9x.o
+voice_numeric(int, unsigned char, unsigned char)  obj/audio.o
+                                                  obj/menus.o
+                                                  obj/er9x.o
+voice_telem_item(unsigned char)                   obj/menus.o
+                                                  obj/er9x.o
+yesNoMenuExit(char const*)                        obj/menus.o

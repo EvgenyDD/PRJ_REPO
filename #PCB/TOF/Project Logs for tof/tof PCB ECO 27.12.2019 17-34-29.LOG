@@ -1,0 +1,19 @@
+Added Component: Designator=U?(*SENSOR_VL53L1CXV0FY/1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "VL53L1CXV0FY/1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "LGA-12 STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/VL53L1CXV0FY/1/STMicroelectronics/view-part/2755611/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-4
+Added Pin To Net: NetName=GND Pin=U?-6
+Added Pin To Net: NetName=GND Pin=U?-12
+Added Net: Name=GND
+Added Pin To Net: NetName=VCC Pin=U?-1
+Added Pin To Net: NetName=VCC Pin=U?-11
+Added Net: Name=VCC
+Added Class: Name=tof

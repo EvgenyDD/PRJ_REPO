@@ -1,0 +1,17 @@
+!SESSION 2016-01-21 00:19:02.318 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 4 77 2016-01-21 00:39:25.839
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2016-01-21 00:39:25.839
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2016-01-21 00:39:25.839
+!MESSAGE H:\WORKSPACE\_AVR\er9x\src overlaps the workspace location: H:\WORKSPACE\_AVR\er9x\src
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-01-21 00:40:18.028
+!MESSAGE Indexed 'q' (0 sources, 8 headers) in 0,40 sec: 12 declarations; 81 references; 6 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)

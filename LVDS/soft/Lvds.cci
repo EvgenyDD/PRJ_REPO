@@ -1,0 +1,13 @@
+VERSION:3 SOURCE_TIMESTAMP:488ABAEE
+NODE:I LEVEL:0 LINE:8 "C:\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:10 "C:\cvavr\inc\stdlib.h"
+NODE:M LEVEL:0 LINE:11 "F_CPU"
+NODE:V LEVEL:0 LINE:14 "value -> RAM:????"
+NODE:V LEVEL:0 LINE:15 "i -> RAM:????"
+NODE:V LEVEL:0 LINE:16 "numFlash -> RAM:????"
+NODE:V LEVEL:0 LINE:17 "interval -> RAM:????"
+NODE:V LEVEL:0 LINE:18 "curPotValue -> RAM:????"
+NODE:F LEVEL:0 LINE:20 "MeasureBattery(void)"
+NODE:F LEVEL:0 LINE:31 "MeasurePot(void)"
+NODE:F LEVEL:0 LINE:42 "main(void)"
